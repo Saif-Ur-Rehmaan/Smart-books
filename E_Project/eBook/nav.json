@@ -1,0 +1,35 @@
+{
+    "catalog": [
+      {
+        "name": "Mystery",
+        "books": [
+          "The Secret of the Old Clock",
+          "Murder on the Orient Express",
+          "The Girl with the Dragon Tattoo",
+          "Gone Girl",
+          "Big Little Lies"
+        ]
+      },
+      {
+        "name": "Science Fiction",
+        "books": [
+          "Dune",
+          "Foundation",
+          "Snow Crash",
+          "Neuromancer",
+          "The Martian"
+        ]
+      },
+      {
+        "name": "Romance",
+        "books": [
+          "Pride and Prejudice",
+          "Outlander",
+          "The Notebook",
+          "Me Before You",
+          "The Fault in Our Stars"
+        ]
+      }
+    ]
+  }
+  
