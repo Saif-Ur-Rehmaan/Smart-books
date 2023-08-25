@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 23, 2023 at 04:01 AM
+-- Generation Time: Aug 25, 2023 at 02:00 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -78,14 +78,14 @@ INSERT INTO `books` (`id`, `category_id`, `special`, `is_Featured`, `title`, `im
 (7, 2, NULL, '0', 'Foundation', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 672, 0),
 (8, 2, NULL, '0', 'Snow Crash', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 221, 0),
 (9, 2, NULL, '', 'Neuromancer', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 66, 0),
-(10, 2, NULL, '1', 'The Martian', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 649, 0),
+(10, 2, NULL, '1', 'The Martian', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 653, 0),
 (11, 3, NULL, '1', 'Pride and Prejudice', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 1035, 0),
 (12, 3, NULL, '', 'Outlander', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 642, 0),
 (13, 3, NULL, '1', 'The Notebook', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 666, 0),
 (14, 3, NULL, '', 'Me Before You', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 222, 0),
 (15, 3, NULL, '1', 'The Fault in Our Stars', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 958, 0),
 (19, 10, NULL, '', 'Whispers of Love', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 838, 0),
-(20, 11, NULL, '1', 'Secrets in the Shadows', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 786, 0);
+(20, 11, NULL, '1', 'Secrets in the Shadows', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 796, 0);
 
 -- --------------------------------------------------------
 
