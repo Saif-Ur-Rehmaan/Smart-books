@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 25, 2023 at 02:00 AM
+-- Generation Time: Aug 29, 2023 at 11:08 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -57,35 +57,36 @@ CREATE TABLE `books` (
   `id` int(11) NOT NULL,
   `category_id` int(11) DEFAULT NULL,
   `special` varchar(255) DEFAULT NULL,
-  `is_Featured` varchar(10) NOT NULL,
+  `is_Featured` varchar(10) NOT NULL DEFAULT '0',
   `title` varchar(255) DEFAULT NULL,
   `image_name` varchar(255) NOT NULL,
   `views` int(11) DEFAULT 0,
-  `QuantityInStock` int(255) NOT NULL
+  `QuantityInStock` int(255) NOT NULL,
+  `date_added` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `books`
 --
 
-INSERT INTO `books` (`id`, `category_id`, `special`, `is_Featured`, `title`, `image_name`, `views`, `QuantityInStock`) VALUES
-(1, 1, '1', '', 'The Secret of the Old Clock', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 236, 10),
-(2, 1, '1', '0', 'Murder on the Orient Express', '13-700x700_79425203-3721-4beb-a32d-5b0ce707597e_600x600.jpg@v=1552408122', 347, 0),
-(3, 1, '1', '0', 'The Girl with the Dragon Tattoo', '11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg@v=1552406840', 134, 0),
-(4, 1, NULL, '0', 'Gone Girl', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 557, 0),
-(5, 1, '1', '0', 'Big Little Lies', '7-700x700_fbe0ea4b-7436-4710-bb1f-3666a9ef6df8_600x600.jpg@v=1552408335', 26, 0),
-(6, 2, NULL, '0', 'Dune', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 253, 0),
-(7, 2, NULL, '0', 'Foundation', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 672, 0),
-(8, 2, NULL, '0', 'Snow Crash', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 221, 0),
-(9, 2, NULL, '', 'Neuromancer', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 66, 0),
-(10, 2, NULL, '1', 'The Martian', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 653, 0),
-(11, 3, NULL, '1', 'Pride and Prejudice', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 1035, 0),
-(12, 3, NULL, '', 'Outlander', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 642, 0),
-(13, 3, NULL, '1', 'The Notebook', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 666, 0),
-(14, 3, NULL, '', 'Me Before You', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 222, 0),
-(15, 3, NULL, '1', 'The Fault in Our Stars', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 958, 0),
-(19, 10, NULL, '', 'Whispers of Love', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 838, 0),
-(20, 11, NULL, '1', 'Secrets in the Shadows', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 796, 0);
+INSERT INTO `books` (`id`, `category_id`, `special`, `is_Featured`, `title`, `image_name`, `views`, `QuantityInStock`, `date_added`) VALUES
+(1, 1, '1', '0', 'The Secret of the Old Clock', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 236, 10, '2023-08-30 00:08:53'),
+(2, 1, '1', '0', 'Murder on the Orient Express', '13-700x700_79425203-3721-4beb-a32d-5b0ce707597e_600x600.jpg@v=1552408122', 347, 0, '2023-08-30 00:08:53'),
+(3, 1, '1', '0', 'The Girl with the Dragon Tattoo', '11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg@v=1552406840', 134, 0, '2023-08-30 00:08:53'),
+(4, 1, NULL, '0', 'Gone Girl', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 557, 0, '2023-08-30 00:08:53'),
+(5, 1, '1', '0', 'Big Little Lies', '7-700x700_fbe0ea4b-7436-4710-bb1f-3666a9ef6df8_600x600.jpg@v=1552408335', 26, 0, '2023-08-30 00:08:53'),
+(6, 2, NULL, '0', 'Dune', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 253, 0, '2023-08-30 00:08:53'),
+(7, 2, NULL, '0', 'Foundation', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 672, 0, '2023-08-30 00:08:53'),
+(8, 2, NULL, '0', 'Snow Crash', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 221, 0, '2023-08-30 00:08:53'),
+(9, 2, NULL, '0', 'Neuromancer', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 66, 0, '2023-08-30 00:08:53'),
+(10, 2, NULL, '1', 'The Martian', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 653, 0, '2023-08-30 00:08:53'),
+(11, 3, NULL, '1', 'Pride and Prejudice', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 1035, 0, '2023-08-30 00:08:53'),
+(12, 3, NULL, '', 'Outlander', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 642, 0, '2023-08-30 00:08:53'),
+(13, 3, NULL, '1', 'The Notebook', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 666, 0, '2023-08-30 00:08:53'),
+(14, 3, NULL, '', 'Me Before You', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 222, 0, '2023-08-30 00:08:53'),
+(15, 3, NULL, '1', 'The Fault in Our Stars', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 958, 0, '2023-08-30 00:08:53'),
+(19, 10, NULL, '', 'Whispers of Love', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 838, 0, '2023-08-30 00:08:53'),
+(20, 11, NULL, '1', 'Secrets in the Shadows', '12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966', 796, 0, '2023-08-30 00:08:53');
 
 -- --------------------------------------------------------
 
