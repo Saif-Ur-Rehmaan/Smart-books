@@ -469,201 +469,17 @@
                                   // ob_start();
                                   ?>
 
-                                        <div class="product-layout grid-style  ">
-                                          <div class="product-thumb transition">
-                                            <div class="item">
-                                              <div class="item-inner">
-                                                <div class="caption-top">
-
-                                                  <p class="manufacture-product">
-                                                    <a href="collections/vendors@q=Amazona.html"
-                                                      title="<?php echo $catName ?>"><?php echo $catName ?></a>
-                                                  </p>
-
-                                                  <h4 class="product-name">
-                                                    <a
-                                                      href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>">
-                                                      <?php echo $BookTitle ?>
-                                                    </a>
-                                                  </h4>
-                                                </div>
-                                                <div class=" box-border">
-                                                  <div class="image images-container">
-
-                                                    <a href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>"
-                                                      class="product-image">
-                                                      <img
-                                                        class="img-responsive has-rotator img-default-image img-cate-1613107134516-1543060429425"
-                                                        src="cdn/shop/products/<?php echo ($imagename != null || $imagename != "") ? $imagename : "9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg@v=1552407244"; ?>"
-                                                        alt="<?php echo $BookTitle ?>">
-
-
-
-
-                                                      <input type="hidden"
-                                                        value="//smartbook-theme.myshopify.com/cdn/shop/products/9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg?v=1552407244"
-                                                        class="img-default-1613107134516-1543060429425" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                    </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                    <div class="box-label"></div>
-                                                    <div class="action-links">
-                                                      <button class="button btn-cart " type="button" data-toggle="tooltip"
-                                                        data-loading-text="Loading..." title="Add to Cart"
-                                                        onclick="cart.add('14458191544372');">
-                                                        <span>Add to Cart</span>
-                                                      </button>
-
-
-                                                      <button class="btn-wishlist button btn-default wishlist-btn"
-                                                        data-product-handle="copy-of-when-the-doves-disappeared" type="button"
-                                                        data-toggle="tooltip" title="Add to Wish List"
-                                                        data-original-title="Add to Wish List">
-                                                        <span>Add to Wish List</span>
-                                                      </button>
-
-
-                                                      <button class="button btn-compare" type="button" data-toggle="tooltip"
-                                                        title="View Details"
-                                                        onclick="location.href='/products/copy-of-when-the-doves-disappeared';">
-                                                        <span>View Details</span>
-                                                      </button>
-
-                                                      <button class="button btn-quickview quickview" type="button"
-                                                        title="Quick View" data-toggle="modal" data-target="#productModal"
-                                                        data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
-                                                        <span>Quick View</span>
-                                                      </button>
-
-                                                    </div>
-                                                  </div>
-                                                  <!-- image -->
-                                                  <div class="caption">
-                                                    <div class="inner  swtch">
-                                                  
-                                                        <div class="ratings">
-                                                          <div class="rating-box">
-                                                        
-                                                    <span class="spr-badge" id="spr_badge_1613107134516" data-rating="5.0">
-                                                      <span class="spr-starrating spr-badge-starrating">
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                      </span><span class="spr-badge-caption">1 review</span>
-                                                    </span>
-
-
-                                                          </div>
-                                                        </div>
-                                                    
-                                                        <div class="price-box">
-
-                                                        <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
-                                                        foreach ($price_saleprice as $key => $value) {
-                                                          $price = $value["price"];
-                                                          $saleprice = $value["sale_price"]; ?>
-
-
-                                                                    <p class="special-price">
-                                                                      <span class="price">
-                                                                        <span class="money" data-currency-usd="$<?php echo $price ?>">
-                                                                        $<?php echo $price ?>
-                                                                        </span>
-                                                                      </span>
-                                                                    </p>
-                                                                    <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                                      <p class="old-price">
-                                                                        <span class="price">
-                                                                          <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
-                                                                          $<?php echo $saleprice; ?>
-                                                                          </span>
-                                                                        </span>
-                                                                      </p>
-                                                                    <?php } ?>
-
-                                                        <?php } ?>
-
-                                                        </div>
-                                                        <!-- price-container -->
-                                                      
-
-
-                                                    <?php foreach ($price_saleprice as $key => $value) {
-                                                      $price = $value["price"];
-                                                      $saleprice = $value["sale_price"]; ?>
-                                                      <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                            <div class="label-product label_sale">
-                                                            <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
-                                                            </div>
-                                                      <?php }
-                                                    } ?>    
-
-
-
-
-                                                      </div>
-
-                                                  </div>
-                                                  <!-- caption -->
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <!-- product-thumb -->
-                                        </div>
-
-                                        <?php
-
-                                        if ($i + 1 < count($arru)) {
-                                          $BookTitle = $arru[$i + 1]["Title"];
-                                          $imagename = $arru[$i + 1]["Image"];
-                                          $Bookid = $arru[$i + 1]["ID"];
-                                          $catId = $arru[$i + 1]["catId"];
-                                          $catName = $arru[$i + 1]["catName"];
-                                          $htmlprodSec = '';
-                                          // ob_start();
-                                          ?>
-  
                                                 <div class="product-layout grid-style  ">
                                                   <div class="product-thumb transition">
                                                     <div class="item">
                                                       <div class="item-inner">
                                                         <div class="caption-top">
-  
+
                                                           <p class="manufacture-product">
                                                             <a href="collections/vendors@q=Amazona.html"
                                                               title="<?php echo $catName ?>"><?php echo $catName ?></a>
                                                           </p>
-  
+
                                                           <h4 class="product-name">
                                                             <a
                                                               href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>">
@@ -673,50 +489,50 @@
                                                         </div>
                                                         <div class=" box-border">
                                                           <div class="image images-container">
-  
+
                                                             <a href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>"
                                                               class="product-image">
                                                               <img
                                                                 class="img-responsive has-rotator img-default-image img-cate-1613107134516-1543060429425"
                                                                 src="cdn/shop/products/<?php echo ($imagename != null || $imagename != "") ? $imagename : "9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg@v=1552407244"; ?>"
                                                                 alt="<?php echo $BookTitle ?>">
-  
-  
-  
-  
+
+
+
+
                                                               <input type="hidden"
                                                                 value="//smartbook-theme.myshopify.com/cdn/shop/products/9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg?v=1552407244"
                                                                 class="img-default-1613107134516-1543060429425" />
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
                                                             </a>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                                             <div class="box-label"></div>
                                                             <div class="action-links">
                                                               <button class="button btn-cart " type="button" data-toggle="tooltip"
@@ -724,99 +540,99 @@
                                                                 onclick="cart.add('14458191544372');">
                                                                 <span>Add to Cart</span>
                                                               </button>
-  
-  
+
+
                                                               <button class="btn-wishlist button btn-default wishlist-btn"
                                                                 data-product-handle="copy-of-when-the-doves-disappeared" type="button"
                                                                 data-toggle="tooltip" title="Add to Wish List"
                                                                 data-original-title="Add to Wish List">
                                                                 <span>Add to Wish List</span>
                                                               </button>
-  
-  
+
+
                                                               <button class="button btn-compare" type="button" data-toggle="tooltip"
                                                                 title="View Details"
                                                                 onclick="location.href='/products/copy-of-when-the-doves-disappeared';">
                                                                 <span>View Details</span>
                                                               </button>
-  
+
                                                               <button class="button btn-quickview quickview" type="button"
                                                                 title="Quick View" data-toggle="modal" data-target="#productModal"
                                                                 data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
                                                                 <span>Quick View</span>
                                                               </button>
-  
+
                                                             </div>
                                                           </div>
                                                           <!-- image -->
-                                                        <div class="caption">
-                                                      <div class="inner  swtch">
+                                                          <div class="caption">
+                                                            <div class="inner  swtch">
                                                   
-                                                          <div class="ratings">
-                                                            <div class="rating-box">
+                                                                <div class="ratings">
+                                                                  <div class="rating-box">
                                                         
-                                                      <span class="spr-badge" id="spr_badge_1613107134516" data-rating="5.0">
-                                                        <span class="spr-starrating spr-badge-starrating">
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        </span><span class="spr-badge-caption">1 review</span>
-                                                      </span>
+                                                            <span class="spr-badge" id="spr_badge_1613107134516" data-rating="5.0">
+                                                              <span class="spr-starrating spr-badge-starrating">
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                              </span><span class="spr-badge-caption">1 review</span>
+                                                            </span>
 
 
-                                                            </div>
-                                                          </div>
+                                                                  </div>
+                                                                </div>
                                                     
-                                                          <div class="price-box">
+                                                                <div class="price-box">
 
-                                                          <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
-                                                          foreach ($price_saleprice as $key => $value) {
-                                                            $price = $value["price"];
-                                                            $saleprice = $value["sale_price"]; ?>
+                                                                <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+                                                                foreach ($price_saleprice as $key => $value) {
+                                                                  $price = $value["price"];
+                                                                  $saleprice = $value["sale_price"]; ?>
 
 
-                                                                      <p class="special-price">
-                                                                        <span class="price">
-                                                                          <span class="money" data-currency-usd="$<?php echo $price ?>">
-                                                                          $<?php echo $price ?>
-                                                                          </span>
-                                                                        </span>
-                                                                      </p>
-                                                                      <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                                        <p class="old-price">
-                                                                          <span class="price">
-                                                                            <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
-                                                                            $<?php echo $saleprice; ?>
-                                                                            </span>
-                                                                          </span>
-                                                                        </p>
-                                                                      <?php } ?>
+                                                                                    <p class="special-price">
+                                                                                      <span class="price">
+                                                                                        <span class="money" data-currency-usd="$<?php echo $price ?>">
+                                                                                        $<?php echo $price ?>
+                                                                                        </span>
+                                                                                      </span>
+                                                                                    </p>
+                                                                                    <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                              <p class="old-price">
+                                                                                                <span class="price">
+                                                                                                  <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
+                                                                                                  $<?php echo $saleprice; ?>
+                                                                                                  </span>
+                                                                                                </span>
+                                                                                              </p>
+                                                                                    <?php } ?>
 
-                                                          <?php } ?>
+                                                                <?php } ?>
 
-                                                          </div>
-                                                          <!-- price-container -->
+                                                                </div>
+                                                                <!-- price-container -->
                                                       
 
 
-                                                      <?php foreach ($price_saleprice as $key => $value) {
-                                                        $price = $value["price"];
-                                                        $saleprice = $value["sale_price"]; ?>
-                                                        <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                              <div class="label-product label_sale">
-                                                              <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                            <?php foreach ($price_saleprice as $key => $value) {
+                                                              $price = $value["price"];
+                                                              $saleprice = $value["sale_price"]; ?>
+                                                                      <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                    <div class="label-product label_sale">
+                                                                                    <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                                                    </div>
+                                                                      <?php }
+                                                            } ?>    
+
+
+
+
                                                               </div>
-                                                        <?php }
-                                                      } ?>    
 
-
-
-
-                                                        </div>
-
-                                                    </div>
+                                                          </div>
                                                           <!-- caption -->
                                                         </div>
                                                       </div>
@@ -824,11 +640,195 @@
                                                   </div>
                                                   <!-- product-thumb -->
                                                 </div>
-  
+
                                                 <?php
 
-                                        }
-                                        echo "</div>";
+                                                if ($i + 1 < count($arru)) {
+                                                  $BookTitle = $arru[$i + 1]["Title"];
+                                                  $imagename = $arru[$i + 1]["Image"];
+                                                  $Bookid = $arru[$i + 1]["ID"];
+                                                  $catId = $arru[$i + 1]["catId"];
+                                                  $catName = $arru[$i + 1]["catName"];
+                                                  $htmlprodSec = '';
+                                                  // ob_start();
+                                                  ?>
+  
+                                                                <div class="product-layout grid-style  ">
+                                                                  <div class="product-thumb transition">
+                                                                    <div class="item">
+                                                                      <div class="item-inner">
+                                                                        <div class="caption-top">
+  
+                                                                          <p class="manufacture-product">
+                                                                            <a href="collections/vendors@q=Amazona.html"
+                                                                              title="<?php echo $catName ?>"><?php echo $catName ?></a>
+                                                                          </p>
+  
+                                                                          <h4 class="product-name">
+                                                                            <a
+                                                                              href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>">
+                                                                              <?php echo $BookTitle ?>
+                                                                            </a>
+                                                                          </h4>
+                                                                        </div>
+                                                                        <div class=" box-border">
+                                                                          <div class="image images-container">
+  
+                                                                            <a href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>"
+                                                                              class="product-image">
+                                                                              <img
+                                                                                class="img-responsive has-rotator img-default-image img-cate-1613107134516-1543060429425"
+                                                                                src="cdn/shop/products/<?php echo ($imagename != null || $imagename != "") ? $imagename : "9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg@v=1552407244"; ?>"
+                                                                                alt="<?php echo $BookTitle ?>">
+  
+  
+  
+  
+                                                                              <input type="hidden"
+                                                                                value="//smartbook-theme.myshopify.com/cdn/shop/products/9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg?v=1552407244"
+                                                                                class="img-default-1613107134516-1543060429425" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+                                                                            </a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+                                                                            <div class="box-label"></div>
+                                                                            <div class="action-links">
+                                                                              <button class="button btn-cart " type="button" data-toggle="tooltip"
+                                                                                data-loading-text="Loading..." title="Add to Cart"
+                                                                                onclick="cart.add('14458191544372');">
+                                                                                <span>Add to Cart</span>
+                                                                              </button>
+  
+  
+                                                                              <button class="btn-wishlist button btn-default wishlist-btn"
+                                                                                data-product-handle="copy-of-when-the-doves-disappeared" type="button"
+                                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                                data-original-title="Add to Wish List">
+                                                                                <span>Add to Wish List</span>
+                                                                              </button>
+  
+  
+                                                                              <button class="button btn-compare" type="button" data-toggle="tooltip"
+                                                                                title="View Details"
+                                                                                onclick="location.href='/products/copy-of-when-the-doves-disappeared';">
+                                                                                <span>View Details</span>
+                                                                              </button>
+  
+                                                                              <button class="button btn-quickview quickview" type="button"
+                                                                                title="Quick View" data-toggle="modal" data-target="#productModal"
+                                                                                data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
+                                                                                <span>Quick View</span>
+                                                                              </button>
+  
+                                                                            </div>
+                                                                          </div>
+                                                                          <!-- image -->
+                                                                        <div class="caption">
+                                                                      <div class="inner  swtch">
+                                                  
+                                                                          <div class="ratings">
+                                                                            <div class="rating-box">
+                                                        
+                                                                      <span class="spr-badge" id="spr_badge_1613107134516" data-rating="5.0">
+                                                                        <span class="spr-starrating spr-badge-starrating">
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                        </span><span class="spr-badge-caption">1 review</span>
+                                                                      </span>
+
+
+                                                                            </div>
+                                                                          </div>
+                                                    
+                                                                          <div class="price-box">
+
+                                                                          <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+                                                                          foreach ($price_saleprice as $key => $value) {
+                                                                            $price = $value["price"];
+                                                                            $saleprice = $value["sale_price"]; ?>
+
+
+                                                                                              <p class="special-price">
+                                                                                                <span class="price">
+                                                                                                  <span class="money" data-currency-usd="$<?php echo $price ?>">
+                                                                                                  $<?php echo $price ?>
+                                                                                                  </span>
+                                                                                                </span>
+                                                                                              </p>
+                                                                                              <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                                        <p class="old-price">
+                                                                                                          <span class="price">
+                                                                                                            <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
+                                                                                                            $<?php echo $saleprice; ?>
+                                                                                                            </span>
+                                                                                                          </span>
+                                                                                                        </p>
+                                                                                              <?php } ?>
+
+                                                                          <?php } ?>
+
+                                                                          </div>
+                                                                          <!-- price-container -->
+                                                      
+
+
+                                                                      <?php foreach ($price_saleprice as $key => $value) {
+                                                                        $price = $value["price"];
+                                                                        $saleprice = $value["sale_price"]; ?>
+                                                                                <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                              <div class="label-product label_sale">
+                                                                                              <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                                                              </div>
+                                                                                <?php }
+                                                                      } ?>    
+
+
+
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                          <!-- caption -->
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                  <!-- product-thumb -->
+                                                                </div>
+  
+                                                                <?php
+
+                                                }
+                                                echo "</div>";
                                 }
                                 ?>
 
@@ -884,190 +884,6 @@ WHERE date_added >= DATE_SUB(NOW(), INTERVAL 30 DAY)";
                                 // ob_start();
                                 ?>
 
-        <div class="product-layout grid-style  ">
-          <div class="product-thumb transition">
-            <div class="item">
-              <div class="item-inner">
-                <div class="caption-top">
-
-                  <p class="manufacture-product">
-                    <a href="collections/vendors@q=Amazona.html"
-                      title="<?php echo $catName ?>"><?php echo $catName ?></a>
-                  </p>
-
-                  <h4 class="product-name">
-                    <a
-                      href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>">
-                      <?php echo $BookTitle ?>
-                    </a>
-                  </h4>
-                </div>
-                <div class=" box-border">
-                  <div class="image images-container">
-
-                    <a href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>"
-                      class="product-image">
-                      <img
-                        class="img-responsive has-rotator img-default-image img-cate-1613107134516-1543060429425"
-                        src="cdn/shop/products/<?php echo ($imagename != null || $imagename != "") ? $imagename : "9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg@v=1552407244"; ?>"
-                        alt="<?php echo $BookTitle ?>">
-
-
-
-
-                      <input type="hidden"
-                        value="//smartbook-theme.myshopify.com/cdn/shop/products/9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg?v=1552407244"
-                        class="img-default-1613107134516-1543060429425" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <div class="box-label"></div>
-                    <div class="action-links">
-                      <button class="button btn-cart " type="button" data-toggle="tooltip"
-                        data-loading-text="Loading..." title="Add to Cart"
-                        onclick="cart.add('14458191544372');">
-                        <span>Add to Cart</span>
-                      </button>
-
-
-                      <button class="btn-wishlist button btn-default wishlist-btn"
-                        data-product-handle="copy-of-when-the-doves-disappeared" type="button"
-                        data-toggle="tooltip" title="Add to Wish List"
-                        data-original-title="Add to Wish List">
-                        <span>Add to Wish List</span>
-                      </button>
-
-
-                      <button class="button btn-compare" type="button" data-toggle="tooltip"
-                        title="View Details"
-                        onclick="location.href='/products/copy-of-when-the-doves-disappeared';">
-                        <span>View Details</span>
-                      </button>
-
-                      <button class="button btn-quickview quickview" type="button"
-                        title="Quick View" data-toggle="modal" data-target="#productModal"
-                        data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
-                        <span>Quick View</span>
-                      </button>
-
-                    </div>
-                  </div>
-                  <!-- image -->
-                  <div class="caption">
-                                                    <div class="inner  swtch">
-                                                  
-                                                        <div class="ratings">
-                                                          <div class="rating-box">
-                                                        
-                                                    <span class="spr-badge" id="spr_badge_1613107134516" data-rating="5.0">
-                                                      <span class="spr-starrating spr-badge-starrating">
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                      </span><span class="spr-badge-caption">1 review</span>
-                                                    </span>
-
-
-                                                          </div>
-                                                        </div>
-                                                    
-                                                        <div class="price-box">
-
-                                                        <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
-                                                        foreach ($price_saleprice as $key => $value) {
-                                                          $price = $value["price"];
-                                                          $saleprice = $value["sale_price"]; ?>
-
-
-                                                                    <p class="special-price">
-                                                                      <span class="price">
-                                                                        <span class="money" data-currency-usd="$<?php echo $price ?>">
-                                                                        $<?php echo $price ?>
-                                                                        </span>
-                                                                      </span>
-                                                                    </p>
-                                                                    <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                                      <p class="old-price">
-                                                                        <span class="price">
-                                                                          <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
-                                                                          $<?php echo $saleprice; ?>
-                                                                          </span>
-                                                                        </span>
-                                                                      </p>
-                                                                    <?php } ?>
-
-                                                        <?php } ?>
-
-                                                        </div>
-                                                        <!-- price-container -->
-                                                      
-
-
-                                                    <?php foreach ($price_saleprice as $key => $value) {
-                                                      $price = $value["price"];
-                                                      $saleprice = $value["sale_price"]; ?>
-                                                      <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                            <div class="label-product label_sale">
-                                                            <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
-                                                            </div>
-                                                      <?php }
-                                                    } ?>    
-
-
-
-
-                                                      </div>
-
-                                                  </div>
-                  <!-- caption -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- product-thumb -->
-        </div>
-
-        <?php
-
-        if ($i + 1 < count($arru)) {
-          $BookTitle = $arru[$i + 1]["Title"];
-          $imagename = $arru[$i + 1]["Image"];
-          $Bookid = $arru[$i + 1]["ID"];
-          $catId = $arru[$i + 1]["catId"];
-          $catName = $arru[$i + 1]["catName"];
-          $htmlprodSec = '';
-          // ob_start();
-          ?>
-
                 <div class="product-layout grid-style  ">
                   <div class="product-thumb transition">
                     <div class="item">
@@ -1165,73 +981,73 @@ WHERE date_added >= DATE_SUB(NOW(), INTERVAL 30 DAY)";
                           </div>
                           <!-- image -->
                           <div class="caption">
-                                                      <div class="inner  swtch">
+                                                            <div class="inner  swtch">
                                                   
-                                                          <div class="ratings">
-                                                            <div class="rating-box">
+                                                                <div class="ratings">
+                                                                  <div class="rating-box">
                                                         
-                                                      <span class="spr-badge" id="spr_badge_1613107134516" data-rating="5.0">
-                                                        <span class="spr-starrating spr-badge-starrating">
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        </span><span class="spr-badge-caption">1 review</span>
-                                                      </span>
+                                                            <span class="spr-badge" id="spr_badge_1613107134516" data-rating="5.0">
+                                                              <span class="spr-starrating spr-badge-starrating">
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                              </span><span class="spr-badge-caption">1 review</span>
+                                                            </span>
 
 
-                                                            </div>
-                                                          </div>
+                                                                  </div>
+                                                                </div>
                                                     
-                                                          <div class="price-box">
+                                                                <div class="price-box">
 
-                                                          <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
-                                                          foreach ($price_saleprice as $key => $value) {
-                                                            $price = $value["price"];
-                                                            $saleprice = $value["sale_price"]; ?>
+                                                                <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+                                                                foreach ($price_saleprice as $key => $value) {
+                                                                  $price = $value["price"];
+                                                                  $saleprice = $value["sale_price"]; ?>
 
 
-                                                                      <p class="special-price">
-                                                                        <span class="price">
-                                                                          <span class="money" data-currency-usd="$<?php echo $price ?>">
-                                                                          $<?php echo $price ?>
-                                                                          </span>
-                                                                        </span>
-                                                                      </p>
-                                                                      <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                                        <p class="old-price">
-                                                                          <span class="price">
-                                                                            <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
-                                                                            $<?php echo $saleprice; ?>
-                                                                            </span>
-                                                                          </span>
-                                                                        </p>
-                                                                      <?php } ?>
+                                                                                    <p class="special-price">
+                                                                                      <span class="price">
+                                                                                        <span class="money" data-currency-usd="$<?php echo $price ?>">
+                                                                                        $<?php echo $price ?>
+                                                                                        </span>
+                                                                                      </span>
+                                                                                    </p>
+                                                                                    <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                              <p class="old-price">
+                                                                                                <span class="price">
+                                                                                                  <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
+                                                                                                  $<?php echo $saleprice; ?>
+                                                                                                  </span>
+                                                                                                </span>
+                                                                                              </p>
+                                                                                    <?php } ?>
 
-                                                          <?php } ?>
+                                                                <?php } ?>
 
-                                                          </div>
-                                                          <!-- price-container -->
+                                                                </div>
+                                                                <!-- price-container -->
                                                       
 
 
-                                                      <?php foreach ($price_saleprice as $key => $value) {
-                                                        $price = $value["price"];
-                                                        $saleprice = $value["sale_price"]; ?>
-                                                        <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                              <div class="label-product label_sale">
-                                                              <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                            <?php foreach ($price_saleprice as $key => $value) {
+                                                              $price = $value["price"];
+                                                              $saleprice = $value["sale_price"]; ?>
+                                                                      <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                    <div class="label-product label_sale">
+                                                                                    <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                                                    </div>
+                                                                      <?php }
+                                                            } ?>    
+
+
+
+
                                                               </div>
-                                                        <?php }
-                                                      } ?>    
 
-
-
-
-                                                        </div>
-
-                                                    </div>
+                                                          </div>
                           <!-- caption -->
                         </div>
                       </div>
@@ -1242,8 +1058,192 @@ WHERE date_added >= DATE_SUB(NOW(), INTERVAL 30 DAY)";
 
                 <?php
 
-        }
-        echo "</div>";
+                if ($i + 1 < count($arru)) {
+                  $BookTitle = $arru[$i + 1]["Title"];
+                  $imagename = $arru[$i + 1]["Image"];
+                  $Bookid = $arru[$i + 1]["ID"];
+                  $catId = $arru[$i + 1]["catId"];
+                  $catName = $arru[$i + 1]["catName"];
+                  $htmlprodSec = '';
+                  // ob_start();
+                  ?>
+
+                                <div class="product-layout grid-style  ">
+                                  <div class="product-thumb transition">
+                                    <div class="item">
+                                      <div class="item-inner">
+                                        <div class="caption-top">
+
+                                          <p class="manufacture-product">
+                                            <a href="collections/vendors@q=Amazona.html"
+                                              title="<?php echo $catName ?>"><?php echo $catName ?></a>
+                                          </p>
+
+                                          <h4 class="product-name">
+                                            <a
+                                              href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>">
+                                              <?php echo $BookTitle ?>
+                                            </a>
+                                          </h4>
+                                        </div>
+                                        <div class=" box-border">
+                                          <div class="image images-container">
+
+                                            <a href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>"
+                                              class="product-image">
+                                              <img
+                                                class="img-responsive has-rotator img-default-image img-cate-1613107134516-1543060429425"
+                                                src="cdn/shop/products/<?php echo ($imagename != null || $imagename != "") ? $imagename : "9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg@v=1552407244"; ?>"
+                                                alt="<?php echo $BookTitle ?>">
+
+
+
+
+                                              <input type="hidden"
+                                                value="//smartbook-theme.myshopify.com/cdn/shop/products/9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg?v=1552407244"
+                                                class="img-default-1613107134516-1543060429425" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <div class="box-label"></div>
+                                            <div class="action-links">
+                                              <button class="button btn-cart " type="button" data-toggle="tooltip"
+                                                data-loading-text="Loading..." title="Add to Cart"
+                                                onclick="cart.add('14458191544372');">
+                                                <span>Add to Cart</span>
+                                              </button>
+
+
+                                              <button class="btn-wishlist button btn-default wishlist-btn"
+                                                data-product-handle="copy-of-when-the-doves-disappeared" type="button"
+                                                data-toggle="tooltip" title="Add to Wish List"
+                                                data-original-title="Add to Wish List">
+                                                <span>Add to Wish List</span>
+                                              </button>
+
+
+                                              <button class="button btn-compare" type="button" data-toggle="tooltip"
+                                                title="View Details"
+                                                onclick="location.href='/products/copy-of-when-the-doves-disappeared';">
+                                                <span>View Details</span>
+                                              </button>
+
+                                              <button class="button btn-quickview quickview" type="button"
+                                                title="Quick View" data-toggle="modal" data-target="#productModal"
+                                                data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
+                                                <span>Quick View</span>
+                                              </button>
+
+                                            </div>
+                                          </div>
+                                          <!-- image -->
+                                          <div class="caption">
+                                                                      <div class="inner  swtch">
+                                                  
+                                                                          <div class="ratings">
+                                                                            <div class="rating-box">
+                                                        
+                                                                      <span class="spr-badge" id="spr_badge_1613107134516" data-rating="5.0">
+                                                                        <span class="spr-starrating spr-badge-starrating">
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                        </span><span class="spr-badge-caption">1 review</span>
+                                                                      </span>
+
+
+                                                                            </div>
+                                                                          </div>
+                                                    
+                                                                          <div class="price-box">
+
+                                                                          <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+                                                                          foreach ($price_saleprice as $key => $value) {
+                                                                            $price = $value["price"];
+                                                                            $saleprice = $value["sale_price"]; ?>
+
+
+                                                                                              <p class="special-price">
+                                                                                                <span class="price">
+                                                                                                  <span class="money" data-currency-usd="$<?php echo $price ?>">
+                                                                                                  $<?php echo $price ?>
+                                                                                                  </span>
+                                                                                                </span>
+                                                                                              </p>
+                                                                                              <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                                        <p class="old-price">
+                                                                                                          <span class="price">
+                                                                                                            <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
+                                                                                                            $<?php echo $saleprice; ?>
+                                                                                                            </span>
+                                                                                                          </span>
+                                                                                                        </p>
+                                                                                              <?php } ?>
+
+                                                                          <?php } ?>
+
+                                                                          </div>
+                                                                          <!-- price-container -->
+                                                      
+
+
+                                                                      <?php foreach ($price_saleprice as $key => $value) {
+                                                                        $price = $value["price"];
+                                                                        $saleprice = $value["sale_price"]; ?>
+                                                                                <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                              <div class="label-product label_sale">
+                                                                                              <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                                                              </div>
+                                                                                <?php }
+                                                                      } ?>    
+
+
+
+
+                                                                        </div>
+
+                                                                    </div>
+                                          <!-- caption -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- product-thumb -->
+                                </div>
+
+                                <?php
+
+                }
+                echo "</div>";
                               }
                               ?>
 
@@ -1297,190 +1297,6 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
                                 // ob_start();
                                 ?>
 
-        <div class="product-layout grid-style  ">
-          <div class="product-thumb transition">
-            <div class="item">
-              <div class="item-inner">
-                <div class="caption-top">
-
-                  <p class="manufacture-product">
-                    <a href="collections/vendors@q=Amazona.html"
-                      title="<?php echo $catName ?>"><?php echo $catName ?></a>
-                  </p>
-
-                  <h4 class="product-name">
-                    <a
-                      href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>">
-                      <?php echo $BookTitle ?>
-                    </a>
-                  </h4>
-                </div>
-                <div class=" box-border">
-                  <div class="image images-container">
-
-                    <a href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>"
-                      class="product-image">
-                      <img
-                        class="img-responsive has-rotator img-default-image img-cate-1613107134516-1543060429425"
-                        src="cdn/shop/products/<?php echo ($imagename != null || $imagename != "") ? $imagename : "9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg@v=1552407244"; ?>"
-                        alt="<?php echo $BookTitle ?>">
-
-
-
-
-                      <input type="hidden"
-                        value="//smartbook-theme.myshopify.com/cdn/shop/products/9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg?v=1552407244"
-                        class="img-default-1613107134516-1543060429425" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <div class="box-label"></div>
-                    <div class="action-links">
-                      <button class="button btn-cart " type="button" data-toggle="tooltip"
-                        data-loading-text="Loading..." title="Add to Cart"
-                        onclick="cart.add('14458191544372');">
-                        <span>Add to Cart</span>
-                      </button>
-
-
-                      <button class="btn-wishlist button btn-default wishlist-btn"
-                        data-product-handle="copy-of-when-the-doves-disappeared" type="button"
-                        data-toggle="tooltip" title="Add to Wish List"
-                        data-original-title="Add to Wish List">
-                        <span>Add to Wish List</span>
-                      </button>
-
-
-                      <button class="button btn-compare" type="button" data-toggle="tooltip"
-                        title="View Details"
-                        onclick="location.href='/products/copy-of-when-the-doves-disappeared';">
-                        <span>View Details</span>
-                      </button>
-
-                      <button class="button btn-quickview quickview" type="button"
-                        title="Quick View" data-toggle="modal" data-target="#productModal"
-                        data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
-                        <span>Quick View</span>
-                      </button>
-
-                    </div>
-                  </div>
-                  <!-- image -->
-                  <div class="caption">
-                                                    <div class="inner  swtch">
-                                                  
-                                                        <div class="ratings">
-                                                          <div class="rating-box">
-                                                        
-                                                    <span class="spr-badge" id="spr_badge_1613107134516" data-rating="5.0">
-                                                      <span class="spr-starrating spr-badge-starrating">
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                      </span><span class="spr-badge-caption">1 review</span>
-                                                    </span>
-
-
-                                                          </div>
-                                                        </div>
-                                                    
-                                                        <div class="price-box">
-
-                                                        <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
-                                                        foreach ($price_saleprice as $key => $value) {
-                                                          $price = $value["price"];
-                                                          $saleprice = $value["sale_price"]; ?>
-
-
-                                                                    <p class="special-price">
-                                                                      <span class="price">
-                                                                        <span class="money" data-currency-usd="$<?php echo $price ?>">
-                                                                        $<?php echo $price ?>
-                                                                        </span>
-                                                                      </span>
-                                                                    </p>
-                                                                    <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                                      <p class="old-price">
-                                                                        <span class="price">
-                                                                          <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
-                                                                          $<?php echo $saleprice; ?>
-                                                                          </span>
-                                                                        </span>
-                                                                      </p>
-                                                                    <?php } ?>
-
-                                                        <?php } ?>
-
-                                                        </div>
-                                                        <!-- price-container -->
-                                                      
-
-
-                                                    <?php foreach ($price_saleprice as $key => $value) {
-                                                      $price = $value["price"];
-                                                      $saleprice = $value["sale_price"]; ?>
-                                                      <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                            <div class="label-product label_sale">
-                                                            <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
-                                                            </div>
-                                                      <?php }
-                                                    } ?>    
-
-
-
-
-                                                      </div>
-
-                                                  </div>
-                  <!-- caption -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- product-thumb -->
-        </div>
-
-        <?php
-
-        if ($i + 1 < count($arru)) {
-          $BookTitle = $arru[$i + 1]["Title"];
-          $imagename = $arru[$i + 1]["Image"];
-          $Bookid = $arru[$i + 1]["ID"];
-          $catId = $arru[$i + 1]["catId"];
-          $catName = $arru[$i + 1]["catName"];
-          $htmlprodSec = '';
-          // ob_start();
-          ?>
-
                 <div class="product-layout grid-style  ">
                   <div class="product-thumb transition">
                     <div class="item">
@@ -1578,73 +1394,73 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
                           </div>
                           <!-- image -->
                           <div class="caption">
-                                                      <div class="inner  swtch">
+                                                            <div class="inner  swtch">
                                                   
-                                                          <div class="ratings">
-                                                            <div class="rating-box">
+                                                                <div class="ratings">
+                                                                  <div class="rating-box">
                                                         
-                                                      <span class="spr-badge" id="spr_badge_1613107134516" data-rating="5.0">
-                                                        <span class="spr-starrating spr-badge-starrating">
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                                        </span><span class="spr-badge-caption">1 review</span>
-                                                      </span>
+                                                            <span class="spr-badge" id="spr_badge_1613107134516" data-rating="5.0">
+                                                              <span class="spr-starrating spr-badge-starrating">
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                              </span><span class="spr-badge-caption">1 review</span>
+                                                            </span>
 
 
-                                                            </div>
-                                                          </div>
+                                                                  </div>
+                                                                </div>
                                                     
-                                                          <div class="price-box">
+                                                                <div class="price-box">
 
-                                                          <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
-                                                          foreach ($price_saleprice as $key => $value) {
-                                                            $price = $value["price"];
-                                                            $saleprice = $value["sale_price"]; ?>
+                                                                <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+                                                                foreach ($price_saleprice as $key => $value) {
+                                                                  $price = $value["price"];
+                                                                  $saleprice = $value["sale_price"]; ?>
 
 
-                                                                      <p class="special-price">
-                                                                        <span class="price">
-                                                                          <span class="money" data-currency-usd="$<?php echo $price ?>">
-                                                                          $<?php echo $price ?>
-                                                                          </span>
-                                                                        </span>
-                                                                      </p>
-                                                                      <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                                        <p class="old-price">
-                                                                          <span class="price">
-                                                                            <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
-                                                                            $<?php echo $saleprice; ?>
-                                                                            </span>
-                                                                          </span>
-                                                                        </p>
-                                                                      <?php } ?>
+                                                                                    <p class="special-price">
+                                                                                      <span class="price">
+                                                                                        <span class="money" data-currency-usd="$<?php echo $price ?>">
+                                                                                        $<?php echo $price ?>
+                                                                                        </span>
+                                                                                      </span>
+                                                                                    </p>
+                                                                                    <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                              <p class="old-price">
+                                                                                                <span class="price">
+                                                                                                  <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
+                                                                                                  $<?php echo $saleprice; ?>
+                                                                                                  </span>
+                                                                                                </span>
+                                                                                              </p>
+                                                                                    <?php } ?>
 
-                                                          <?php } ?>
+                                                                <?php } ?>
 
-                                                          </div>
-                                                          <!-- price-container -->
+                                                                </div>
+                                                                <!-- price-container -->
                                                       
 
 
-                                                      <?php foreach ($price_saleprice as $key => $value) {
-                                                        $price = $value["price"];
-                                                        $saleprice = $value["sale_price"]; ?>
-                                                        <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                              <div class="label-product label_sale">
-                                                              <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                            <?php foreach ($price_saleprice as $key => $value) {
+                                                              $price = $value["price"];
+                                                              $saleprice = $value["sale_price"]; ?>
+                                                                      <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                    <div class="label-product label_sale">
+                                                                                    <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                                                    </div>
+                                                                      <?php }
+                                                            } ?>    
+
+
+
+
                                                               </div>
-                                                        <?php }
-                                                      } ?>    
 
-
-
-
-                                                        </div>
-
-                                                    </div>
+                                                          </div>
                           <!-- caption -->
                         </div>
                       </div>
@@ -1655,8 +1471,192 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
 
                 <?php
 
-        }
-        echo "</div>";
+                if ($i + 1 < count($arru)) {
+                  $BookTitle = $arru[$i + 1]["Title"];
+                  $imagename = $arru[$i + 1]["Image"];
+                  $Bookid = $arru[$i + 1]["ID"];
+                  $catId = $arru[$i + 1]["catId"];
+                  $catName = $arru[$i + 1]["catName"];
+                  $htmlprodSec = '';
+                  // ob_start();
+                  ?>
+
+                                <div class="product-layout grid-style  ">
+                                  <div class="product-thumb transition">
+                                    <div class="item">
+                                      <div class="item-inner">
+                                        <div class="caption-top">
+
+                                          <p class="manufacture-product">
+                                            <a href="collections/vendors@q=Amazona.html"
+                                              title="<?php echo $catName ?>"><?php echo $catName ?></a>
+                                          </p>
+
+                                          <h4 class="product-name">
+                                            <a
+                                              href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>">
+                                              <?php echo $BookTitle ?>
+                                            </a>
+                                          </h4>
+                                        </div>
+                                        <div class=" box-border">
+                                          <div class="image images-container">
+
+                                            <a href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>"
+                                              class="product-image">
+                                              <img
+                                                class="img-responsive has-rotator img-default-image img-cate-1613107134516-1543060429425"
+                                                src="cdn/shop/products/<?php echo ($imagename != null || $imagename != "") ? $imagename : "9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg@v=1552407244"; ?>"
+                                                alt="<?php echo $BookTitle ?>">
+
+
+
+
+                                              <input type="hidden"
+                                                value="//smartbook-theme.myshopify.com/cdn/shop/products/9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg?v=1552407244"
+                                                class="img-default-1613107134516-1543060429425" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <div class="box-label"></div>
+                                            <div class="action-links">
+                                              <button class="button btn-cart " type="button" data-toggle="tooltip"
+                                                data-loading-text="Loading..." title="Add to Cart"
+                                                onclick="cart.add('14458191544372');">
+                                                <span>Add to Cart</span>
+                                              </button>
+
+
+                                              <button class="btn-wishlist button btn-default wishlist-btn"
+                                                data-product-handle="copy-of-when-the-doves-disappeared" type="button"
+                                                data-toggle="tooltip" title="Add to Wish List"
+                                                data-original-title="Add to Wish List">
+                                                <span>Add to Wish List</span>
+                                              </button>
+
+
+                                              <button class="button btn-compare" type="button" data-toggle="tooltip"
+                                                title="View Details"
+                                                onclick="location.href='/products/copy-of-when-the-doves-disappeared';">
+                                                <span>View Details</span>
+                                              </button>
+
+                                              <button class="button btn-quickview quickview" type="button"
+                                                title="Quick View" data-toggle="modal" data-target="#productModal"
+                                                data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
+                                                <span>Quick View</span>
+                                              </button>
+
+                                            </div>
+                                          </div>
+                                          <!-- image -->
+                                          <div class="caption">
+                                                                      <div class="inner  swtch">
+                                                  
+                                                                          <div class="ratings">
+                                                                            <div class="rating-box">
+                                                        
+                                                                      <span class="spr-badge" id="spr_badge_1613107134516" data-rating="5.0">
+                                                                        <span class="spr-starrating spr-badge-starrating">
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                          <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                                        </span><span class="spr-badge-caption">1 review</span>
+                                                                      </span>
+
+
+                                                                            </div>
+                                                                          </div>
+                                                    
+                                                                          <div class="price-box">
+
+                                                                          <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+                                                                          foreach ($price_saleprice as $key => $value) {
+                                                                            $price = $value["price"];
+                                                                            $saleprice = $value["sale_price"]; ?>
+
+
+                                                                                              <p class="special-price">
+                                                                                                <span class="price">
+                                                                                                  <span class="money" data-currency-usd="$<?php echo $price ?>">
+                                                                                                  $<?php echo $price ?>
+                                                                                                  </span>
+                                                                                                </span>
+                                                                                              </p>
+                                                                                              <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                                        <p class="old-price">
+                                                                                                          <span class="price">
+                                                                                                            <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
+                                                                                                            $<?php echo $saleprice; ?>
+                                                                                                            </span>
+                                                                                                          </span>
+                                                                                                        </p>
+                                                                                              <?php } ?>
+
+                                                                          <?php } ?>
+
+                                                                          </div>
+                                                                          <!-- price-container -->
+                                                      
+
+
+                                                                      <?php foreach ($price_saleprice as $key => $value) {
+                                                                        $price = $value["price"];
+                                                                        $saleprice = $value["sale_price"]; ?>
+                                                                                <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                              <div class="label-product label_sale">
+                                                                                              <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                                                              </div>
+                                                                                <?php }
+                                                                      } ?>    
+
+
+
+
+                                                                        </div>
+
+                                                                    </div>
+                                          <!-- caption -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- product-thumb -->
+                                </div>
+
+                                <?php
+
+                }
+                echo "</div>";
                               }
                               ?>
 
@@ -1742,11 +1742,471 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
       </div>
 
 
+       
+
+
+
+      <div id="shopify-section-1552581993254" class="shopify-section index-section">
+        <div class="main-row  bestseller-full  "
+          style="background-image: url('cdn/shop/files/bkg_module.jpg@v=1613707747');" data-section-id="1552581993254">
+          <div class="container">
+            <div class="row">
+              <div class="main-col col-sm-12 col-md-12">
+                <div class="row sub-row">
+                  <div class="sub-col col-sm-12 col-md-12">
+
+                    <div class="tt_product_module module-image list-module  multi-rows "
+                      id="product_module1552581993254">
+                      <div class="module-title">
+
+                        <h2>BEST SELLER BOOKS</h2>
+
+                      </div>
+                      <div class="box-style">
+
+                        <div class="col-image">
+                          <div class="banner-static">
+                            <div class="image">
+
+                              <a >
+                                
+                                <img src="images/authors/<?php echo DatabaseManager::select("authors", "image_name", "sales_count=(select max(sales_count) from authors) and total_sales=(select max(total_sales) from authors) and registration_date=(SELECT min(registration_date) from authors)")[0]["image_name"]; ?>" alt=""
+                                  class="" />
+                              </a>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-product">
+                          <div class="owl-container">
+                            <div class="tt-product owl-carousel owl-theme ">
+<!-- wking -->
+                            <?php //echo DatabaseManager::select("authors","image_name","sales_count=(select max(sales_count) from authors) and total_sales=(select max(total_sales) from authors) and registration_date=(SELECT min(registration_date) from authors)")[0]["image_name"]; ?>
+ 
+                            <?php
+
+                            $sql = "SELECT categories.name,authors.id as authid, categories.id as cid, books.id as Bid, books.title, books.image_name
+                                    FROM authors
+                                    INNER JOIN book_details ON authors.id = book_details.author_id
+                                    INNER JOIN books ON books.id = book_details.book_id
+                                    INNER JOIN categories ON categories.id = books.category_id
+                                    WHERE sales_count = (SELECT MAX(sales_count) FROM authors)
+                                    AND total_sales = (SELECT MAX(total_sales) FROM authors)
+                                    AND registration_date = (SELECT MIN(registration_date) FROM authors)
+                                    LIMIT 1";
+
+                            $q_ry = DatabaseManager::query($sql);
+                            $res = mysqli_fetch_assoc($q_ry);
+                            // print_r($res);
+                            
+                            $arru = []; // Initialize the main array
+                            
+                            $authid = $res["authid"];
+                            $catId = $res["cid"];
+                            $catName = $res["name"];
+
+                            $responce = DatabaseManager::query("SELECT books.id as Bid ,books.title,books.image_name,authors.id from books 
+                                                                  INNER join book_details on book_details.book_id=books.id 
+                                                                  inner join authors on authors.id=book_details.author_id WHERE authors.id=11");
+
+                            while ($books = mysqli_fetch_assoc($responce)) {
+
+                              $productArray = array(
+                                "Title" => $books["title"],
+                                "Image" => $books["image_name"],
+                                "ID" => $books["Bid"],
+                                "catId" => $catId,
+                                "catName" => $catName
+                              );
+                              array_push($arru, $productArray); // Push the product array into $arru
+                            
+
+                            }
+
+
+
+                            for ($i = 0; $i < count($arru); $i += (count($arru) < 1) ? 1 : 2) {
+                              echo "<div class=\"row_items\">";
+
+                              $BookTitle = $arru[$i]["Title"];
+                              $imagename = $arru[$i]["Image"];
+                              $Bookid = $arru[$i]["ID"];
+                              $catId = $arru[$i]["catId"];
+                              $catName = $arru[$i]["catName"];
+                              $htmlprodSec = '';
+                              // ob_start();
+                              ?>
+  <div class="product-layout list-style  ">
+        <div class="product-thumb transition">
+          <div class="item">
+            <div class="item-inner">
+              <div class="image images-container">
+
+                <a href="collections/vendors/products/copy-of-brothers-beasts-bernheimer.html"
+                  class="product-image">
+                  <img
+                    class="img-responsive has-rotator img-default-image img-cate-1613143277620-1552581993254"
+                    src="cdn/shop/products/<?php echo $imagename ?>"
+                    alt="<?php echo $BookTitle ?>">
+
+
+
+
+                  <input type="hidden"
+                    value="//smartbook-theme.myshopify.com/cdn/shop/products/16-700x700_579706ac-e6c6-4b2f-8510-f56d5f5410ba_600x600.jpg?v=1552408223"
+                    class="img-default-1613143277620-1552581993254" />
 
 
 
 
 
+
+
+
+
+
+
+
+
+                </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="box-label"></div>
+              </div>
+              <!-- image -->
+              <div class="caption">
+                <div class="inner  swtch">
+
+                  <p class="manufacture-product">
+                    <a href="pages/products.html?bookid=<?php echo $Bookid ?>" title="Amazona"><?php echo $catName ?></a>
+                  </p>
+
+                  <h4 class="product-name">
+                    <a
+                      href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>">
+                      <?php echo $BookTitle ?>
+                    </a>
+                  </h4>
+
+                  <div class="ratings">
+                    <div class="rating-box">
+
+                      <span class="shopify-product-reviews-badge"
+                        data-id="1613143277620"></span>
+
+                    </div>
+                  </div>
+
+              
+                  <div class="price-box">
+
+  <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+  foreach ($price_saleprice as $key => $value) {
+    $price = $value["price"];
+    $saleprice = $value["sale_price"]; ?>
+
+
+                      <p class="special-price">
+                        <span class="price">
+                          <span class="money" data-currency-usd="$<?php echo $price ?>">
+                          $<?php echo $price ?>
+                          </span>
+                        </span>
+                      </p>
+                      <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                <p class="old-price">
+                                  <span class="price">
+                                    <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
+                                    $<?php echo $saleprice; ?>
+                                    </span>
+                                  </span>
+                                </p>
+                      <?php } ?>
+
+  <?php } ?>
+
+  </div>
+                  <!-- price-container -->
+
+
+
+
+
+
+                  <?php foreach ($price_saleprice as $key => $value) {
+                                                                        $price = $value["price"];
+                                                                        $saleprice = $value["sale_price"]; ?>
+                                                                                <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                              <div class="label-product label_sale">
+                                                                                              <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                                                              </div>
+                                                                                <?php }
+                                                                      } ?>    
+
+
+
+
+
+                </div>
+              </div>
+              <!-- caption -->
+            </div>
+          </div>
+        </div>
+        <!-- product-thumb -->
+      </div>
+      <!-- product-layout -->
+
+      
+                            <?php
+    if(count($arru) < 1){break;};
+
+                            if ($i + 1 < count($arru)) {
+                              $BookTitle = $arru[$i + 1]["Title"];
+                              $imagename = $arru[$i + 1]["Image"];
+                              $Bookid = $arru[$i + 1]["ID"];
+                              $catId = $arru[$i + 1]["catId"];
+                              $catName = $arru[$i + 1]["catName"];
+                              $htmlprodSec = '';
+                              // ob_start();
+                              ?>
+  <div class="product-layout list-style  ">
+        <div class="product-thumb transition">
+          <div class="item">
+            <div class="item-inner">
+              <div class="image images-container">
+
+                <a href="collections/vendors/products/copy-of-brothers-beasts-bernheimer.html"
+                  class="product-image">
+                  <img
+                    class="img-responsive has-rotator img-default-image img-cate-1613143277620-1552581993254"
+                    src="cdn/shop/products/<?php echo $imagename ?>"
+                    alt="<?php echo $BookTitle ?>">
+
+
+
+
+                  <input type="hidden"
+                    value="//smartbook-theme.myshopify.com/cdn/shop/products/16-700x700_579706ac-e6c6-4b2f-8510-f56d5f5410ba_600x600.jpg?v=1552408223"
+                    class="img-default-1613143277620-1552581993254" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="box-label"></div>
+              </div>
+              <!-- image -->
+              <div class="caption">
+                <div class="inner  swtch">
+
+                  <p class="manufacture-product">
+                    <a href="pages/products.html?bookid=<?php echo $Bookid ?>" title="Amazona"><?php echo $catName ?></a>
+                  </p>
+
+                  <h4 class="product-name">
+                    <a
+                      href="pages/singleProductPage.php?productdetails=<?php echo urlencode(json_encode(["imagename" => $imagename, "BookTitle" => $BookTitle, "Bookid" => $Bookid, "catId" => $catId, "catName" => $catName])); //to decode this json use $productdetails = $_GET['productdetails'];then $productData = json_decode(urldecode($productdetails), true); ?>">
+                      <?php echo $BookTitle ?>
+                    </a>
+                  </h4>
+
+                  <div class="ratings">
+                    <div class="rating-box">
+
+                      <span class="shopify-product-reviews-badge"
+                        data-id="1613143277620"></span>
+
+                    </div>
+                  </div>
+
+              
+                  <div class="price-box">
+
+  <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+  foreach ($price_saleprice as $key => $value) {
+    $price = $value["price"];
+    $saleprice = $value["sale_price"]; ?>
+
+
+                      <p class="special-price">
+                        <span class="price">
+                          <span class="money" data-currency-usd="$<?php echo $price ?>">
+                          $<?php echo $price ?>
+                          </span>
+                        </span>
+                      </p>
+                      <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                <p class="old-price">
+                                  <span class="price">
+                                    <span class="money" data-currency-usd="$<?php echo $saleprice; ?>">
+                                    $<?php echo $saleprice; ?>
+                                    </span>
+                                  </span>
+                                </p>
+                      <?php } ?>
+
+  <?php } ?>
+
+  </div>
+                  <!-- price-container -->
+
+
+
+
+
+
+                  <?php foreach ($price_saleprice as $key => $value) {
+                                                                        $price = $value["price"];
+                                                                        $saleprice = $value["sale_price"]; ?>
+                                                                                <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                              <div class="label-product label_sale">
+                                                                                              <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                                                              </div>
+                                                                                <?php }
+                                                                      } ?>    
+
+
+
+
+
+                </div>
+              </div>
+              <!-- caption -->
+            </div>
+          </div>
+        </div>
+        <!-- product-thumb -->
+      </div>
+
+
+                                                        <?php
+
+                            }
+                            echo "</div>";
+                            }
+                            ?>
+            
+                   
+                   
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <script>
+                      var product_owlCarousel = $("#product_module1552581993254 .tt-product");
+                      product_owlCarousel.owlCarousel({
+                        loop: false,
+                        margin: 0,
+                        nav: false,
+                        dots: true,
+                        autoplay: false,
+                        autoplayTimeout: 1000,
+                        autoplayHoverPause: true,
+                        autoplaySpeed: 1000,
+                        navSpeed: 1000,
+                        dotsSpeed: 1000,
+                        lazyLoad: true,
+                        responsive: {
+                          0: {
+                            items: 1,
+                            nav: true
+                          },
+                          480: {
+                            items: 2,
+                            nav: true
+                          },
+                          768: {
+                            items: 2
+                          },
+                          992: {
+                            items: 1
+                          },
+                          1200: {
+                            items: 2
+                          },
+                          1600: {
+                            items: 2
+                          }
+                        },
+                        onInitialized: function () {
+                          var i = 0;
+                          $('.owl-dots > .owl-dot').each(function () {
+                            $(this).addClass('clk-' + i);
+                            i++;
+                          });
+                          var count = $("#product_module1552581993254 .owl-item.active").length;
+                          if (count == 1) {
+                            $("#product_module1552581993254 .owl-item").removeClass('first');
+                            $("#product_module1552581993254 .owl-item.active").addClass('first');
+                          } else {
+                            $("#product_module1552581993254 .owl-item").removeClass('first');
+                            $("#product_module1552581993254 .owl-item.active:first").addClass('first');
+                          }
+                        },
+                        onTranslated: function () {
+                          var count = $("#product_module1552581993254 .owl-item.active").length;
+                          if (count == 1) {
+                            $("#product_module1552581993254 .owl-item").removeClass('first');
+                            $("#product_module1552581993254 .owl-item.active").addClass('first');
+                          } else {
+                            $("#product_module1552581993254 .owl-item").removeClass('first');
+                            $("#product_module1552581993254469 .owl-item.active:first").addClass('first');
+                          }
+                        }
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
 
 
