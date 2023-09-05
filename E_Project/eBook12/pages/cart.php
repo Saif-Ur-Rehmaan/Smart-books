@@ -146,12 +146,14 @@
                                                     ?>
                                                     <tr>
                                                         <td class="text-center btn-remove-product">
-                                                            <a type="button" data-toggle="tooltip" title="Remove"
-                                                                style="background: transparent;"
-                                                                data-original-title="<?php echo $bookid ?>"
-                                                                class="btn btn-danger wishlist-btn _addtocart"
-                                                                onmouseup="setTimeout(()=>{location.reload()})" data-line="1">
-                                                                <i class="fa fa-times-circle"
+                                                            <a 
+                                                            class="btn btn-danger wishlist-btn _addtocart"
+                                                            type="button" 
+                                                            data-toggle="tooltip" title="Remove"
+                                                            style="background: transparent;"
+                                                            data-original-title="<?php echo $bookid ?>"
+                                                            data-line="1">
+                                                            <i class="fa fa-times-circle"
                                                                     style="position:relative;z-index: -1;"></i>
                                                             </a>
                                                         </td>
@@ -177,9 +179,13 @@
                                                             </div>
                                                         </td>
                                                         <td class="text-center">
-                                                            <a onclick="alert('ordered'); this.parentNode.parentNode.remove()" class="is-add-cart btn btn-primary "
-                                                                data-product-id="14458364690484"
-                                                                data-product-handle="copy-of-the-dress-and-the-girl">BUY NOW</a>
+                                                            <a 
+                                                            class="is-add-cart _addtocart btn btn-primary "
+                                                            type="button" 
+                                                            data-toggle="tooltip" title="Remove"
+                                                            style="background: transparent;"
+                                                            data-original-title="<?php echo $bookid ?>"
+                                                            data-line="1">BUY NOW</a>
                                                         </td>
                                                     </tr>
                                                 <?php }

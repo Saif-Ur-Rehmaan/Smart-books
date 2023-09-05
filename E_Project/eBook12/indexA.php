@@ -578,7 +578,7 @@
                                                                                                     type="button"
                                                                                                     data-toggle="tooltip"
                                                                                                     title="View Details"
-                                                                                                    onclick="location.href='/products/copy-of-when-the-doves-disappeared';">
+                                                                                                    onclick="location.href='pages/osingleProductPage.php?bookid=<?php echo $Bookid?>;">
                                                                                                     <span>View
                                                                                                         Details</span>
                                                                                                 </button>
@@ -795,7 +795,7 @@
                                                                                                         type="button"
                                                                                                         data-toggle="tooltip"
                                                                                                         title="View Details"
-                                                                                                        onclick="location.href='/products/copy-of-when-the-doves-disappeared';">
+                                                                                                        onclick="location.href='pages/osingleProductPage.php?bookid=<?php echo $Bookid?>;">
                                                                                                         <span>View
                                                                                                             Details</span>
                                                                                                     </button>
@@ -1060,7 +1060,7 @@ WHERE date_added >= DATE_SUB(NOW(), INTERVAL 30 DAY)";
                                                                                                     type="button"
                                                                                                     data-toggle="tooltip"
                                                                                                     title="View Details"
-                                                                                                    onclick="location.href='/products/copy-of-when-the-doves-disappeared';">
+                                                                                                    onclick="location.href='pages/osingleProductPage.php?bookid=<?php echo $Bookid?>;">
                                                                                                     <span>View
                                                                                                         Details</span>
                                                                                                 </button>
@@ -1277,7 +1277,7 @@ WHERE date_added >= DATE_SUB(NOW(), INTERVAL 30 DAY)";
                                                                                                         type="button"
                                                                                                         data-toggle="tooltip"
                                                                                                         title="View Details"
-                                                                                                        onclick="location.href='/products/copy-of-when-the-doves-disappeared';">
+                                                                                                        onclick="location.href='pages/osingleProductPage.php?bookid=<?php echo $Bookid?>;">
                                                                                                         <span>View
                                                                                                             Details</span>
                                                                                                     </button>
@@ -1540,7 +1540,7 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
                                                                                                     type="button"
                                                                                                     data-toggle="tooltip"
                                                                                                     title="View Details"
-                                                                                                    onclick="location.href='/products/copy-of-when-the-doves-disappeared';">
+                                                                                                    onclick="location.href='pages/osingleProductPage.php?bookid=<?php echo $Bookid?>;">
                                                                                                     <span>View
                                                                                                         Details</span>
                                                                                                 </button>
@@ -1757,7 +1757,7 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
                                                                                                         type="button"
                                                                                                         data-toggle="tooltip"
                                                                                                         title="View Details"
-                                                                                                        onclick="location.href='/products/copy-of-when-the-doves-disappeared';">
+                                                                                                        onclick="location.href='pages/osingleProductPage.php?bookid=<?php echo $Bookid?>;">
                                                                                                         <span>View
                                                                                                             Details</span>
                                                                                                     </button>
@@ -2096,7 +2096,7 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
                                                                                                 type="button"
                                                                                                 data-toggle="tooltip"
                                                                                                 title="View Details"
-                                                                                                onclick="location.href='/products/a-wing-and-a-prayer';">
+                                                                                                onclick="location.href='pages/singleProductPage.php/a-wing-and-a-prayer';">
                                                                                                 <span>View
                                                                                                     Details</span>
                                                                                             </button>
@@ -2336,7 +2336,7 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
                                                                                                 type="button"
                                                                                                 data-toggle="tooltip"
                                                                                                 title="View Details"
-                                                                                                onclick="location.href='/products/copy-of-brothers-beasts-bernheimer';">
+                                                                                                onclick="location.href='pages/singleProductPage.php/copy-of-brothers-beasts-bernheimer';">
                                                                                                 <span>View
                                                                                                     Details</span>
                                                                                             </button>
@@ -2558,7 +2558,7 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
                                                                                                 type="button"
                                                                                                 data-toggle="tooltip"
                                                                                                 title="View Details"
-                                                                                                onclick="location.href='/products/copy-of-anthropologie-amerindienne-franz-boas';">
+                                                                                                onclick="location.href='pages/singleProductPage.php/copy-of-anthropologie-amerindienne-franz-boas';">
                                                                                                 <span>View
                                                                                                     Details</span>
                                                                                             </button>
@@ -2779,7 +2779,7 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
                                                                                                 type="button"
                                                                                                 data-toggle="tooltip"
                                                                                                 title="View Details"
-                                                                                                onclick="location.href='/products/copy-of-rising-crow-by-k-l-byles';">
+                                                                                                onclick="location.href='pages/singleProductPage.php/copy-of-rising-crow-by-k-l-byles';">
                                                                                                 <span>View
                                                                                                     Details</span>
                                                                                             </button>
@@ -3001,7 +3001,7 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
                                                                                                 type="button"
                                                                                                 data-toggle="tooltip"
                                                                                                 title="View Details"
-                                                                                                onclick="location.href='/products/copy-of-a-million-little-pieces';">
+                                                                                                onclick="location.href='pages/singleProductPage.php/copy-of-a-million-little-pieces';">
                                                                                                 <span>View
                                                                                                     Details</span>
                                                                                             </button>

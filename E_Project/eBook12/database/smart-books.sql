@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 05, 2023 at 09:44 PM
+-- Generation Time: Sep 05, 2023 at 11:54 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -314,7 +314,9 @@ INSERT INTO `users` (`id`, `username`, `password`, `email`, `registration_date`)
 (7, 'a home', 'as', 'a@gmail.com', '2023-09-05 12:49:25'),
 (8, ' ', '', '', '2023-09-05 12:54:18'),
 (9, 'saif u', '123', 's@gmail.com', '2023-09-05 15:12:52'),
-(10, 'ahmed k', '111', 'k@gmail.com', '2023-09-05 15:13:31');
+(10, 'ahmed k', '111', 'k@gmail.com', '2023-09-05 15:13:31'),
+(11, 'saif ur rehman', 'saif', 's@gmail.com', '2023-09-05 21:16:40'),
+(12, 'a a', 'a', 'a@gmail.com', '2023-09-05 21:17:20');
 
 --
 -- Indexes for dumped tables
@@ -411,7 +413,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Constraints for dumped tables

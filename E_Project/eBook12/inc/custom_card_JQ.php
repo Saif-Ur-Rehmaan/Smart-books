@@ -61,7 +61,9 @@
                 },
                 success: (e) => {
                     console.log(e);
-                    alert(e)
+                    // alert(e)
+                    // location.reload();
+
                 },
                 error: () => {
                     console.log("wishlist Notdone");
@@ -85,6 +87,7 @@
                 success: (e) => {
                     console.log(e);
                     alert(e)
+                    location.reload();
                 },
                 error: () => {
                     console.log("add to cart Notdone");

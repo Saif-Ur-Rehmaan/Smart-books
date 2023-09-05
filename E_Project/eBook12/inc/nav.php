@@ -47,7 +47,7 @@
       <div class="box box-right">
 
         <div><a
-            href="<?php ((basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : "") ?>wishlist.php"
+            href="<?php echo ((basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : "") ?>wishlist.php"
             id="wishlist-total"><i class="icons-left fas fa-heart"></i><span class="hidden-xs">Wish List</span></a>
         </div>
 
@@ -91,10 +91,7 @@
         <div><a
             href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>contact-us.php"
             title="Contact"><i class="icons-left fas fa-phone"></i><span class="hidden-xs">Contact</span></a></div>
-        <div><a
-            href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>checkout.php"
-            title="Checkout"><i class="icons-left fas fa-share"></i><span class="hidden-xs">Checkout</span></a></div>
-      </div>
+         
     </div>
   </div>
 </nav>

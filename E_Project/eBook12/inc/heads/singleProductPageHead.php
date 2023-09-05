@@ -8,8 +8,7 @@
     <link rel="apple-touch-icon" href="../cdn/shop/t/16/assets/favicon.png@v=18071225341662517451562343323" />
     
     <!-- Title and description ================================================== -->
-    <title>
-    <?php $bookid=$_GET["bookid"]; echo DatabaseManager::select("books","title","id=$bookid")[0]["title"]?>
+    <title>SmartBooks-<?php $bookid=$_GET["bookid"]; echo DatabaseManager::select("books","title","id=$bookid")[0]["title"]?>
     </title>
     
     <meta name="description" content="Landed gentry cesar romero by jingo. Nostrilis tickler albert einstein, super mario id educated cesar romero tip top old bean landed gentry don’t panic by jingo. Nostrilis tickler albert einstein dali, albert einstein tip top old bean tom selleck Nostrilis tickler id by jingo. don’t panic prostate cancer Sergeant major">
