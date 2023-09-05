@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 04, 2023 at 12:09 AM
+-- Generation Time: Sep 05, 2023 at 09:44 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -34,22 +34,29 @@ CREATE TABLE `authors` (
   `total_sales` decimal(10,2) DEFAULT NULL,
   `sales_count` int(11) DEFAULT NULL,
   `image_name` varchar(100) DEFAULT 'user.jpg',
-  `registration_date` timestamp NOT NULL DEFAULT current_timestamp()
+  `registration_date` timestamp NOT NULL DEFAULT current_timestamp(),
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `authors`
 --
 
-INSERT INTO `authors` (`id`, `name`, `bio`, `total_sales`, `sales_count`, `image_name`, `registration_date`) VALUES
-(1, 'Carolyn Keene', 'Mystery author of Nancy Drew series.', '1995.00', 11, 'user.jpg', '2023-08-31 20:32:21'),
-(2, 'Agatha Christie', 'Famous mystery novelist.', '2350.00', 10, 'user.jpg', '2023-08-31 20:32:21'),
-(3, 'Frank Herbert', 'Author of the science fiction classic Dune.', '3320.00', 10, 'user.jpg', '2023-08-31 20:32:21'),
-(4, 'John Doe', 'John Doe is a prolific author with a passion for storytelling.', '4320.00', 10, 'user.jpg', '2023-08-31 20:32:21'),
-(5, 'Jane Smith', 'Jane Smith is a talented writer known for her compelling narratives.', '5320.00', 10, 'user.jpg', '2023-08-31 20:32:21'),
-(6, 'Michael Johnson', 'Michael Johnson is an award-winning author who captivates readers.', '6320.00', 10, 'user.jpg', '2023-08-31 20:32:21'),
-(10, 'Emily Williams', 'Emily Williams is known for her captivating romance novels that touch hearts.', '13400.00', 11, 'user.jpg', '2023-08-31 20:32:21'),
-(11, 'David Anderson', 'David Anderson\'s thrilling mystery novels have earned him a dedicated readership.', '14100.00', 11, 'img-module1-340x388_340x388.jpg@v=1613707747', '2023-08-31 20:32:21');
+INSERT INTO `authors` (`id`, `name`, `bio`, `total_sales`, `sales_count`, `image_name`, `registration_date`, `email`, `password`) VALUES
+(1, 'Carolyn Keene', 'Mystery author of Nancy Drew series.', '1995.00', 11, 'user.jpg', '2023-08-31 20:32:21', '', ''),
+(2, 'Agatha Christie', 'Famous mystery novelist.', '2350.00', 10, 'user.jpg', '2023-08-31 20:32:21', '', ''),
+(3, 'Frank Herbert', 'Author of the science fiction classic Dune.', '3320.00', 10, 'user.jpg', '2023-08-31 20:32:21', '', ''),
+(4, 'John Doe', 'John Doe is a prolific author with a passion for storytelling.', '4320.00', 10, 'user.jpg', '2023-08-31 20:32:21', '', ''),
+(5, 'Jane Smith', 'Jane Smith is a talented writer known for her compelling narratives.', '5320.00', 10, 'user.jpg', '2023-08-31 20:32:21', '', ''),
+(6, 'Michael Johnson', 'Michael Johnson is an award-winning author who captivates readers.', '6320.00', 10, 'user.jpg', '2023-08-31 20:32:21', '', ''),
+(10, 'Emily Williams', 'Emily Williams is known for her captivating romance novels that touch hearts.', '13400.00', 11, 'user.jpg', '2023-08-31 20:32:21', '', ''),
+(11, 'David Anderson', 'David Anderson\'s thrilling mystery novels have earned him a dedicated readership.', '14100.00', 11, 'img-module1-340x388_340x388.jpg@v=1613707747', '2023-08-31 20:32:21', '', ''),
+(12, 'saif writer', NULL, NULL, NULL, 'user.jpg', '2023-09-05 12:13:02', 'w@gmail.com', '132'),
+(13, 'saif home', 'abc', NULL, NULL, 'RobloxScreenShot20230717_150857879.png', '2023-09-05 13:03:33', 'a@gmail.com', 'bf'),
+(14, 'saif home', 'abc', NULL, NULL, 'RobloxScreenShot20230717_150857879.png', '2023-09-05 13:04:45', 'a@gmail.com', 'a'),
+(15, 'saif home', 'abc', NULL, NULL, 'RobloxScreenShot20230716_233613270.png', '2023-09-05 13:08:02', 'a@gmail.com', 'sda'),
+(16, 's sa', 'sa', NULL, NULL, 'RobloxScreenShot20230717_150857879.png', '2023-09-05 13:09:20', 'sa', 'asad');
 
 -- --------------------------------------------------------
 
@@ -148,6 +155,33 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 (6, 'Historical Romance'),
 (10, 'Fantasy Romance'),
 (11, 'Suspense Thriller');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contactus`
+--
+
+CREATE TABLE `contactus` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone_Number` varchar(255) NOT NULL,
+  `Messege` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `contactus`
+--
+
+INSERT INTO `contactus` (`id`, `name`, `email`, `phone_Number`, `Messege`) VALUES
+(1, 'saif', 'saif@gmail.com', '12312312312', 'lorem ipsem abc'),
+(2, 'saif', 'saif@gmail.com', '12312312312', 'lorem ipsem abc'),
+(3, 'saif', 'saif@gmail.com', '12312312312', 'lorem ipsem abc'),
+(4, 'saif', 'saif@gmail.com', '12312312312', 'lorem ipsem abc'),
+(5, 'saif', 'saif@gmail.com', '12312312312', 'lorem ipsem abc'),
+(6, 'saif', 'saif@gmail.com', '12312312312', 'lorem ipsem abc'),
+(7, 'rizwan', 'khan', '123123123', 'behtreen kaam kr lia');
 
 -- --------------------------------------------------------
 
@@ -275,7 +309,12 @@ INSERT INTO `users` (`id`, `username`, `password`, `email`, `registration_date`)
 (2, 'user2', 'password2', 'user2@example.com', '2023-08-31 20:08:22'),
 (3, 'user3', 'password3', 'user3@example.com', '2023-08-31 20:08:22'),
 (4, 'user4', 'password4', 'user4@example.com', '2023-08-31 20:08:22'),
-(5, 'user5', 'password5', 'user5@example.com', '2023-08-31 20:08:22');
+(5, 'user5', 'password5', 'user5@example.com', '2023-08-31 20:08:22'),
+(6, 'saifa', 'aaa', 'a@gmail.com', '2023-09-05 12:11:18'),
+(7, 'a home', 'as', 'a@gmail.com', '2023-09-05 12:49:25'),
+(8, ' ', '', '', '2023-09-05 12:54:18'),
+(9, 'saif u', '123', 's@gmail.com', '2023-09-05 15:12:52'),
+(10, 'ahmed k', '111', 'k@gmail.com', '2023-09-05 15:13:31');
 
 --
 -- Indexes for dumped tables
@@ -309,6 +348,12 @@ ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `contactus`
+--
+ALTER TABLE `contactus`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
@@ -330,7 +375,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `authors`
 --
 ALTER TABLE `authors`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `books`
@@ -351,6 +396,12 @@ ALTER TABLE `categories`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
+-- AUTO_INCREMENT for table `contactus`
+--
+ALTER TABLE `contactus`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
@@ -360,7 +411,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Constraints for dumped tables

@@ -11,12 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <link rel="shortcut icon" href="../cdn/shop/t/12/assets/favicon.png@v=18071225341662517451562327408" />
-    <link rel="apple-touch-icon" href="../cdn/shop/t/12/assets/favicon.png@v=18071225341662517451562327408" />
+    <link rel="shortcut icon" href="../cdn/shop/t/13/assets/favicon.png@v=18071225341662517451562340545" />
+    <link rel="apple-touch-icon" href="../cdn/shop/t/13/assets/favicon.png@v=18071225341662517451562340545" />
     
     <!-- Title and description ================================================== -->
     <title>
-      wishlist &ndash; SmartBook - eBooks , Bookstore Shopify Theme
+      FAQs &ndash; SmartBook - eBooks , Bookstore Shopify Theme
     </title>
     
     <base href="" />
@@ -25,8 +25,8 @@
     
 
 <meta property="og:type" content="page">
-<meta property="og:title" content="wishlist">
-<meta property="og:url" content="https://smartbook-theme.myshopify.com/pages/wishlist">
+<meta property="og:title" content="FAQs">
+<meta property="og:url" content="https://smartbook-theme.myshopify.com/pages/faqs">
 
 
 
@@ -45,24 +45,24 @@
 
 
     <!-- Helpers ================================================== -->
-    <link rel="canonical" href="wishlist.html">
+    <link rel="canonical" href="faqs.html">
 
     <!-- CSS ================================================== -->
-    <link href="../cdn/shop/t/12/assets/owl.carousel.min.css@v=144261501687721598301562327414.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../cdn/shop/t/12/assets/owl.theme.green.min.css@v=136707948681557483891562327414.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../cdn/shop/t/12/assets/menu.css@v=63921008845885610331562327427.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../cdn/shop/t/12/assets/animate.css@v=56360581960268441961562327403.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../cdn/shop/t/12/assets/bootstrap.min.css@v=25071467596515048571562327405.css" rel="stylesheet" type="text/css" media="all" /> 
+    <link href="../cdn/shop/t/13/assets/owl.carousel.min.css@v=144261501687721598301562340551.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/owl.theme.green.min.css@v=136707948681557483891562340551.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/menu.css@v=51296343718567490361562340565.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/animate.css@v=56360581960268441961562340540.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/bootstrap.min.css@v=25071467596515048571562340542.css" rel="stylesheet" type="text/css" media="all" /> 
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../cdn/shop/t/12/assets/pe-helper.css@v=146537683752987679521562327414.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../cdn/shop/t/12/assets/elegant-font-style.css@v=148793376219670935751656108424.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/pe-helper.css@v=146537683752987679521562340552.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/elegant-font-style.css@v=1773454372145626421619549670.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../cdn/shop/t/12/assets/stroke-gap-icons.css@v=122179070357960371781656108425.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/stroke-gap-icons.css@v=50245262368297783781616879696.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../cdn/shop/t/12/assets/plaza-font.css@v=72348631410119234851656108424.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/plaza-font.css@v=5958531606947927511616879696.css" rel="stylesheet" type="text/css" media="all" />
     
     
   
@@ -84,15 +84,17 @@
   
 
  
-    <link href="../cdn/shop/t/12/assets/stylesheet.css@v=146239629006698341211656108424.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../cdn/shop/t/12/assets/ajaxlogin.css@v=110471483824167117431562327402.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../cdn/shop/t/12/assets/quickview.css@v=61122951359162937771562327427.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../cdn/shop/t/12/assets/swiper.min.css@v=68811326383173586861562327418.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../cdn/shop/t/12/assets/swiper-custom.css@v=74064993356636843241562327427.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/stylesheet.css@v=7980634437116825101617864424.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/ajaxlogin.css@v=110471483824167117431562340540.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/quickview.css@v=147522742887238193261562340565.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/swiper.min.css@v=68811326383173586861562340556.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/swiper-custom.css@v=74064993356636843241562340565.css" rel="stylesheet" type="text/css" media="all" />
     
     
-    <link href="../cdn/shop/t/12/assets/custom.css@v=85422703474915538031617863662.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../cdn/shop/t/13/assets/custom.css@v=169340930574348427791562340565.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css" rel="stylesheet" type="text/css" media="all" />
+    
+    <link href="../cdn/shop/t/13/assets/faq-style.css@v=31254808469864022231562340565.css" rel="stylesheet" type="text/css" media="all" />    
     
     
     <!-- Header hook for plugins ================================================== -->
@@ -142,7 +144,7 @@ Shopify.shop = "smartbook-theme.myshopify.com";
 Shopify.locale = "en";
 Shopify.currency = {"active":"USD","rate":"1.0"};
 Shopify.country = "US";
-Shopify.theme = {"name":"Smartbook 1","id":74455220276,"theme_store_id":null,"role":"main"};
+Shopify.theme = {"name":"Smartbook 2","id":74460266548,"theme_store_id":null,"role":"unpublished"};
 Shopify.theme.handle = "null";
 Shopify.theme.style = {"id":null,"handle":null};
 Shopify.cdnHost = "cdn.shopify.com";
@@ -168,11 +170,23 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":7089913908,"offset":-14400,"reqid":"dba3ab4e-981b-4f8d-83f2-7bb59192140e","pageurl":"smartbook-theme.myshopify.com\/pages\/wishlist","s":"pages-21359001652","u":"28a34bd56c35","p":"page","rtyp":"page","rid":21359001652};</script>
+<script id="__st">var __st={"a":7089913908,"offset":-14400,"reqid":"2bb1ec56-66b6-4cf5-9eac-92b47ac55daf","pageurl":"smartbook-theme.myshopify.com\/pages\/faqs","s":"pages-21358968884","u":"52d9c0d889a2","p":"page","rtyp":"page","rid":21358968884};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
+<script>document.addEventListener('DOMContentLoaded', function() {
+  const previewBarInjector = new Shopify.PreviewBarInjector({
+    targetNode: document.body,
+    iframeRoot: 'https://smartbook-theme.myshopify.com',
+    iframeSrc: 'https://smartbook-theme.myshopify.com/preview_bar',
+    previewToken: '65njbdam9uf846r5',
+    themeStoreId: '',
+    permanentDomain: 'smartbook-theme.myshopify.com',
+  });
+  previewBarInjector.init();
+});</script>
 <script integrity="sha256-atgy37M9Jn61+JKsuMFsbCkWlGMgmOcwfLDPeUl9V2s=" data-source-attribution="shopify.loadfeatures" defer="defer" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shopifycloud/shopify/assets/storefront/load_feature-6ad832dfb33d267eb5f892acb8c16c6c291694632098e7307cb0cf79497d576b.js" crossorigin="anonymous"></script>
 <script integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4=" data-source-attribution="shopify.dynamic-checkout" defer="defer" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js" crossorigin="anonymous"></script>
+<script integrity="sha256-V7lM7zdLAxLbwI5Iz1g1WLOqzMR1UKAIHMJLCMbKENY=" defer="defer" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shopifycloud/shopify/assets/storefront/bars/preview_bar_injector-57b94cef374b0312dbc08e48cf583558b3aaccc47550a0081cc24b08c6ca10d6.js" crossorigin="anonymous"></script>
 
 
 <style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
@@ -191,47 +205,49 @@ Shopify.routes.root = "/";</script>
 
 <!--[if lt IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
-<script src="//smartbook-theme.myshopify.com/cdn/shop/t/12/assets/respond.min.js?v=52248677837542619231562327416" type="text/javascript"></script>
-<link href="//smartbook-theme.myshopify.com/cdn/shop/t/12/assets/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<script src="//smartbook-theme.myshopify.com/cdn/shop/t/13/assets/respond.min.js?v=52248677837542619231562340554" type="text/javascript"></script>
+<link href="//smartbook-theme.myshopify.com/cdn/shop/t/13/assets/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
 <link href="//smartbook-theme.myshopify.com/search?q=9ee3da80448438e77835cec11e5d3f42" id="respond-redirect" rel="respond-redirect" />
 <script src="//smartbook-theme.myshopify.com/search?q=9ee3da80448438e77835cec11e5d3f42" type="text/javascript"></script>
-<script src="//smartbook-theme.myshopify.com/cdn/shop/t/12/assets/es5-shim.min.js?v=162403747125444000461562327407" type="text/javascript"></script>
+<script src="//smartbook-theme.myshopify.com/cdn/shop/t/13/assets/es5-shim.min.js?v=162403747125444000461562340544" type="text/javascript"></script>
 <![endif]-->
-<!--[if (lte IE 9) ]><script src="//smartbook-theme.myshopify.com/cdn/shop/t/12/assets/match-media.min.js?18205" type="text/javascript"></script><![endif]-->
+<!--[if (lte IE 9) ]><script src="//smartbook-theme.myshopify.com/cdn/shop/t/13/assets/match-media.min.js?18205" type="text/javascript"></script><![endif]-->
 
 
     <!-- JavaScripts-->
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/jquery-2.1.1.min.js@v=14397996608708860371562327410" type="text/javascript"></script>
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/owl.carousel.min.js@v=166908070870787366981562327414" type="text/javascript"></script> 
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/jquery.plugin.min.js@v=168274580697022526331562327412" type="text/javascript"></script>
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/jquery.countdown.min.js@v=179067753610155927421562327411" type="text/javascript"></script>
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/menu.js@v=29274008892731009231562327413" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/jquery-2.1.1.min.js@v=14397996608708860371562340547" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/owl.carousel.min.js@v=166908070870787366981562340551" type="text/javascript"></script> 
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/jquery.plugin.min.js@v=168274580697022526331562340549" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/jquery.countdown.min.js@v=179067753610155927421562340548" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/menu.js@v=29274008892731009231562340550" type="text/javascript"></script>
     
     
     
     
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/jquery.bpopup.min.js@v=45937891466859774381562327410" type="text/javascript"></script>
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/jquery.cookie.js@v=48388009562886839411562327411" type="text/javascript"></script>
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/moment.min.js@v=12766354955387885901562327413" type="text/javascript"></script>
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/quickview.js@v=172446652489787083371562327427" type="text/javascript"></script>
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/swiper.jquery.js@v=138888780083506419961562327418" type="text/javascript"></script>
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/common.js@v=115366291981147249621562327427" type="text/javascript"></script>
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/jquery.magnific-popup.min.js@v=132335878410273497401562327412" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/jquery.bpopup.min.js@v=45937891466859774381562340548" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/jquery.cookie.js@v=48388009562886839411562340548" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/moment.min.js@v=12766354955387885901562340551" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/quickview.js@v=172446652489787083371562340565" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/swiper.jquery.js@v=138888780083506419961562340555" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/common.js@v=115366291981147249621562340565" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/jquery.magnific-popup.min.js@v=132335878410273497401562340549" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js" type="text/javascript"></script>
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/shipping-cart.js@v=91022910107171357801562327416" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/shipping-cart.js@v=91022910107171357801562340554" type="text/javascript"></script>
     
     <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shopifycloud/shopify/assets/themes_support/option_selection-9f517843f664ad329c689020fb1e45d03cac979f64b9eb1651ea32858b0ff452.js" type="text/javascript"></script>
     
     
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/jquery-ui.min.js@v=3075874348992017221562327410" type="text/javascript"></script>
-    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/bootstrap.min.js@v=135618559580299884151562327405" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/faq-main.js@v=93239835271943075071562340565" type="text/javascript"></script>
+    
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/jquery-ui.min.js@v=3075874348992017221562340547" type="text/javascript"></script>
+    <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/bootstrap.min.js@v=135618559580299884151562340542" type="text/javascript"></script>
     
   <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 7089913908,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
 <script id="web-pixels-manager-setup">(function e(e,n,a,o,t,r,i){function s(e,n){if(document.head){var a=document.createElement("link");e.match(/spin\.dev\/?/)&&(e+="?fast_storefront_renderer=1"),a.rel="preload",a.href=e,n&&(a.as=n);try{document.head.appendChild(a)}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Could not append prefetch link tag to DOM.")}}}var l=i||[],d=null!==e;d&&(window.Shopify=window.Shopify||{},window.Shopify.analytics=window.Shopify.analytics||{},window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=function(e,n,a){window.Shopify.analytics.replayQueue.push([e,n,a])});var c=function(){var e="legacy",n="unknown",a=null,o=navigator.userAgent.match(/(Firefox|Chrome)\/(\d+)/i),t=navigator.userAgent.match(/(Edg)\/(\d+)/i),r=navigator.userAgent.match(/(Version)\/(\d+)(.+)(Safari)\/(\d+)/i);r?(n="safari",a=parseInt(r[2],10)):t?(n="edge",a=parseInt(t[2],10)):o&&(n=o[1].toLocaleLowerCase(),a=parseInt(o[2],10));var i={chrome:60,firefox:55,safari:11,edge:80}[n];return void 0!==i&&null!==a&&i<=a&&(e="modern"),e}(),p=c.substring(0,1),f=o.substring(0,1);if(d)try{self.performance.mark("wpm:start")}catch(e){}if(d){var u=self.location.origin,w=(e.webPixelsConfigList||[]).filter((function(e){return"app"===e.type.toLowerCase()}));for(let e=0;e<w.length;e++){s([u,"/wpm@",r,"/web-pixel-",w[e].id,"@",w[e].scriptVersion,"/sandbox/worker.",c,".js"].join(""),"script")}}var h,y,m,g,v,b,_,S,x=[a,"/wpm","/",f,r,p,".js"].join("");h={src:x,async:!0,onload:function(){if(e){var a=window.webPixelsManager.init(e);n(a),window.Shopify.analytics.replayQueue.forEach((function(e){a.publishCustomEvent(e[0],e[1],e[2])})),window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=a.publishCustomEvent,l.indexOf("web_pixels_visitor_api")>-1&&(window.Shopify.analytics.visitor=a.visitor)}},onerror:function(){var n=(e.storefrontBaseUrl?e.storefrontBaseUrl.replace(/\/$/,""):self.location.origin)+"/.well-known/shopify/monorail/unstable/produce_batch",a=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/2.0",payload:{version:t||"latest",page_url:self.location.href,status:"failed",error_msg:x+" has failed to load"},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(n,a))return!0}catch(e){}const o=new XMLHttpRequest;try{return o.open("POST",n,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(a),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}},y=document.createElement("script"),m=h.src,g=h.async||!0,v=h.onload,b=h.onerror,_=document.head,S=document.body,y.async=g,y.src=m,v&&y.addEventListener("load",v),b&&y.addEventListener("error",b),_?_.appendChild(y):S?S.appendChild(y):console.error("Did not find a head or body element to append the script")})({shopId: 7089913908,storefrontBaseUrl: "https://smartbook-theme.myshopify.com",cdnBaseUrl: "https://smartbook-theme.myshopify.com/cdn",surface: "storefront-renderer",enabledBetaFlags: ["web_pixels_async_pixel_refactor"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"APP"},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"CUSTOM"}],initData: {"cart":null,"checkout":null,"customer":null,"productVariants":[]},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed");},"https://smartbook-theme.myshopify.com/cdn","browser","0.0.340","776a6b8dwc4f9a677p12fedeb6m90cf832d",["web_pixels_async_pixel_refactor"]);</script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
 window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
 window.ShopifyAnalytics.meta.currency = 'USD';
-var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":21359001652}};
+var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":21358968884}};
 for (var attr in meta) {
   window.ShopifyAnalytics.meta[attr] = meta[attr];
 }</script>
@@ -349,7 +365,7 @@ for (var attr in meta) {
     Monorail.produce('monorail-edge.shopifysvc.com',
       'trekkie_storefront_load_errors/1.1',
       {shop_id: 7089913908,
-      theme_id: 74455220276,
+      theme_id: 74460266548,
       app_name: "storefront",
       context_url: window.location.href,
       source_url: "https://cdn.shopify.com/s/trekkie.storefront.86e6093655e0fc43d85a74a23d4e9c9f5505c3b5.min.js"});
@@ -364,7 +380,7 @@ for (var attr in meta) {
       first.parentNode.insertBefore(script, first);
     };
     trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":7089913908,"isMerchantRequest":null,"themeId":74455220276,"themeCityHash":"4901103085928145888","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer"}}
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":7089913908,"isMerchantRequest":null,"themeId":74460266548,"themeCityHash":"12442528008141242166","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer"}}
     );
 
     var loaded = false;
@@ -380,7 +396,7 @@ for (var attr in meta) {
       try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
       document.write = originalDocumentWrite;
 
-      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":21359001652});
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":21358968884});
 
       var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
       var token = match? match[1]: undefined;
@@ -410,8 +426,8 @@ for (var attr in meta) {
   window.BOOMR.themeName = "Smartbook";
   window.BOOMR.themeVersion = "1.0.0";
   window.BOOMR.shopId = 7089913908;
-  window.BOOMR.themeId = 74455220276;
-  window.BOOMR.renderRegion = "gcp-asia-southeast1";
+  window.BOOMR.themeId = 74460266548;
+  window.BOOMR.renderRegion = "gcp-us-east1";
   window.BOOMR.url =
     "https://smartbook-theme.myshopify.com/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
   var where = document.currentScript || document.getElementsByTagName("script")[0];
@@ -550,7 +566,7 @@ for (var attr in meta) {
 <![endif]-->
     <div class="wrapper">
       <div id="shopify-section-header" class="shopify-section"><!--Start of Header Area-->
-<nav id="top">
+<nav id="top" class="hd2">
   <div class="container">
     <div class="container-inner">
       <div class="box box-left">
@@ -624,7 +640,7 @@ for (var attr in meta) {
     </div>
   </div>
 </nav>
-<header>
+<header class="hd2">
   <div class="header-inner ">
     <div class="container">
       <div class="container-inner">
@@ -658,10 +674,10 @@ for (var attr in meta) {
                 }
                 #oc-menu-mheader .ul-top-items .li-top-item:hover, #oc-menu-mheader .ul-top-items .li-top-item.active {
                   background: #FFFFFF;
-                  color: #62ab00;
+                  color: #f00043;
                 }
                 #oc-menu-mheader .ul-top-items .li-top-item:hover .a-top-link, #oc-menu-mheader .ul-top-items .li-top-item.active .a-top-link{
-                  color: #62ab00;
+                  color: #f00043;
                   font-weight: 700;
                 }
                 #oc-menu-mheader .mega-menu-container {
@@ -681,7 +697,7 @@ for (var attr in meta) {
                 }
                 #oc-menu-mheader .ul-second-items .li-second-items:hover, #oc-menu-mheader .ul-second-items .li-second-items.active {
                   background: #FFFFFF;
-                  color: #62ab00;
+                  color: #f00043;
                 }
                 #oc-menu-mheader .ul-second-items .li-second-items .a-second-link {
                   color: #282828;
@@ -690,7 +706,7 @@ for (var attr in meta) {
                   font-weight: 600;
                 }
                 #oc-menu-mheader .ul-second-items .li-second-items:hover .a-second-link, #oc-menu-mheader .ul-second-items .li-second-items.active .a-second-link {
-                  color: #62ab00;
+                  color: #f00043;
                   font-weight: 600;
                 }
                 #oc-menu-mheader .ul-third-items .li-third-items {
@@ -706,7 +722,7 @@ for (var attr in meta) {
                   font-weight: 400;
                 }
                 #oc-menu-mheader .ul-third-items .li-third-items:hover .a-third-link, #oc-menu-mheader .ul-third-items .li-third-items.active .a-third-link {
-                  color: #62ab00;
+                  color: #f00043;
                   font-weight: 400;
                 }
               </style>
@@ -817,7 +833,7 @@ for (var attr in meta) {
       
       
       <li class="li-second-items">
-        <a href="wishlist.html#" class="a-second-link a-item">
+        <a href="faqs.html#" class="a-second-link a-item">
           <span class="a-second-title">Mobile Phones</span>
         </a>
         <span class="second-click-show a-click-show">
@@ -860,7 +876,7 @@ for (var attr in meta) {
       
       
       <li class="li-second-items">
-        <a href="wishlist.html#" class="a-second-link a-item">
+        <a href="faqs.html#" class="a-second-link a-item">
           <span class="a-second-title">SmartWatches</span>
         </a>
         <span class="second-click-show a-click-show">
@@ -903,7 +919,7 @@ for (var attr in meta) {
       
       
       <li class="li-second-items">
-        <a href="wishlist.html#" class="a-second-link a-item">
+        <a href="faqs.html#" class="a-second-link a-item">
           <span class="a-second-title">Smart TVs</span>
         </a>
         <span class="second-click-show a-click-show">
@@ -1002,28 +1018,6 @@ for (var attr in meta) {
       
       
       <li class="li-second-items product-img col-lg-3 col-md-12 col-sm-12 col-xs-12">
-        <a href="../collections/special-offer/products/copy-of-the-dress-and-the-girl.html">
-          <img class="mega-second-image img-responsive" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966" alt="A million little pieces - James Frey">
-        </a>
-        <h4>
-          <a class="a-mega-second-link" href="../collections/special-offer/products/copy-of-the-dress-and-the-girl.html">A million little pieces - James Frey</a>
-        </h4>
-        <div class="price-box">
-          
-          <p class="special-price"><span class="price"><span class=money>$9.99</span></span></p>
-          <p class="old-price"><span class="price"><span class=money>$19.99</span></span></p>
-          
-        </div>
-      </li>
-      
-      
-      
-
-      
-      
-      
-      
-      <li class="li-second-items product-img col-lg-3 col-md-12 col-sm-12 col-xs-12">
         <a href="../collections/special-offer/products/copy-of-pieces-of-light-fernyhough.html">
           <img class="mega-second-image img-responsive" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/13-700x700_79425203-3721-4beb-a32d-5b0ce707597e_600x600.jpg@v=1552408122" alt="Brothers &amp; Beasts - Bernheimer">
         </a>
@@ -1046,11 +1040,11 @@ for (var attr in meta) {
       
       
       <li class="li-second-items product-img col-lg-3 col-md-12 col-sm-12 col-xs-12">
-        <a href="../collections/special-offer/products/copy-of-fred-the-lonely-monster-anne.html">
-          <img class="mega-second-image img-responsive" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/7-700x700_fbe0ea4b-7436-4710-bb1f-3666a9ef6df8_600x600.jpg@v=1552408335" alt="Coyoto Tales - Thomas King">
+        <a href="../collections/vendors/products/copy-of-a-million-little-pieces.html">
+          <img class="mega-second-image img-responsive" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/3-700x700_cf5377d4-6cac-4e0e-9eb4-3a70409fb473_600x600.jpg@v=1552408053" alt="Pieces of Light by Fernyhough">
         </a>
         <h4>
-          <a class="a-mega-second-link" href="../collections/special-offer/products/copy-of-fred-the-lonely-monster-anne.html">Coyoto Tales - Thomas King</a>
+          <a class="a-mega-second-link" href="../collections/vendors/products/copy-of-a-million-little-pieces.html">Pieces of Light by Fernyhough</a>
         </h4>
         <div class="price-box">
           
@@ -1068,11 +1062,33 @@ for (var attr in meta) {
       
       
       <li class="li-second-items product-img col-lg-3 col-md-12 col-sm-12 col-xs-12">
-        <a href="../collections/special-offer/products/copy-of-a-wing-and-a-prayer.html">
-          <img class="mega-second-image img-responsive" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg@v=1552406840" alt="GREEN by Sam Graham-Felsen">
+        <a href="../collections/special-offer/products/copy-of-green-by-sam-graham-felsen.html">
+          <img class="mega-second-image img-responsive" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/15-700x700_73afafb5-634c-4ea5-b2b1-3b5230703011_600x600.jpg@v=1552406959" alt="Rising Crow by K.L. Byles - Book 1">
         </a>
         <h4>
-          <a class="a-mega-second-link" href="../collections/special-offer/products/copy-of-a-wing-and-a-prayer.html">GREEN by Sam Graham-Felsen</a>
+          <a class="a-mega-second-link" href="../collections/special-offer/products/copy-of-green-by-sam-graham-felsen.html">Rising Crow by K.L. Byles - Book 1</a>
+        </h4>
+        <div class="price-box">
+          
+          <p class="special-price"><span class="price"><span class=money>$9.99</span></span></p>
+          <p class="old-price"><span class="price"><span class=money>$19.99</span></span></p>
+          
+        </div>
+      </li>
+      
+      
+      
+
+      
+      
+      
+      
+      <li class="li-second-items product-img col-lg-3 col-md-12 col-sm-12 col-xs-12">
+        <a href="../collections/vendors/products/copy-of-anthropologie-amerindienne-franz-boas.html">
+          <img class="mega-second-image img-responsive" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/14-700x700_daed651a-c2eb-460b-8fed-262253a5e927_600x600.jpg@v=1552407352" alt="The Dance of the business mind">
+        </a>
+        <h4>
+          <a class="a-mega-second-link" href="../collections/vendors/products/copy-of-anthropologie-amerindienne-franz-boas.html">The Dance of the business mind</a>
         </h4>
         <div class="price-box">
           
@@ -1413,711 +1429,75 @@ for (var attr in meta) {
   <div id="logo" >
     
     <a href="../index.php" itemprop="url">
-      <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/files/logo_ca90e1e9-33da-4ed1-bcb0-19c471d50256.png@v=1613707406"
+      <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/files/logo-alt.png@v=1613766592"
            alt="SmartBook - eBooks , Bookstore Shopify Theme"
            itemprop="logo" class="img-responsive logo"  />
     </a>
       
   </div>
 </div>
-            
-            <div class="header-phone">
-              <p>Free Support 24/7</p>
-<p>+01-202-555-0181</p>
-            </div>
-            
-            <div class="col-hoz fix">
-              <style>
-                #oc-menu-header .oc-menu-bar {
-                  background: #FFFFFF;
-                  color: #FFFFFF;
-                  padding: 15px 15px 15px 15px;
-                  position: relative;
-                }
-                #oc-menu-header.oc-menu-bar {
-                  background: #FFFFFF;
-                  color: #FFFFFF;
-                }
-                #oc-menu-header .ul-top-items .li-top-item {
-                  background: #FFFFFF;
-                  color: #282828;
-                }
-                #oc-menu-header .ul-top-items .li-top-item .a-top-link {
-                  padding: 15px 15px 15px 15px;
-                  color: #282828;
-                  font-size: 16px;
-                  line-height: 24px;
-                  text-transform: uppercase;
-                  font-weight: 400;
-                }
-                #oc-menu-header .ul-top-items .li-top-item:hover, #oc-menu-header .ul-top-items .li-top-item.active {
-                  background: #FFFFFF;
-                  color: #62ab00;
-                }
-                #oc-menu-header .ul-top-items .li-top-item:hover .a-top-link, #oc-menu-header .ul-top-items .li-top-item.active .a-top-link{
-                  color: #62ab00;
-                  font-weight: 400;
-                }
-                #oc-menu-header .mega-menu-container {
-                  width: 768px;
-                  background: #FFFFFF;
-                  padding: 35px 35px 32px 35px;
-                }
-                #oc-menu-header .mega-menu-container .a-mega-second-link,#oc-menu-header .mega-menu-container .widget-html-title {
-                  color: #282828;
-                }
-                #oc-menu-header .mega-menu-container .a-mega-third-link {
-                  color: #666666;
-                }
-                #oc-menu-header .ul-second-items .li-second-items {
-                  background: #FFFFFF;
-                  color: #282828;
-                }
-                #oc-menu-header .ul-second-items .li-second-items:hover, #oc-menu-header .ul-second-items .li-second-items.active {
-                  background: #FFFFFF;
-                  color: #62ab00;
-                }
-                #oc-menu-header .ul-second-items .li-second-items .a-second-link {
-                  color: #282828;
-                  font-size: 14px;
-                  text-transform: uppercase;
-                  font-weight: 600;
-                }
-                #oc-menu-header .ul-second-items .li-second-items:hover .a-second-link, #oc-menu-header .ul-second-items .li-second-items.active .a-second-link {
-                  color: #62ab00;
-                  font-weight: 600;
-                }
-                #oc-menu-header .ul-third-items .li-third-items {
-                  background: #FFFFFF;
-                }
-                #oc-menu-header .ul-third-items .li-third-items:hover, #oc-menu-header .ul-third-items .li-third-items.active {
-                  background: #FFFFFF;
-                }
-                #oc-menu-header .ul-third-items .li-third-items .a-third-link {
-                  color: #666666;
-                  font-size: 14px;
-                  text-transform: capitalize;
-                  font-weight: 400;
-                }
-                #oc-menu-header .ul-third-items .li-third-items:hover .a-third-link, #oc-menu-header .ul-third-items .li-third-items.active .a-third-link {
-                  color: #62ab00;
-                  font-weight: 400;
-                }
-              </style>
-              <div role="menu" id="oc-menu-header" class="oc-menu horizontal-menu oc-menu-bar visible-lg">
-  
-    <input type="hidden" id="menu-effect-header" class="menu-effect" value="none" />
-    <ul class="ul-top-items">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <li class="li-top-item left has-child" style="float: left;">
-        <a class="a-top-link" href="../index.php">
-          <span>Home</span>
-          <i class="fas fa-chevron-down" aria-hidden="true"></i>
-        </a>
-        <!-- Flyout Menu -->
-        <div class="flyout-menu-container sub-menu-container left">
-          <ul class="ul-second-items">
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../index.php" class="a-second-link a-item">
-                <span class="a-second-title">Home 1</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../index.html@fts=0&amp;preview_theme_id=74460266548.html" class="a-second-link a-item">
-                <span class="a-second-title">Home 2</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../index.html@fts=0&amp;preview_theme_id=74460889140.html" class="a-second-link a-item">
-                <span class="a-second-title">Home 3</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../index.html@fts=0&amp;preview_theme_id=74461478964.html" class="a-second-link a-item">
-                <span class="a-second-title">Home 4</span>
-              </a>
-            </li>
-            
-            
-          </ul>
-        </div>
-      </li>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <li class="li-top-item left has-child" style="float: left;">
-  <a class="a-top-link" href="../collections/all/index.html@preview_theme_id=74460266548.html">
-    <span>Catalog</span>
-    <i class="fas fa-chevron-down" aria-hidden="true"></i>
-  </a>
-  <!-- Mega Menu -->
-  <div class="mega-menu-container sub-menu-container left">
-    <div class="row" >
-      
-      
-
-      
-      
-
-      
-
-      
-      
-      
-      <div class="col-md-3 sub-item2-content sub-item2-category-content" data-cols="3">
-        <a class="a-mega-second-link" href="wishlist.html#"><h4>Mobile Phones</h4></a>
-        <div class="sub_item3-content">
-          
-          <h5><a class="a-mega-third-link" href="../index.php">Home</a></h5>
-          
-          <h5><a class="a-mega-third-link" href="../collections/all/index.html@preview_theme_id=74460266548.html">Catalog</a></h5>
-          
-          <h5><a class="a-mega-third-link" href="https://smartbook-theme.myshopify.com/search">Specials</a></h5>
-          
-          <h5><a class="a-mega-third-link" href="https://smartbook-theme.myshopify.com/search">Pages</a></h5>
-          
-          <h5><a class="a-mega-third-link" href="../collections/vendors/products/copy-of-rising-crow-by-k-l-byles.html">Product Pages  </a></h5>
-          
-        </div>
-      </div>
-      
-      
-      
-
-      
-
-      
-      
-      
-      <div class="col-md-3 sub-item2-content sub-item2-category-content" data-cols="3">
-        <a class="a-mega-second-link" href="wishlist.html#"><h4>SmartWatches</h4></a>
-        <div class="sub_item3-content">
-          
-          <h5><a class="a-mega-third-link" href="../index.php">Home</a></h5>
-          
-          <h5><a class="a-mega-third-link" href="../collections/all/index.html@preview_theme_id=74460266548.html">Catalog</a></h5>
-          
-          <h5><a class="a-mega-third-link" href="https://smartbook-theme.myshopify.com/search">Specials</a></h5>
-          
-          <h5><a class="a-mega-third-link" href="https://smartbook-theme.myshopify.com/search">Pages</a></h5>
-          
-          <h5><a class="a-mega-third-link" href="../collections/vendors/products/copy-of-rising-crow-by-k-l-byles.html">Product Pages  </a></h5>
-          
-        </div>
-      </div>
-      
-      
-      
-
-      
-
-      
-      
-      
-      <div class="col-md-3 sub-item2-content sub-item2-category-content" data-cols="3">
-        <a class="a-mega-second-link" href="wishlist.html#"><h4>Smart TVs</h4></a>
-        <div class="sub_item3-content">
-          
-          <h5><a class="a-mega-third-link" href="../index.php">Home</a></h5>
-          
-          <h5><a class="a-mega-third-link" href="../collections/all/index.html@preview_theme_id=74460266548.html">Catalog</a></h5>
-          
-          <h5><a class="a-mega-third-link" href="https://smartbook-theme.myshopify.com/search">Specials</a></h5>
-          
-          <h5><a class="a-mega-third-link" href="https://smartbook-theme.myshopify.com/search">Pages</a></h5>
-          
-          <h5><a class="a-mega-third-link" href="../collections/vendors/products/copy-of-rising-crow-by-k-l-byles.html">Product Pages  </a></h5>
-          
-        </div>
-      </div>
-      
-      
-      
-
-      
-      
-      
-      
-      <div class="col-md-3 sub-item2-content" data-cols="3">
-        <p class="widget-html-title"></p>
-        <div>
-          <div class="banner-static static-menu-right">
-            <div class="image">
-              <a href="../collections/all/index.html@preview_theme_id=74460266548.html">
-                <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/files/img-right-menu.jpg@v=1613707825" alt="image">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
-      
-    </div>
-  </div>
-</li>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <li class="li-top-item left has-child" style="float: left;">
-  <a class="a-top-link" href="https://smartbook-theme.myshopify.com/search">
-    <span>Specials</span>
-    <i class="fas fa-chevron-down" aria-hidden="true"></i>
-  </a>
-  <!-- Mega Menu -->
-  <div class="mega-menu-container sub-menu-container left">
-    <div class="row" >
-      
-      
-
-      
-      
-
-      
-      
-      
-      
-      <div class="col-md-3 sub-widget-cate sub-item2-content sub-product sub-item2-category-content" data-cols="3">
-        <a href="../collections/special-offer/products/copy-of-the-dress-and-the-girl.html">
-          <img class="mega-second-image" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_600x600.jpg@v=1552407966" alt="A million little pieces - James Frey">
-        </a>
-        <a class="a-mega-second-link" href="../collections/special-offer/products/copy-of-the-dress-and-the-girl.html"><h4>A million little pieces - James Frey</h4></a>
-        <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$12.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-      </div>
-      
-      
-      
-
-      
-      
-      
-      
-      <div class="col-md-3 sub-widget-cate sub-item2-content sub-product sub-item2-category-content" data-cols="3">
-        <a href="../collections/special-offer/products/copy-of-pieces-of-light-fernyhough.html">
-          <img class="mega-second-image" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/13-700x700_79425203-3721-4beb-a32d-5b0ce707597e_600x600.jpg@v=1552408122" alt="Brothers &amp; Beasts - Bernheimer">
-        </a>
-        <a class="a-mega-second-link" href="../collections/special-offer/products/copy-of-pieces-of-light-fernyhough.html"><h4>Brothers & Beasts - Bernheimer</h4></a>
-        <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$16.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-      </div>
-      
-      
-      
-
-      
-      
-      
-      
-      <div class="col-md-3 sub-widget-cate sub-item2-content sub-product sub-item2-category-content" data-cols="3">
-        <a href="../collections/special-offer/products/copy-of-fred-the-lonely-monster-anne.html">
-          <img class="mega-second-image" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/7-700x700_fbe0ea4b-7436-4710-bb1f-3666a9ef6df8_600x600.jpg@v=1552408335" alt="Coyoto Tales - Thomas King">
-        </a>
-        <a class="a-mega-second-link" href="../collections/special-offer/products/copy-of-fred-the-lonely-monster-anne.html"><h4>Coyoto Tales - Thomas King</h4></a>
-        <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$13.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-      </div>
-      
-      
-      
-
-      
-      
-      
-      
-      <div class="col-md-3 sub-widget-cate sub-item2-content sub-product sub-item2-category-content" data-cols="3">
-        <a href="../collections/special-offer/products/copy-of-a-wing-and-a-prayer.html">
-          <img class="mega-second-image" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg@v=1552406840" alt="GREEN by Sam Graham-Felsen">
-        </a>
-        <a class="a-mega-second-link" href="../collections/special-offer/products/copy-of-a-wing-and-a-prayer.html"><h4>GREEN by Sam Graham-Felsen</h4></a>
-        <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$13.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-      </div>
-      
-      
-      
-    </div>
-  </div>
-</li>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <li class="li-top-item left has-child" style="float: left;">
-        <a class="a-top-link" href="https://smartbook-theme.myshopify.com/search">
-          <span>Pages</span>
-          <i class="fas fa-chevron-down" aria-hidden="true"></i>
-        </a>
-        <!-- Flyout Menu -->
-        <div class="flyout-menu-container sub-menu-container left">
-          <ul class="ul-second-items">
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../collections/all/index.html@preview_theme_id=74460266548.html" class="a-second-link a-item">
-                <span class="a-second-title">Collection Pages</span>
-                <i class="fas fa-chevron-right" aria-hidden="true"></i>
-              </a>
-              <div class="flyout-third-items left">
-                <ul class="ul-third-items">
+            <div class="box-cart">
+              <div id="top-links">
+                <ul class="user ul-account list-unstyled">
                   
-                  <li class="li-third-items">
-                    <a href="../collections/all/index.html@fts=0&amp;preview_theme_id=.html" class="a-third-link">
-                      <span class="a-third-title">Left Sidebar</span>
-                    </a>
-                  </li>
                   
-                  <li class="li-third-items">
-                    <a href="../collections/all/index.html@preview_theme_id=74461806644.html" class="a-third-link">
-                      <span class="a-third-title">Right Sidebar</span>
-                    </a>
-                  </li>
+                  <li><a href="https://smartbook-theme.myshopify.com/account/login" id="a-login-link">Sign in</a></li>
                   
-                  <li class="li-third-items">
-                    <a href="../collections/all/index.html@preview_theme_id=74460889140.html" class="a-third-link">
-                      <span class="a-third-title">No Sidebar</span>
-                    </a>
-                  </li>
+                  <li>or <a href="https://smartbook-theme.myshopify.com/account/register" id="a-register-link">Register</a></li>
                   
-                  <li class="li-third-items">
-                    <a href="../collections/all/index.html@preview_theme_id=74460266548.html" class="a-third-link">
-                      <span class="a-third-title">No Top Banner</span>
-                    </a>
-                  </li>
+                  
                   
                 </ul>
               </div>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../blogs/news.html" class="a-second-link a-item">
-                <span class="a-second-title">Blog</span>
-                <i class="fas fa-chevron-right" aria-hidden="true"></i>
-              </a>
-              <div class="flyout-third-items left">
-                <ul class="ul-third-items">
-                  
-                  <li class="li-third-items">
-                    <a href="../blogs/news.html" class="a-third-link">
-                      <span class="a-third-title">News</span>
-                    </a>
-                  </li>
-                  
-                  <li class="li-third-items">
-                    <a href="../blogs/news.html" class="a-third-link">
-                      <span class="a-third-title">Article</span>
-                    </a>
-                  </li>
-                  
-                </ul>
-              </div>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="contact-us.html" class="a-second-link a-item">
-                <span class="a-second-title">Contact Us</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="faqs.html" class="a-second-link a-item">
-                <span class="a-second-title">FAQs</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="https://smartbook-theme.myshopify.com/404/" class="a-second-link a-item">
-                <span class="a-second-title">404</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="https://smartbook-theme.myshopify.com/cart/" class="a-second-link a-item">
-                <span class="a-second-title">Cart</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="https://smartbook-theme.myshopify.com/checkout/" class="a-second-link a-item">
-                <span class="a-second-title">Checkout</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="wishlist.html" class="a-second-link a-item">
-                <span class="a-second-title">Wishlist</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="https://smartbook-theme.myshopify.com/account/login" class="a-second-link a-item">
-                <span class="a-second-title">Login</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="https://smartbook-theme.myshopify.com/account/register" class="a-second-link a-item">
-                <span class="a-second-title">Register</span>
-              </a>
-            </li>
-            
-            
-          </ul>
-        </div>
-      </li>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <li class="li-top-item left has-child" style="float: left;">
-        <a class="a-top-link" href="../collections/vendors/products/copy-of-rising-crow-by-k-l-byles.html">
-          <span>Product Pages  </span>
-          <i class="fas fa-chevron-down" aria-hidden="true"></i>
-        </a>
-        <!-- Flyout Menu -->
-        <div class="flyout-menu-container sub-menu-container left">
-          <ul class="ul-second-items">
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../products/copy-of-dance-of-the-business-mind/index.php" class="a-second-link a-item">
-                <span class="a-second-title">Horizontal Thumbs</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../products/copy-of-brothers-beasts-bernheimer/index.html@fts=0&amp;preview_theme_id=74460889140.html" class="a-second-link a-item">
-                <span class="a-second-title">Vertical Thumbs</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../products/copy-of-brothers-beasts-bernheimer/index.html@fts=0&amp;preview_theme_id=74461478964.html" class="a-second-link a-item">
-                <span class="a-second-title">Vertical Thumbs - Right</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../products/copy-of-brothers-beasts-bernheimer/index.html@fts=0&amp;preview_theme_id=74461806644.html" class="a-second-link a-item">
-                <span class="a-second-title">Image Rollover</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../collections/special-offer/products/copy-of-a-wing-and-a-prayer.html" class="a-second-link a-item">
-                <span class="a-second-title">Pre Order</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../collections/vendors/products/copy-of-a-million-little-pieces.html" class="a-second-link a-item">
-                <span class="a-second-title">Video Thumb</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../collections/vendors/products/copy-of-a-million-little-pieces.html" class="a-second-link a-item">
-                <span class="a-second-title">Deal Counter</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../products/copy-of-dance-of-the-business-mind/index.php" class="a-second-link a-item">
-                <span class="a-second-title">Trust Badge</span>
-              </a>
-            </li>
-            
-            
-            <!-- Nested Level Third -->
-            
-            
-            <li class="li-second-items">
-              <a href="../collections/special-offer/products/copy-of-when-the-doves-disappeared.html" class="a-second-link a-item">
-                <span class="a-second-title">Custom Summary</span>
-              </a>
-            </li>
-            
-            
-          </ul>
-        </div>
-      </li>
-      
-      
-      
-    </ul>
-    
+              <div id="cart" class="btn-group btn-block">
+  <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn dropdown-toggle">
+    <span id="cart-total">
+      <span class="txt_number">0</span>
+      <span class="txt_items">Shopping Cart </span>
+      <span class="total-price"><span class=money>$0.00</span></span>
+    </span>
+  </button>
+  <ul class="dropdown-menu pull-right">
+    <li class="has-scroll">
+      <table class="table">
+        <tbody>
+           
+          <p class="text-center cart-empty">Your shopping cart is empty!</p>
+          
+        </tbody>
+      </table>
+    </li>
+    <li  class="hide">
+      <table class="table">
+        <tr>
+          <td class="text-left">Subtotal :</td>
+          <td class="text-right" id="cart-subtotal"><span class=money>$0.00</span></td>
+        </tr>
+      </table>
+      <p class="text-center cart-button">
+        <a href="https://smartbook-theme.myshopify.com/cart">View Cart</a> 
+        <a href="https://smartbook-theme.myshopify.com/checkout">Checkout</a>
+      </p>
+    </li>
+  </ul>
 </div>
             </div>
           </div>
+          
+<div class="col-search">
+  <div id="search-by-category">
+    <div class="search-container">
+      <input type="text" name="q" id="text-search" value="" placeholder="Search here..." class="" aria-label="Search here..." />
+      <ul class="search-results" style="display:none";></ul>
+    </div>
+    <div id="sp-btn-search" class="">
+      <button type="button" id="btn-search-category" class="btn btn-default btn-lg">
+        <span>Search</span>
+      </button>
+    </div>
+  </div>
+</div>
+ 
         </div>
         <div class="clearfix"></div>
       </div>
@@ -2130,13 +1510,13 @@ for (var attr in meta) {
           <style>
             #oc-menu-vheader .oc-menu-bar {
               background: #FFFFFF;
-              color: #282828;
+              color: #FFFFFF;
               padding: 12px 20px 12px 20px;
               position: relative;
             }
             #oc-menu-vheader.oc-menu-bar {
               background: #FFFFFF;
-              color: #282828;
+              color: #FFFFFF;
             }
             #oc-menu-vheader .ul-top-items .li-top-item {
               background: #FFFFFF;
@@ -2152,10 +1532,10 @@ for (var attr in meta) {
             }
             #oc-menu-vheader .ul-top-items .li-top-item:hover, #oc-menu-vheader .ul-top-items .li-top-item.active {
               background: #FFFFFF;
-              color: #62ab00;
+              color: #f00043;
             }
             #oc-menu-vheader .ul-top-items .li-top-item:hover .a-top-link, #oc-menu-vheader .ul-top-items .li-top-item.active .a-top-link{
-              color: #62ab00;
+              color: #f00043;
               font-weight: 400;
             }
             #oc-menu-vheader .mega-menu-container {
@@ -2175,7 +1555,7 @@ for (var attr in meta) {
             }
             #oc-menu-vheader .ul-second-items .li-second-items:hover, #oc-menu-vheader .ul-second-items .li-second-items.active {
               background: #FFFFFF;
-              color: #62ab00;
+              color: #f00043;
             }
             #oc-menu-vheader .ul-second-items .li-second-items .a-second-link {
               color: #282828;
@@ -2184,7 +1564,7 @@ for (var attr in meta) {
               font-weight: 600;
             }
             #oc-menu-vheader .ul-second-items .li-second-items:hover .a-second-link, #oc-menu-vheader .ul-second-items .li-second-items.active .a-second-link {
-              color: #62ab00;
+              color: #f00043;
               font-weight: 600;
             }
             #oc-menu-vheader .ul-third-items .li-third-items {
@@ -2200,7 +1580,7 @@ for (var attr in meta) {
               font-weight: 400;
             }
             #oc-menu-vheader .ul-third-items .li-third-items:hover .a-third-link, #oc-menu-vheader .ul-third-items .li-third-items.active .a-third-link {
-              color: #62ab00;
+              color: #f00043;
               font-weight: 400;
             }
           </style>
@@ -2582,71 +1962,706 @@ for (var attr in meta) {
 </div>
         </div>
         
-<div class="col-search">
-  <div id="search-by-category">
-    <div class="search-container">
-      <input type="text" name="q" id="text-search" value="" placeholder="Search here..." class="" aria-label="Search here..." />
-      <ul class="search-results" style="display:none";></ul>
-    </div>
-    <div id="sp-btn-search" class="">
-      <button type="button" id="btn-search-category" class="btn btn-default btn-lg">
-        <span>Search</span>
-      </button>
+        <div class="header-phone">
+          <p>Free Support 24/7</p>
+<p>+01-202-555-0181</p>
+        </div>
+        
+        <div class="col-hoz fix">
+          <style>
+            #oc-menu-header .oc-menu-bar {
+              background: #FFFFFF;
+              color: #FFFFFF;
+              padding: 0px 0px 0px 0px;
+              position: relative;
+            }
+            #oc-menu-header.oc-menu-bar {
+              background: #FFFFFF;
+              color: #FFFFFF;
+            }
+            #oc-menu-header .ul-top-items .li-top-item {
+              background: #FFFFFF;
+              color: #FFFFFF;
+            }
+            #oc-menu-header .ul-top-items .li-top-item .a-top-link {
+              padding: 23px 15px 23px 15px;
+              color: #ffffff;
+              font-size: 16px;
+              line-height: 24px;
+              text-transform: uppercase;
+              font-weight: 400;
+            }
+            #oc-menu-header .ul-top-items .li-top-item:hover, #oc-menu-header .ul-top-items .li-top-item.active {
+              background: #FFFFFF;
+              color: #282828;
+            }
+            #oc-menu-header .ul-top-items .li-top-item:hover .a-top-link, #oc-menu-header .ul-top-items .li-top-item.active .a-top-link{
+              color: #282828;
+              font-weight: 400;
+            }
+            #oc-menu-header .mega-menu-container {
+              width: 768px;
+              background: #FFFFFF;
+              padding: 35px 35px 32px 35px;
+            }
+            #oc-menu-header .mega-menu-container .a-mega-second-link,#oc-menu-header .mega-menu-container .widget-html-title {
+              color: #282828;
+            }
+            #oc-menu-header .mega-menu-container .a-mega-third-link {
+              color: #666666;
+            }
+            #oc-menu-header .ul-second-items .li-second-items {
+              background: #FFFFFF;
+              color: #282828;
+            }
+            #oc-menu-header .ul-second-items .li-second-items:hover, #oc-menu-header .ul-second-items .li-second-items.active {
+              background: #FFFFFF;
+              color: #f00043;
+            }
+            #oc-menu-header .ul-second-items .li-second-items .a-second-link {
+              color: #282828;
+              font-size: 14px;
+              text-transform: uppercase;
+              font-weight: 600;
+            }
+            #oc-menu-header .ul-second-items .li-second-items:hover .a-second-link, #oc-menu-header .ul-second-items .li-second-items.active .a-second-link {
+              color: #f00043;
+              font-weight: 600;
+            }
+            #oc-menu-header .ul-third-items .li-third-items {
+              background: #FFFFFF;
+            }
+            #oc-menu-header .ul-third-items .li-third-items:hover, #oc-menu-header .ul-third-items .li-third-items.active {
+              background: #FFFFFF;
+            }
+            #oc-menu-header .ul-third-items .li-third-items .a-third-link {
+              color: #666666;
+              font-size: 14px;
+              text-transform: capitalize;
+              font-weight: 400;
+            }
+            #oc-menu-header .ul-third-items .li-third-items:hover .a-third-link, #oc-menu-header .ul-third-items .li-third-items.active .a-third-link {
+              color: #f00043;
+              font-weight: 400;
+            }
+          </style>
+          <div role="menu" id="oc-menu-header" class="oc-menu horizontal-menu oc-menu-bar visible-lg">
+  
+    <input type="hidden" id="menu-effect-header" class="menu-effect" value="none" />
+    <ul class="ul-top-items">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="li-top-item left has-child" style="float: left;">
+        <a class="a-top-link" href="../index.php">
+          <span>Home</span>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </a>
+        <!-- Flyout Menu -->
+        <div class="flyout-menu-container sub-menu-container left">
+          <ul class="ul-second-items">
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../index.php" class="a-second-link a-item">
+                <span class="a-second-title">Home 1</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../index.html@fts=0&amp;preview_theme_id=74460266548.html" class="a-second-link a-item">
+                <span class="a-second-title">Home 2</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../index.html@fts=0&amp;preview_theme_id=74460889140.html" class="a-second-link a-item">
+                <span class="a-second-title">Home 3</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../index.html@fts=0&amp;preview_theme_id=74461478964.html" class="a-second-link a-item">
+                <span class="a-second-title">Home 4</span>
+              </a>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="li-top-item left has-child" style="float: left;">
+  <a class="a-top-link" href="../collections/all/index.html@preview_theme_id=74460266548.html">
+    <span>Catalog</span>
+    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+  </a>
+  <!-- Mega Menu -->
+  <div class="mega-menu-container sub-menu-container left">
+    <div class="row" >
+      
+      
+
+      
+      
+
+      
+
+      
+      
+      
+      <div class="col-md-3 sub-item2-content sub-item2-category-content" data-cols="3">
+        <a class="a-mega-second-link" href="faqs.html#"><h4>Mobile Phones</h4></a>
+        <div class="sub_item3-content">
+          
+          <h5><a class="a-mega-third-link" href="../index.php">Home</a></h5>
+          
+          <h5><a class="a-mega-third-link" href="../collections/all/index.html@preview_theme_id=74460266548.html">Catalog</a></h5>
+          
+          <h5><a class="a-mega-third-link" href="https://smartbook-theme.myshopify.com/search">Specials</a></h5>
+          
+          <h5><a class="a-mega-third-link" href="https://smartbook-theme.myshopify.com/search">Pages</a></h5>
+          
+          <h5><a class="a-mega-third-link" href="../collections/vendors/products/copy-of-rising-crow-by-k-l-byles.html">Product Pages  </a></h5>
+          
+        </div>
+      </div>
+      
+      
+      
+
+      
+
+      
+      
+      
+      <div class="col-md-3 sub-item2-content sub-item2-category-content" data-cols="3">
+        <a class="a-mega-second-link" href="faqs.html#"><h4>SmartWatches</h4></a>
+        <div class="sub_item3-content">
+          
+          <h5><a class="a-mega-third-link" href="../index.php">Home</a></h5>
+          
+          <h5><a class="a-mega-third-link" href="../collections/all/index.html@preview_theme_id=74460266548.html">Catalog</a></h5>
+          
+          <h5><a class="a-mega-third-link" href="https://smartbook-theme.myshopify.com/search">Specials</a></h5>
+          
+          <h5><a class="a-mega-third-link" href="https://smartbook-theme.myshopify.com/search">Pages</a></h5>
+          
+          <h5><a class="a-mega-third-link" href="../collections/vendors/products/copy-of-rising-crow-by-k-l-byles.html">Product Pages  </a></h5>
+          
+        </div>
+      </div>
+      
+      
+      
+
+      
+
+      
+      
+      
+      <div class="col-md-3 sub-item2-content sub-item2-category-content" data-cols="3">
+        <a class="a-mega-second-link" href="faqs.html#"><h4>Smart TVs</h4></a>
+        <div class="sub_item3-content">
+          
+          <h5><a class="a-mega-third-link" href="../index.php">Home</a></h5>
+          
+          <h5><a class="a-mega-third-link" href="../collections/all/index.html@preview_theme_id=74460266548.html">Catalog</a></h5>
+          
+          <h5><a class="a-mega-third-link" href="https://smartbook-theme.myshopify.com/search">Specials</a></h5>
+          
+          <h5><a class="a-mega-third-link" href="https://smartbook-theme.myshopify.com/search">Pages</a></h5>
+          
+          <h5><a class="a-mega-third-link" href="../collections/vendors/products/copy-of-rising-crow-by-k-l-byles.html">Product Pages  </a></h5>
+          
+        </div>
+      </div>
+      
+      
+      
+
+      
+      
+      
+      
+      <div class="col-md-3 sub-item2-content" data-cols="3">
+        <p class="widget-html-title"></p>
+        <div>
+          <div class="banner-static static-menu-right">
+            <div class="image">
+              <a href="../collections/all/index.html@preview_theme_id=74460266548.html">
+                <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/files/img-right-menu.jpg@v=1613707825" alt="image">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
     </div>
   </div>
+</li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="li-top-item left has-child" style="float: left;">
+  <a class="a-top-link" href="https://smartbook-theme.myshopify.com/search">
+    <span>Specials</span>
+    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+  </a>
+  <!-- Mega Menu -->
+  <div class="mega-menu-container sub-menu-container left">
+    <div class="row" >
+      
+      
+
+      
+      
+
+      
+      
+      
+      
+      <div class="col-md-3 sub-widget-cate sub-item2-content sub-product sub-item2-category-content" data-cols="3">
+        <a href="../collections/special-offer/products/copy-of-pieces-of-light-fernyhough.html">
+          <img class="mega-second-image" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/13-700x700_79425203-3721-4beb-a32d-5b0ce707597e_600x600.jpg@v=1552408122" alt="Brothers &amp; Beasts - Bernheimer">
+        </a>
+        <a class="a-mega-second-link" href="../collections/special-offer/products/copy-of-pieces-of-light-fernyhough.html"><h4>Brothers & Beasts - Bernheimer</h4></a>
+        <div class="price-box">
+  
+  <p class="special-price"><span class="price" id="productPrice"><span class=money>$16.99</span></span></p>
+  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
+  
 </div>
- 
-        <div class="box-cart">
-          <div id="top-links">
-            <ul class="user ul-account list-unstyled">
-              
-              
-              <li><a href="https://smartbook-theme.myshopify.com/account/login" id="a-login-link">Sign in</a></li>
-              
-              <li>or <a href="https://smartbook-theme.myshopify.com/account/register" id="a-register-link">Register</a></li>
-              
-              
-              
-            </ul>
-          </div>
-          <div id="cart" class="btn-group btn-block">
-  <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn dropdown-toggle">
-    <span id="cart-total">
-      <span class="txt_number">0</span>
-      <span class="txt_items">Shopping Cart </span>
-      <span class="total-price"><span class=money>$0.00</span></span>
-    </span>
-  </button>
-  <ul class="dropdown-menu pull-right">
-    <li class="has-scroll">
-      <table class="table">
-        <tbody>
-           
-          <p class="text-center cart-empty">Your shopping cart is empty!</p>
-          
-        </tbody>
-      </table>
-    </li>
-    <li  class="hide">
-      <table class="table">
-        <tr>
-          <td class="text-left">Subtotal :</td>
-          <td class="text-right" id="cart-subtotal"><span class=money>$0.00</span></td>
-        </tr>
-      </table>
-      <p class="text-center cart-button">
-        <a href="https://smartbook-theme.myshopify.com/cart">View Cart</a> 
-        <a href="https://smartbook-theme.myshopify.com/checkout">Checkout</a>
-      </p>
-    </li>
-  </ul>
+      </div>
+      
+      
+      
+
+      
+      
+      
+      
+      <div class="col-md-3 sub-widget-cate sub-item2-content sub-product sub-item2-category-content" data-cols="3">
+        <a href="../collections/vendors/products/copy-of-a-million-little-pieces.html">
+          <img class="mega-second-image" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/3-700x700_cf5377d4-6cac-4e0e-9eb4-3a70409fb473_600x600.jpg@v=1552408053" alt="Pieces of Light by Fernyhough">
+        </a>
+        <a class="a-mega-second-link" href="../collections/vendors/products/copy-of-a-million-little-pieces.html"><h4>Pieces of Light by Fernyhough</h4></a>
+        <div class="price-box">
+  
+  <p class="special-price"><span class="price" id="productPrice"><span class=money>$17.99</span></span></p>
+  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
+  
+</div>
+      </div>
+      
+      
+      
+
+      
+      
+      
+      
+      <div class="col-md-3 sub-widget-cate sub-item2-content sub-product sub-item2-category-content" data-cols="3">
+        <a href="../collections/special-offer/products/copy-of-green-by-sam-graham-felsen.html">
+          <img class="mega-second-image" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/15-700x700_73afafb5-634c-4ea5-b2b1-3b5230703011_600x600.jpg@v=1552406959" alt="Rising Crow by K.L. Byles - Book 1">
+        </a>
+        <a class="a-mega-second-link" href="../collections/special-offer/products/copy-of-green-by-sam-graham-felsen.html"><h4>Rising Crow by K.L. Byles - Book 1</h4></a>
+        <div class="price-box">
+  
+  <p class="special-price"><span class="price" id="productPrice"><span class=money>$15.99</span></span></p>
+  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
+  
+</div>
+      </div>
+      
+      
+      
+
+      
+      
+      
+      
+      <div class="col-md-3 sub-widget-cate sub-item2-content sub-product sub-item2-category-content" data-cols="3">
+        <a href="../collections/vendors/products/copy-of-anthropologie-amerindienne-franz-boas.html">
+          <img class="mega-second-image" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/14-700x700_daed651a-c2eb-460b-8fed-262253a5e927_600x600.jpg@v=1552407352" alt="The Dance of the business mind">
+        </a>
+        <a class="a-mega-second-link" href="../collections/vendors/products/copy-of-anthropologie-amerindienne-franz-boas.html"><h4>The Dance of the business mind</h4></a>
+        <div class="price-box">
+  
+  <p class="special-price"><span class="price" id="productPrice"><span class=money>$18.99</span></span></p>
+  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
+  
+</div>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+</li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="li-top-item left has-child" style="float: left;">
+        <a class="a-top-link" href="https://smartbook-theme.myshopify.com/search">
+          <span>Pages</span>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </a>
+        <!-- Flyout Menu -->
+        <div class="flyout-menu-container sub-menu-container left">
+          <ul class="ul-second-items">
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../collections/all/index.html@preview_theme_id=74460266548.html" class="a-second-link a-item">
+                <span class="a-second-title">Collection Pages</span>
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+              </a>
+              <div class="flyout-third-items left">
+                <ul class="ul-third-items">
+                  
+                  <li class="li-third-items">
+                    <a href="../collections/all/index.html@fts=0&amp;preview_theme_id=.html" class="a-third-link">
+                      <span class="a-third-title">Left Sidebar</span>
+                    </a>
+                  </li>
+                  
+                  <li class="li-third-items">
+                    <a href="../collections/all/index.html@preview_theme_id=74461806644.html" class="a-third-link">
+                      <span class="a-third-title">Right Sidebar</span>
+                    </a>
+                  </li>
+                  
+                  <li class="li-third-items">
+                    <a href="../collections/all/index.html@preview_theme_id=74460889140.html" class="a-third-link">
+                      <span class="a-third-title">No Sidebar</span>
+                    </a>
+                  </li>
+                  
+                  <li class="li-third-items">
+                    <a href="../collections/all/index.html@preview_theme_id=74460266548.html" class="a-third-link">
+                      <span class="a-third-title">No Top Banner</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../blogs/news.html" class="a-second-link a-item">
+                <span class="a-second-title">Blog</span>
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+              </a>
+              <div class="flyout-third-items left">
+                <ul class="ul-third-items">
+                  
+                  <li class="li-third-items">
+                    <a href="../blogs/news.html" class="a-third-link">
+                      <span class="a-third-title">News</span>
+                    </a>
+                  </li>
+                  
+                  <li class="li-third-items">
+                    <a href="../blogs/news.html" class="a-third-link">
+                      <span class="a-third-title">Article</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="contact-us.html" class="a-second-link a-item">
+                <span class="a-second-title">Contact Us</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="faqs.html" class="a-second-link a-item">
+                <span class="a-second-title">FAQs</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="https://smartbook-theme.myshopify.com/404/" class="a-second-link a-item">
+                <span class="a-second-title">404</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="https://smartbook-theme.myshopify.com/cart/" class="a-second-link a-item">
+                <span class="a-second-title">Cart</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="https://smartbook-theme.myshopify.com/checkout/" class="a-second-link a-item">
+                <span class="a-second-title">Checkout</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="wishlist.html" class="a-second-link a-item">
+                <span class="a-second-title">Wishlist</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="https://smartbook-theme.myshopify.com/account/login" class="a-second-link a-item">
+                <span class="a-second-title">Login</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="https://smartbook-theme.myshopify.com/account/register" class="a-second-link a-item">
+                <span class="a-second-title">Register</span>
+              </a>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="li-top-item left has-child" style="float: left;">
+        <a class="a-top-link" href="../collections/vendors/products/copy-of-rising-crow-by-k-l-byles.html">
+          <span>Product Pages  </span>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </a>
+        <!-- Flyout Menu -->
+        <div class="flyout-menu-container sub-menu-container left">
+          <ul class="ul-second-items">
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../products/copy-of-dance-of-the-business-mind/index.php" class="a-second-link a-item">
+                <span class="a-second-title">Horizontal Thumbs</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../products/copy-of-brothers-beasts-bernheimer/index.html@fts=0&amp;preview_theme_id=74460889140.html" class="a-second-link a-item">
+                <span class="a-second-title">Vertical Thumbs</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../products/copy-of-brothers-beasts-bernheimer/index.html@fts=0&amp;preview_theme_id=74461478964.html" class="a-second-link a-item">
+                <span class="a-second-title">Vertical Thumbs - Right</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../products/copy-of-brothers-beasts-bernheimer/index.html@fts=0&amp;preview_theme_id=74461806644.html" class="a-second-link a-item">
+                <span class="a-second-title">Image Rollover</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../collections/special-offer/products/copy-of-a-wing-and-a-prayer.html" class="a-second-link a-item">
+                <span class="a-second-title">Pre Order</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../collections/vendors/products/copy-of-a-million-little-pieces.html" class="a-second-link a-item">
+                <span class="a-second-title">Video Thumb</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../collections/vendors/products/copy-of-a-million-little-pieces.html" class="a-second-link a-item">
+                <span class="a-second-title">Deal Counter</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../products/copy-of-dance-of-the-business-mind/index.php" class="a-second-link a-item">
+                <span class="a-second-title">Trust Badge</span>
+              </a>
+            </li>
+            
+            
+            <!-- Nested Level Third -->
+            
+            
+            <li class="li-second-items">
+              <a href="../collections/special-offer/products/copy-of-when-the-doves-disappeared.html" class="a-second-link a-item">
+                <span class="a-second-title">Custom Summary</span>
+              </a>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </li>
+      
+      
+      
+    </ul>
+    
 </div>
         </div>
       </div>
     </div>
   </div>
 </header>
-
 <!--End of Header Area-->
 <script type="text/javascript">
   $(document).ready(function() { 
@@ -2695,7 +2710,7 @@ for (var attr in meta) {
 </script>
 </div>
       
-        <!-- wishlist-area start -->
+        <div id="shopify-section-faq-page" class="shopify-section"><!--FAQ -->
 <div class="container">
   
 
@@ -2710,444 +2725,61 @@ for (var attr in meta) {
   </li>
   
   <li>
-    <a href="wishlist.html"><span>wishlist</span></a>
+    <a href="faqs.html"><span>FAQs</span></a>
   </li>
   
 </ul>
 <!--End Breadcumb area -->
 
-
+ 
   <div class="row">
     <div id="content" class="col-sm-12">
-      <h1>wishlist</h1>
+      <h2>FAQs</h2>
+      <section class="cd-faq">
 
-      <div class="table-responsive">
-        <table class="table table-bordered wishlist-product"  style="display: none;">
-          <thead class="wishlist-head">
-            <tr>
-              <td class="text-center">Remove</td>
-              <td class="text-center">Image</td>
-              <td class="text-center">Product Name</td>
-              <td class="text-center">Unit Price</td>
-              <td class="text-center">Add To Cart</td>
-            </tr>
-          </thead>
+        <div class="cd-faq-items">
+          <ul id="" class="cd-faq-group">
+            <li class="cd-faq-title"></li>
+            
+            
+            <li>
+              <a class="cd-faq-trigger" href="faqs.html#0">How do i signup?</a>
+              <div class="cd-faq-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi.</p>
+              </div> <!-- cd-faq-content -->
+            </li>
+            
+            <li>
+              <a class="cd-faq-trigger" href="faqs.html#0">How do I delete my account?</a>
+              <div class="cd-faq-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi.</p>
+              </div> <!-- cd-faq-content -->
+            </li>
+            
+            <li>
+              <a class="cd-faq-trigger" href="faqs.html#0">Can I have an invoice for my subscription?</a>
+              <div class="cd-faq-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi.</p>
+              </div> <!-- cd-faq-content -->
+            </li>
+            
+            <li>
+              <a class="cd-faq-trigger" href="faqs.html#0">How can I access my account data?</a>
+              <div class="cd-faq-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi.</p>
+              </div> <!-- cd-faq-content -->
+            </li>
+            
+            
+          </ul> <!-- cd-faq-group -->
 
-          
-          
-          
-          <tbody class="wishlist-container" data-line="1" data-product-id="1613133152308" data-product-handle="copy-of-the-dress-and-the-girl">
-            <tr>
-              <td class="text-center btn-remove-product">
-                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="copy-of-the-dress-and-the-girl" data-line="1">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="../collections/special-offer/products/copy-of-the-dress-and-the-girl.html">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/12-700x700_47586504-c2d9-472a-813f-34c7dcfec5ed_small.jpg@v=1552407966" alt="A million little pieces - James Frey" class="img-thumbnail" />
-                </a>
-              </td>
-              <td class="text-center">
-                <h5><a href='../collections/special-offer/products/copy-of-the-dress-and-the-girl.html'>A million little pieces - James Frey</a></h5>
-              </td>
-              <td class="text-center price-box box-special">
-                <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$12.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-              </td>
-              <td class="text-center">
-                <a href="javascript: void(0)" class="is-add-cart btn btn-primary " data-product-id="14458364690484" data-product-handle="copy-of-the-dress-and-the-girl">Add To Cart</a>
-              </td>
-            </tr>
-          </tbody>
-          
-          
-          
-          <tbody class="wishlist-container" data-line="2" data-product-id="1613076168756" data-product-handle="a-wing-and-a-prayer">
-            <tr>
-              <td class="text-center btn-remove-product">
-                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="a-wing-and-a-prayer" data-line="2">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="../collections/vendors/products/a-wing-and-a-prayer.html">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/2-700x700_small.jpg@v=1552406461" alt="A WING and a PRAYER - Morano" class="img-thumbnail" />
-                </a>
-              </td>
-              <td class="text-center">
-                <h5><a href='../collections/vendors/products/a-wing-and-a-prayer.html'>A WING and a PRAYER - Morano</a></h5>
-              </td>
-              <td class="text-center price-box box-special">
-                <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$14.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-              </td>
-              <td class="text-center">
-                <a href="javascript: void(0)" class="is-add-cart btn btn-primary " data-product-id="14458009550900" data-product-handle="a-wing-and-a-prayer">Add To Cart</a>
-              </td>
-            </tr>
-          </tbody>
-          
-          
-          
-          <tbody class="wishlist-container" data-line="3" data-product-id="1613107134516" data-product-handle="copy-of-when-the-doves-disappeared">
-            <tr>
-              <td class="text-center btn-remove-product">
-                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="copy-of-when-the-doves-disappeared" data-line="3">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="../collections/special-offer/products/copy-of-when-the-doves-disappeared.html">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_small.jpg@v=1552407244" alt="anthrplogie amérndene - franz" class="img-thumbnail" />
-                </a>
-              </td>
-              <td class="text-center">
-                <h5><a href='../collections/special-offer/products/copy-of-when-the-doves-disappeared.html'>anthrplogie amérndene - franz</a></h5>
-              </td>
-              <td class="text-center price-box box-special">
-                <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$11.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-              </td>
-              <td class="text-center">
-                <a href="javascript: void(0)" class="is-add-cart btn btn-primary " data-product-id="14458191544372" data-product-handle="copy-of-when-the-doves-disappeared">Add To Cart</a>
-              </td>
-            </tr>
-          </tbody>
-          
-          
-          
-          <tbody class="wishlist-container" data-line="4" data-product-id="1613139345460" data-product-handle="copy-of-pieces-of-light-fernyhough">
-            <tr>
-              <td class="text-center btn-remove-product">
-                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="copy-of-pieces-of-light-fernyhough" data-line="4">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="../collections/special-offer/products/copy-of-pieces-of-light-fernyhough.html">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/13-700x700_79425203-3721-4beb-a32d-5b0ce707597e_small.jpg@v=1552408122" alt="Brothers & Beasts - Bernheimer" class="img-thumbnail" />
-                </a>
-              </td>
-              <td class="text-center">
-                <h5><a href='../collections/special-offer/products/copy-of-pieces-of-light-fernyhough.html'>Brothers & Beasts - Bernheimer</a></h5>
-              </td>
-              <td class="text-center price-box box-special">
-                <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$16.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-              </td>
-              <td class="text-center">
-                <a href="javascript: void(0)" class="is-add-cart btn btn-primary " data-product-id="14458401882164" data-product-handle="copy-of-pieces-of-light-fernyhough">Add To Cart</a>
-              </td>
-            </tr>
-          </tbody>
-          
-          
-          
-          <tbody class="wishlist-container" data-line="5" data-product-id="1613148291124" data-product-handle="copy-of-fred-the-lonely-monster-anne">
-            <tr>
-              <td class="text-center btn-remove-product">
-                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="copy-of-fred-the-lonely-monster-anne" data-line="5">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="../collections/special-offer/products/copy-of-fred-the-lonely-monster-anne.html">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/7-700x700_fbe0ea4b-7436-4710-bb1f-3666a9ef6df8_small.jpg@v=1552408335" alt="Coyoto Tales - Thomas King" class="img-thumbnail" />
-                </a>
-              </td>
-              <td class="text-center">
-                <h5><a href='../collections/special-offer/products/copy-of-fred-the-lonely-monster-anne.html'>Coyoto Tales - Thomas King</a></h5>
-              </td>
-              <td class="text-center price-box box-special">
-                <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$13.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-              </td>
-              <td class="text-center">
-                <a href="javascript: void(0)" class="is-add-cart btn btn-primary " data-product-id="14458452770868" data-product-handle="copy-of-fred-the-lonely-monster-anne">Add To Cart</a>
-              </td>
-            </tr>
-          </tbody>
-          
-          
-          
-          <tbody class="wishlist-container" data-line="6" data-product-id="1613151338548" data-product-handle="copy-of-coyoto-tales-thomas-king">
-            <tr>
-              <td class="text-center btn-remove-product">
-                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="copy-of-coyoto-tales-thomas-king" data-line="6">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="../collections/special-offer/products/copy-of-coyoto-tales-thomas-king.html">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/8-700x700_63654d3a-5549-4e8d-b9c5-234e2e45d2a8_small.jpg@v=1552408391" alt="De Vengeance - J.D Kurtness" class="img-thumbnail" />
-                </a>
-              </td>
-              <td class="text-center">
-                <h5><a href='../collections/special-offer/products/copy-of-coyoto-tales-thomas-king.html'>De Vengeance - J.D Kurtness</a></h5>
-              </td>
-              <td class="text-center price-box box-special">
-                <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$18.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-              </td>
-              <td class="text-center">
-                <a href="javascript: void(0)" class="is-add-cart btn btn-primary " data-product-id="14458465648692" data-product-handle="copy-of-coyoto-tales-thomas-king">Add To Cart</a>
-              </td>
-            </tr>
-          </tbody>
-          
-          
-          
-          <tbody class="wishlist-container" data-line="7" data-product-id="1613143277620" data-product-handle="copy-of-brothers-beasts-bernheimer">
-            <tr>
-              <td class="text-center btn-remove-product">
-                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="copy-of-brothers-beasts-bernheimer" data-line="7">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="../collections/vendors/products/copy-of-brothers-beasts-bernheimer.html">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/16-700x700_579706ac-e6c6-4b2f-8510-f56d5f5410ba_small.jpg@v=1552408223" alt="Fred the lonely monster - Anne" class="img-thumbnail" />
-                </a>
-              </td>
-              <td class="text-center">
-                <h5><a href='../collections/vendors/products/copy-of-brothers-beasts-bernheimer.html'>Fred the lonely monster - Anne</a></h5>
-              </td>
-              <td class="text-center price-box box-special">
-                <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$15.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-              </td>
-              <td class="text-center">
-                <a href="javascript: void(0)" class="is-add-cart btn btn-primary " data-product-id="14458420559924" data-product-handle="copy-of-brothers-beasts-bernheimer">Add To Cart</a>
-              </td>
-            </tr>
-          </tbody>
-          
-          
-          
-          <tbody class="wishlist-container" data-line="8" data-product-id="1613090193460" data-product-handle="copy-of-a-wing-and-a-prayer">
-            <tr>
-              <td class="text-center btn-remove-product">
-                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="copy-of-a-wing-and-a-prayer" data-line="8">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="../collections/special-offer/products/copy-of-a-wing-and-a-prayer.html">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_small.jpg@v=1552406840" alt="GREEN by Sam Graham-Felsen" class="img-thumbnail" />
-                </a>
-              </td>
-              <td class="text-center">
-                <h5><a href='../collections/special-offer/products/copy-of-a-wing-and-a-prayer.html'>GREEN by Sam Graham-Felsen</a></h5>
-              </td>
-              <td class="text-center price-box box-special">
-                <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$13.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-              </td>
-              <td class="text-center">
-                <a href="javascript: void(0)" class="is-add-cart btn btn-primary " data-product-id="14458099466292" data-product-handle="copy-of-a-wing-and-a-prayer">Add To Cart</a>
-              </td>
-            </tr>
-          </tbody>
-          
-          
-          
-          <tbody class="wishlist-container" data-line="9" data-product-id="1613135773748" data-product-handle="copy-of-a-million-little-pieces">
-            <tr>
-              <td class="text-center btn-remove-product">
-                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="copy-of-a-million-little-pieces" data-line="9">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="../collections/vendors/products/copy-of-a-million-little-pieces.html">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/3-700x700_cf5377d4-6cac-4e0e-9eb4-3a70409fb473_small.jpg@v=1552408053" alt="Pieces of Light by Fernyhough" class="img-thumbnail" />
-                </a>
-              </td>
-              <td class="text-center">
-                <h5><a href='../collections/vendors/products/copy-of-a-million-little-pieces.html'>Pieces of Light by Fernyhough</a></h5>
-              </td>
-              <td class="text-center price-box box-special">
-                <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$17.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-              </td>
-              <td class="text-center">
-                <a href="javascript: void(0)" class="is-add-cart btn btn-primary " data-product-id="14458380582964" data-product-handle="copy-of-a-million-little-pieces">Add To Cart</a>
-              </td>
-            </tr>
-          </tbody>
-          
-          
-          
-          <tbody class="wishlist-container" data-line="10" data-product-id="1613094879284" data-product-handle="copy-of-green-by-sam-graham-felsen">
-            <tr>
-              <td class="text-center btn-remove-product">
-                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="copy-of-green-by-sam-graham-felsen" data-line="10">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="../collections/special-offer/products/copy-of-green-by-sam-graham-felsen.html">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/15-700x700_73afafb5-634c-4ea5-b2b1-3b5230703011_small.jpg@v=1552406959" alt="Rising Crow by K.L. Byles - Book 1" class="img-thumbnail" />
-                </a>
-              </td>
-              <td class="text-center">
-                <h5><a href='../collections/special-offer/products/copy-of-green-by-sam-graham-felsen.html'>Rising Crow by K.L. Byles - Book 1</a></h5>
-              </td>
-              <td class="text-center price-box box-special">
-                <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$15.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-              </td>
-              <td class="text-center">
-                <a href="javascript: void(0)" class="is-add-cart btn btn-primary " data-product-id="14458125746228" data-product-handle="copy-of-green-by-sam-graham-felsen">Add To Cart</a>
-              </td>
-            </tr>
-          </tbody>
-          
-          
-          
-          <tbody class="wishlist-container" data-line="11" data-product-id="1613110149172" data-product-handle="copy-of-anthropologie-amerindienne-franz-boas">
-            <tr>
-              <td class="text-center btn-remove-product">
-                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="copy-of-anthropologie-amerindienne-franz-boas" data-line="11">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="../collections/vendors/products/copy-of-anthropologie-amerindienne-franz-boas.html">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/14-700x700_daed651a-c2eb-460b-8fed-262253a5e927_small.jpg@v=1552407352" alt="The Dance of the business mind" class="img-thumbnail" />
-                </a>
-              </td>
-              <td class="text-center">
-                <h5><a href='../collections/vendors/products/copy-of-anthropologie-amerindienne-franz-boas.html'>The Dance of the business mind</a></h5>
-              </td>
-              <td class="text-center price-box box-special">
-                <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$18.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-              </td>
-              <td class="text-center">
-                <a href="javascript: void(0)" class="is-add-cart btn btn-primary " data-product-id="14458216316980" data-product-handle="copy-of-anthropologie-amerindienne-franz-boas">Add To Cart</a>
-              </td>
-            </tr>
-          </tbody>
-          
-          
-          
-          <tbody class="wishlist-container" data-line="12" data-product-id="1613113425972" data-product-handle="copy-of-dance-of-the-business-mind">
-            <tr>
-              <td class="text-center btn-remove-product">
-                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="copy-of-dance-of-the-business-mind" data-line="12">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="../collections/special-offer/products/copy-of-dance-of-the-business-mind.html">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/4-700x700_small.jpg@v=1552407897" alt="The Dress and the Girl - Camile" class="img-thumbnail" />
-                </a>
-              </td>
-              <td class="text-center">
-                <h5><a href='../collections/special-offer/products/copy-of-dance-of-the-business-mind.html'>The Dress and the Girl - Camile</a></h5>
-              </td>
-              <td class="text-center price-box box-special">
-                <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$16.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-              </td>
-              <td class="text-center">
-                <a href="javascript: void(0)" class="is-add-cart btn btn-primary " data-product-id="14458235945012" data-product-handle="copy-of-dance-of-the-business-mind">Add To Cart</a>
-              </td>
-            </tr>
-          </tbody>
-          
-          
-          
-          <tbody class="wishlist-container" data-line="13" data-product-id="1613101662260" data-product-handle="copy-of-rising-crow-by-k-l-byles">
-            <tr>
-              <td class="text-center btn-remove-product">
-                <a type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger wishlist-btn" data-product-handle="copy-of-rising-crow-by-k-l-byles" data-line="13">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="../collections/vendors/products/copy-of-rising-crow-by-k-l-byles.html">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>images/products/5-700x700_ae8ec292-730f-4ff8-8ce5-62500d4bac56_small.jpg@v=1552407177" alt="When the Doves Disappeared" class="img-thumbnail" />
-                </a>
-              </td>
-              <td class="text-center">
-                <h5><a href='../collections/vendors/products/copy-of-rising-crow-by-k-l-byles.html'>When the Doves Disappeared</a></h5>
-              </td>
-              <td class="text-center price-box box-special">
-                <div class="price-box">
-  
-  <p class="special-price"><span class="price" id="productPrice"><span class=money>$15.99</span></span></p>
-  <p class="old-price"><span class="price"  id="comparePrice"><span class=money>$19.99</span></span></p>
-  
-</div>
-              </td>
-              <td class="text-center">
-                <a href="javascript: void(0)" class="is-add-cart btn btn-primary " data-product-id="14458162577460" data-product-handle="copy-of-rising-crow-by-k-l-byles">Add To Cart</a>
-              </td>
-            </tr>
-          </tbody>
-          
-          <p class="text-center wishlist-empty" style="display:none;">Your wishlist doesn&#39;t have any items! <a href="../collections/all/index.html@preview_theme_id=74460266548.html">Start Shopping</a> </p>
+        </div> <!-- cd-faq-items -->
+      </section> <!-- cd-faq -->
 
-        </table>
-      </div>
-
-      <!-- Loader -->
-      <div class="wishlist-loader">
-        <p class="wishlist-loader--text text-center">Loading your customized wishlist...</p>
-      </div>
     </div>
   </div>
+</div>
+<!--End of FAQ Area-->
 </div>
         
       <!-- End Content -->  
@@ -3168,7 +2800,7 @@ for (var attr in meta) {
             <!-- Start product images -->
             <div class="product-images">
               <div class="main-image images">
-                <img alt="" src="wishlist.html" class="img-responsive">
+                <img alt="" src="faqs.html" class="img-responsive">
               </div>
             </div>
             <!-- end product images -->
@@ -3219,7 +2851,7 @@ for (var attr in meta) {
               <div class="">
                 
                 <a href="../index.php" itemprop="url" class="logo-footer">
-                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/files/logo_ca90e1e9-33da-4ed1-bcb0-19c471d50256.png@v=1613707406"
+                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/files/logo-alt.png@v=1613766592"
                        alt="SmartBook - eBooks , Bookstore Shopify Theme"
                        itemprop="logo">
                 </a>
@@ -3293,7 +2925,7 @@ for (var attr in meta) {
   <div class="container-inner">
     <div class="newletter-subscribe">
       <div id="boxes-normal" class="newletter-container">
-        <div style="" id="dialog-normal" class="window">
+        <div  id="dialog-normal" class="window">
           <div class="box">
             <div class="newletter-title">
               <h5>Join Our Newsletter Now</h5>
@@ -3383,7 +3015,7 @@ for (var attr in meta) {
   
   <p>Suspendisse in auctor augue. Cras fermentum est ac fermentum tempor. Etiam vel magna volutpat, posuere eros</p>
   
-  <a href="wishlist.html#">
+  <a href="faqs.html#">
     <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/files/payment.png@v=1613707537" alt="payment">
   </a>
 </div>
@@ -3438,10 +3070,10 @@ for (var attr in meta) {
 
       
       
-      <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/fastclick.min.js@v=29723458539410922371562327408" type="text/javascript"></script>
+      <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/fastclick.min.js@v=29723458539410922371562340545" type="text/javascript"></script>
       
       
-      <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/Wishlist.js@v=26158059899868642851562327427" type="text/javascript"></script>
+      <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/Wishlist.js@v=26158059899868642851562340565" type="text/javascript"></script>
       <script>
         (function() {
           Wishlist.init();
@@ -3583,13 +3215,13 @@ for (var attr in meta) {
     window.cookieconsent.initialise({
       "palette": {
         "popup": {
-          "background": "#62ab00",
+          "background": "#000",
           "text": "#fff"
         },
         "button": {
           "background": "",
           "text": "",
-          "border": "#ffffff"
+          "border": ""
         }
       },
       "content": {
@@ -3600,7 +3232,7 @@ for (var attr in meta) {
       
 
 <script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/s/javascripts/currencies.js" type="text/javascript"></script>
-<script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/12/assets/jquery.currencies.min.js@v=175057760772006623221562327411" type="text/javascript"></script>
+<script src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>cdn/shop/t/13/assets/jquery.currencies.min.js@v=175057760772006623221562340549" type="text/javascript"></script>
 
 <script>
   Currency.format = 'money_format';

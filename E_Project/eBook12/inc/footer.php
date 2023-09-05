@@ -12,13 +12,13 @@
                   <div class="footer-contact footer-content">
                     <div class="">
 
-                      <a href="index.php" itemprop="url" class="logo-footer">
-                        <img src="cdn/shop/files/logo_ca90e1e9-33da-4ed1-bcb0-19c471d50256.png@v=1613707406"
+                      <a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php" ) ? "" : "../"; ?>index.php" itemprop="url" class="logo-footer">
+                        <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php" ) ? "" : "../"; ?>cdn/shop/files/logo_ca90e1e9-33da-4ed1-bcb0-19c471d50256.png@v=1613707406"
                           alt="SmartBook - eBooks , Bookstore Shopify Theme" itemprop="logo">
                       </a>
 
 
-                      <p>We are a team of designers and developers who creates high quality premium Shopify themes.</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quis dolore fugiat?</p>
 
                       <ul class="list-unstyled text-content">
 
@@ -30,13 +30,13 @@
 
                         <li class="phone">
                           <p>Call Us:</p>
-                          <p>(012) 800 456 789</p>
+                          <p>(+92) 335 997 514 9</p>
                         </li>
 
 
                         <li class="email">
                           <p>Mail us:</p>
-                          <p>support@masstechnologist.com</p>
+                          <p>support@smartbook.com</p>
                         </li>
 
                       </ul>
@@ -50,15 +50,15 @@
                   <div class="footer-content">
                     <ul class="list-unstyled text-content">
 
-                      <li><a href="index.php">Home</a></li>
+                      <li><a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php" ) ? "" : "../"; ?>index.php">Home</a></li>
 
-                      <li><a href="collections/all/index.php@preview_theme_id=74460266548.php">Catalog</a></li>
+                      <li><a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php" ) ? "" : "../"; ?>collections.php">Catalog</a></li>
 
-                      <li><a href="https://smartbook-theme.myshopify.com/search">Specials</a></li>
+                      <li><a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php" ) ? "pages/" : ""; ?>products.php?type=Special offer">Specials</a></li>
 
-                      <li><a href="https://smartbook-theme.myshopify.com/search">Pages</a></li>
+                      <li><a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php" ) ? "pages/" : ""; ?>search.php">Search</a></li>
 
-                      <li><a href="collections/vendors/products/copy-of-rising-crow-by-k-l-byles.php">Product Pages
+                      <li><a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php" ) ? "pages/" : ""; ?>products.php">Products
                         </a></li>
 
                     </ul>
@@ -66,21 +66,13 @@
                 </div>
                 <div class="col col3 col-md-3 col-sm-6 col-xs-12 col-footer">
                   <div class="footer-title">
-                    <h5>Main menu</h5>
+                    <h5>Other links</h5>
                   </div>
                   <div class="footer-content">
                     <ul class="list-unstyled text-content">
 
-                      <li><a href="index.php">Home</a></li>
+                      <li><a href="https://github.com/saif-ur-rehmaan">Github</a></li>
 
-                      <li><a href="collections/all/index.php@preview_theme_id=74460266548.php">Catalog</a></li>
-
-                      <li><a href="https://smartbook-theme.myshopify.com/search">Specials</a></li>
-
-                      <li><a href="https://smartbook-theme.myshopify.com/search">Pages</a></li>
-
-                      <li><a href="collections/vendors/products/copy-of-rising-crow-by-k-l-byles.php">Product Pages
-                        </a></li>
 
                     </ul>
                   </div>
@@ -91,7 +83,7 @@
                     <div class="container-inner">
                       <div class="newletter-subscribe">
                         <div id="boxes-normal" class="newletter-container">
-                          <div style="" id="dialog-normal" class="window">
+                          <div  id="dialog-normal" class="window">
                             <div class="box">
                               <div class="newletter-title">
                                 <h5>Join Our Newsletter Now</h5>
@@ -104,20 +96,14 @@
 
 
                                   <div id="subscribe-normal">
-                                    <form method="post"
-                                      action="https://smartbook-theme.myshopify.com/contact#contact_form"
-                                      id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden"
-                                        name="form_type" value="customer" /><input type="hidden" name="utf8"
-                                        value="✓" />
-
-
+                                    <form>
                                       <input type="hidden" name="contact[tags]" value="newsletter">
                                       <input type="text" value="" placeholder="Enter you email address here..."
                                         name="contact[email]" id="subscribe_email-normal" required
                                         aria-label="Enter you email address here..." autocorrect="off"
                                         autocapitalize="off">
                                       <a name="submitNewsletter" class="btn" type="submit"
-                                        onclick="this.parentNode.submit(); return false;">
+                                        onclick="alert('subscribed!'); return false;">
                                         <span>Subscribe</span>
                                       </a>
 
@@ -142,7 +128,7 @@
 
                       <li class="first">
                         <a class="fa fa-facebook facebook" data-toggle="tooltip" data-placement="bottom"
-                          href="https://facebook.com/shopify"
+                          href="https://facebook.com"
                           title="SmartBook - eBooks , Bookstore Shopify Theme on Facebook">
                         </a>
                       </li>
@@ -150,7 +136,7 @@
 
                       <li>
                         <a class="fa fa-twitter twitter" data-toggle="tooltip" data-placement="bottom"
-                          href="https://twitter.com/shopify"
+                          href="https://twitter.com"
                           title="SmartBook - eBooks , Bookstore Shopify Theme on Twitter">
                         </a>
                       </li>
@@ -158,7 +144,7 @@
 
                       <li>
                         <a class="fa fa-pinterest-square pinterest" data-toggle="tooltip" data-placement="bottom"
-                          href="https://pinterest.com/shopify"
+                          href="https://pinterest.com"
                           title="SmartBook - eBooks , Bookstore Shopify Theme on Pinterest">
                         </a>
                       </li>
@@ -174,7 +160,7 @@
 
                       <li>
                         <a class="fa fa-instagram instagram" data-toggle="tooltip" data-placement="bottom"
-                          href="https://instagram.com/shopify"
+                          href="https://instagram.com"
                           title="SmartBook - eBooks , Bookstore Shopify Theme on Instagram">
                         </a>
                       </li>
@@ -201,12 +187,12 @@
                   posuere eros</p>
 
                 <a href=" ">
-                  <img src="cdn/shop/files/payment.png@v=1613707537" alt="payment">
+                  <img src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php" ) ? "" : "../"; ?>cdn/shop/files/payment.png@v=1613707537" alt="payment">
                 </a>
               </div>
 
               <div class="footer-copyright">
-                <p>Copyright © 2019 <a href="http://masstechnologist.com/">MassTechnologist.com.</a> All rights
+                <p>Copyright © 2019 All rights
                   reserved.</p>
               </div>
             </div>

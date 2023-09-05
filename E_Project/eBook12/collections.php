@@ -79,7 +79,7 @@
 
                 <!-- Breadcumb area start -->
                 <ul class="breadcrumb">
-                    <li><a href="index.php" title="Back to the frontpage">
+                    <li><a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php"||basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>index.php" title="Back to the frontpage">
                             Home
                         </a>
                     </li>
@@ -102,7 +102,7 @@
 
                             <div class="text-center ">
 
-                                <a href="pages/products.php?type=featured Product&quantity=all">
+                                <a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php"||basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>products.php?type=Featured Products&quantity=all">
 
                                     <img src="images/products/<?php echo DatabaseManager::select("books","image_name","category_id=1 order by views limit 1")[0]["image_name"] ?>"
                                         alt="Featured Products" />
@@ -122,7 +122,7 @@
 
                             <div class="text-center ">
 
-                                <a href="pages/products.php?type=Most Viewed&quantity=all" title="Browse our Most Viewed collection">
+                                <a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php"||basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>products.php?type=Most Viewed&quantity=all" title="Browse our Most Viewed collection">
 
                                     <img src="images/products/<?php echo DatabaseManager::select("books order by views limit 1","image_name")[0]["image_name"] ?>"
                                         alt="Most Viewed" />
@@ -141,7 +141,7 @@
 
                             <div class="text-center ">
 
-                                <a href="pages/products.php?type=New Arrivals&quantity=all" title="Browse our New Arrivals collection">
+                                <a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php"||basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>products.php?type=New Arrivals&quantity=all" title="Browse our New Arrivals collection">
 
                                     <img src="images/products/<?php echo DatabaseManager::select("categories RIGHT JOIN books ON categories.id = books.category_id limit 1","image_name","")[0]["image_name"] ?>"
                                         alt="New Arrivals" />
@@ -160,7 +160,7 @@
 
                             <div class="text-center ">
 
-                                <a href="pages/products.php?type=Special offer&quantity=all" title="Browse our Special offer collection">
+                                <a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php"||basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>products.php?type=Special offer&quantity=all" title="Browse our Special offer collection">
 
                                     <img src="images/products/<?php echo DatabaseManager::select("book_details right join books on books.id=book_details.book_id","image_name"," sale_price>(0.5*price) order by (0.5*price) desc limit 1")[0]["image_name"] ?>"
                                         alt="Special offer" />

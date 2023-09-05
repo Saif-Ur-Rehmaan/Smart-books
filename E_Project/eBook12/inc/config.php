@@ -1,4 +1,5 @@
 <?php
+session_start();
 $connection = mysqli_connect("localhost", "root", "", "smart-books");
 if (!$connection) {
     header("location: pages/404.php");

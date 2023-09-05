@@ -13,7 +13,7 @@
             <!-- Start product images -->
             <div class="product-images">
               <div class="main-image images">
-                <img alt="" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>index.php@preview_theme_id=.php" class="img-responsive">
+                <img alt="" src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"])=="index.php") ? "" : "../" ; ?>index.php" class="img-responsive">
               </div>
             </div>
             <!-- end product images -->
