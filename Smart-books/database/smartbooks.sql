@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 19, 2023 at 10:15 PM
+-- Generation Time: Sep 19, 2023 at 10:41 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -183,7 +183,6 @@ CREATE TABLE `contactus` (
 
 INSERT INTO `contactus` (`id`, `name`, `email`, `phone_Number`, `Messege`) VALUES
 (1, 'saif', 'saif@gmail.com', '12312312312', 'lorem ipsem abc'),
-(2, 'saif', 'saif@gmail.com', '12312312312', 'lorem ipsem abc'),
 (3, 'saif', 'saif@gmail.com', '12312312312', 'lorem ipsem abc'),
 (4, 'saif', 'saif@gmail.com', '12312312312', 'lorem ipsem abc'),
 (5, 'saif', 'saif@gmail.com', '12312312312', 'lorem ipsem abc'),
@@ -211,7 +210,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `author_id`, `order_date`, `total_amount`, `user_id`, `payment_status`) VALUES
-(1, 1, '2023-09-01', '150.00', 1, 'pending'),
+(1, 1, '2023-09-01', '150.00', 1, 'completed'),
 (2, 1, '2023-09-03', '100.00', 1, 'pending'),
 (3, 1, '2023-09-05', '120.00', 1, 'completed'),
 (4, 1, '2023-09-07', '180.00', 1, 'pending'),
@@ -319,17 +318,7 @@ INSERT INTO `users` (`id`, `username`, `password`, `email`, `registration_date`)
 (3, 'user3', 'password3', 'user3@example.com', '2023-08-31 20:08:22'),
 (4, 'user4', 'password4', 'user4@example.com', '2023-08-31 20:08:22'),
 (5, 'user5', 'password5', 'user5@example.com', '2023-08-31 20:08:22'),
-(6, 'saifa', 'aaa', 'a@gmail.com', '2023-09-05 12:11:18'),
-(7, 'a home', 'as', 'a@gmail.com', '2023-09-05 12:49:25'),
-(8, ' ', '', '', '2023-09-05 12:54:18'),
-(9, 'saif u', '123', 's@gmail.com', '2023-09-05 15:12:52'),
-(10, 'ahmed k', '111', 'k@gmail.com', '2023-09-05 15:13:31'),
-(11, 'saif ur rehman', 'saif', 's@gmail.com', '2023-09-05 21:16:40'),
-(12, 'a a', 'a', 'a@gmail.com', '2023-09-05 21:17:20'),
-(13, 'saif', 'a', 'aa@gmail.com', '2023-09-12 22:14:13'),
-(14, 'saif ', '', '', '2023-09-12 22:42:37'),
-(15, 'ali', '86318e52f5ed4801abe1d13d509443de', 'ali@gmail.com', '2023-09-12 23:11:26'),
-(16, 'saif ur rehman', '123456789', 'saif@gmail.com', '2023-09-19 17:04:20');
+(17, 'ahmed kabeer', 'e807f1fcf82d132f9bb018ca6738a19f', 'ahmed@gmail.com', '2023-09-19 20:36:11');
 
 --
 -- Indexes for dumped tables
@@ -426,7 +415,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Constraints for dumped tables
