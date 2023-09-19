@@ -6,85 +6,71 @@ if (isset($_POST["dataFNM"])) {
   if ($value == "Featured Products") {
     ob_start();
     ?>
-    <style>
-    ._border_animation {
-        /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;  */
-        transition-duration: .5s;
-    }
+        <style>
+        ._border_animation {
+            /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;  */
+            transition-duration: .5s;
+        }
 
-    ._border_animation:hover {
+        ._border_animation:hover {
 
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    }
-    </style>
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+        </style>
 
-    <div class="row flex-row">
-        <?php
-        $sql = "SELECT DISTINCT categories.name, categories.id
+        <div class="row flex-row">
+            <?php
+            $sql = "SELECT DISTINCT categories.name, categories.id
                                                             FROM categories
                                                             RIGHT JOIN books ON categories.id = books.category_id
                                                             WHERE books.is_Featured = 1";
 
-        $categories = DatabaseManager::query($sql);
+            $categories = DatabaseManager::query($sql);
 
-        while ($category = mysqli_fetch_assoc($categories)) {
-          $catId = $category["id"];
-          $catName = $category["name"];
-          $books = DatabaseManager::select("books", "id, title, image_name", "category_id=$catId AND is_Featured=1");
+            while ($category = mysqli_fetch_assoc($categories)) {
+              $catId = $category["id"];
+              $catName = $category["name"];
+              $books = DatabaseManager::select("books", "id, title, image_name", "category_id=$catId AND is_Featured=1");
 
-          $booksToShow = (count($books) > 3) ? 2 : count($books); // Limit to 8 books or the total number of books, whichever is smaller
-    
-          for ($i = 0; $i < $booksToShow; $i++) {
-            $book = $books[$i];
-            $imagename = $book["image_name"];
-            $BookTitle = $book["title"];
-            $Bookid = $book["id"];
-            ?>
-            <div class="col-lg-3 col-md-4 col-sm-12 " style="flex-wrap: wrap;">
-                <div class="item-inner _border_animation py-3 my-4">
-                    <div class="caption-top">
+              $booksToShow = (count($books) > 3) ? 2 : count($books); // Limit to 8 books or the total number of books, whichever is smaller
+        
+              for ($i = 0; $i < $booksToShow; $i++) {
+                $book = $books[$i];
+                $imagename = $book["image_name"];
+                $BookTitle = $book["title"];
+                $Bookid = $book["id"];
+                ?>
+                    <div class="col-lg-3 col-md-4 col-sm-12 " style="flex-wrap: wrap;">
+                        <div class="item-inner _border_animation py-3 my-4">
+                            <div class="caption-top">
 
-                        <p class="manufacture-product">
-                            <a href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>products?catName=<?php echo $catName; ?>&catid=<?php echo $catId; ?>"
-                                title="<?php echo $catName; ?>"><?php echo $catName; ?></a>
-                        </p>
+                                <p class="manufacture-product">
+                                    <a href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>products?catName=<?php echo $catName; ?>&catid=<?php echo $catId; ?>"
+                                        title="<?php echo $catName; ?>"><?php echo $catName; ?></a>
+                                </p>
 
-                        <h4 class="product-name">
-                            <a href="collections/special-offer/products/copy-of-coyoto-tales-thomas-king.php">
-                                <?php echo $BookTitle; ?>
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="box-border">
-                        <div class="image images-container">
+                                <h4 class="product-name">
+                                    <a href="collections/special-offer/products/copy-of-coyoto-tales-thomas-king.php">
+                                        <?php echo $BookTitle; ?>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="box-border">
+                                <div class="image images-container">
 
-                            <!-- <a href="collections/special-offer/products/copy-of-coyoto-tales-thomas-king.php"
+                                    <!-- <a href="collections/special-offer/products/copy-of-coyoto-tales-thomas-king.php"
                                                                                             class="product-image"> -->
-                            <a href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>products?bookId=<?php echo $Bookid ?>&catid=<?php echo $catId ?>"
-                                class="product-image">
-                                <img class="img-responsive has-rotator img-default-image img-cate-1613151338548-1543060429425"
-                                    src="images/products/<?php echo $imagename; ?>" alt="<?php echo $BookTitle; ?>">
+                                    <a href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>products?bookId=<?php echo $Bookid ?>&catid=<?php echo $catId ?>"
+                                        class="product-image">
+                                        <img class="img-responsive has-rotator img-default-image img-cate-1613151338548-1543060429425"
+                                            src="images/products/<?php echo $imagename; ?>" alt="<?php echo $BookTitle; ?>">
 
 
 
 
-                                <input type="hidden"
-                                    value="//smartbook-theme.myshopify.com/images/products/8-700x700_63654d3a-5549-4e8d-b9c5-234e2e45d2a8_600x600.jpg?v=1552408391"
-                                    class="img-default-1613151338548-1543060429425" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            </a>
+                                        <input type="hidden"
+                                            value="//smartbook-theme.myshopify.com/images/products/8-700x700_63654d3a-5549-4e8d-b9c5-234e2e45d2a8_600x600.jpg?v=1552408391"
+                                            class="img-default-1613151338548-1543060429425" />
 
 
 
@@ -98,13 +84,27 @@ if (isset($_POST["dataFNM"])) {
 
 
 
+                                    </a>
 
 
-                            <div class="box-label"></div>
-                            <div class="action-links">
-                                <button class="button btn-cart _Click">
-                                    <a
-                                        href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>cart.php?AddBookToCartOfBookId=<?php echo $Bookid ?>">
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div class="box-label"></div>
+                                    <div class="action-links">
+                                        <button class="button btn-cart _Click">
+                                            <a
+                                                href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>cart.php?AddBookToCartOfBookId=<?php echo $Bookid ?>">
 
 
                                 <span>Add to Cart</span>
@@ -113,8 +113,8 @@ if (isset($_POST["dataFNM"])) {
 
 
                         <button class=" _Click btn-wishlist button btn-default ">
-                                    <a
-                                        href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>cart.php?AddBookToWishListOfBookId=<?php echo $Bookid ?>">
+                                            <a
+                                                href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>cart.php?AddBookToWishListOfBookId=<?php echo $Bookid ?>">
 
                                 <span>Add to Wish List</span>
                             </a>
@@ -122,16 +122,16 @@ if (isset($_POST["dataFNM"])) {
 
 
                         <button class=" _Click button btn-compare" type="button">
-                                    <a
-                                        href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>single_Product_Page.php?ViewDetailOfBookId=<?php echo $Bookid ?>">
+                                            <a
+                                                href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>single_Product_Page.php?ViewDetailOfBookId=<?php echo $Bookid ?>">
 
                                 <span>View Details</span>
                             </a>
                         </button>
 
                         <button class=" _Click button btn-quickview quickview">
-                                    <a
-                                        href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>cart.php?ViewDetailsModal=<?php echo $Bookid ?>">
+                                            <a
+                                                href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>cart.php?ViewDetailsModal=<?php echo $Bookid ?>">
 
                                 <span>Quick View</span>
                             </a>
@@ -141,93 +141,93 @@ if (isset($_POST["dataFNM"])) {
                 </div>
                 <!-- image -->
                 <div class="caption">
-                            <div class="inner  swtch">
+                                    <div class="inner  swtch">
 
-                                <div class="ratings">
-                                    <div class="rating-box">
+                                        <div class="ratings">
+                                            <div class="rating-box">
 
-                                        <span class="shopify-product-reviews-badge" data-id="1613151338548"></span>
+                                                <span class="shopify-product-reviews-badge" data-id="1613151338548"></span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="price-box">
+                                            <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+
+
+                                            foreach ($price_saleprice as $key => $value) {
+                                              $price = $value["price"];
+                                              $saleprice = $value["sale_price"]; ?>
+                                                <p class="special-price"><span class="price"><span
+                                                            class=money>$<?php echo $price ?></span></span>
+                                                </p>
+                                                <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+
+                                                    <p class="old-price"><span class="price"><span
+                                                                class=money>$<?php echo $saleprice; ?></span></span></p>
+
+                                                <?php } ?>
+
+                                            <?php } ?>
+                                        </div><br>
+                                        <!-- price-container -->
+
+
+                                        <?php foreach ($price_saleprice as $key => $value) {
+                                          $price = $value["price"];
+                                          $saleprice = $value["sale_price"]; ?>
+                                            <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                <div class="label-product label_sale">
+                                                    <span>-
+                                                        <?php echo number_format(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100, 2); ?>%
+                                                    </span>
+                                                </div>
+
+                                            <?php } ?>
+
+                                        <?php } ?>
+
+
+
+
+
+
+
 
                                     </div>
                                 </div>
-
-                                <div class="price-box">
-                                    <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
-
-
-                                    foreach ($price_saleprice as $key => $value) {
-                                      $price = $value["price"];
-                                      $saleprice = $value["sale_price"]; ?>
-                                      <p class="special-price"><span class="price"><span
-                                                  class=money>$<?php echo $price ?></span></span>
-                                      </p>
-                                      <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-
-                                        <p class="old-price"><span class="price"><span
-                                                    class=money>$<?php echo $saleprice; ?></span></span></p>
-
-                                      <?php } ?>
-
-                                    <?php } ?>
-                                </div><br>
-                                <!-- price-container -->
-
-
-                                <?php foreach ($price_saleprice as $key => $value) {
-                                  $price = $value["price"];
-                                  $saleprice = $value["sale_price"]; ?>
-                                  <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                    <div class="label-product label_sale">
-                                        <span>-
-                                            <?php echo number_format(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100, 2); ?>%
-                                        </span>
-                                    </div>
-
-                                  <?php } ?>
-
-                                <?php } ?>
-
-
-
-
-
-
-
-
+                                <!-- caption -->
                             </div>
                         </div>
-                        <!-- caption -->
                     </div>
-                </div>
-            </div>
-          <?php }
-        } ?>
-    </div>
-    <?php
-    $htmlResponce = ob_get_clean();
-    echo $htmlResponce;
+                <?php }
+            } ?>
+        </div>
+        <?php
+        $htmlResponce = ob_get_clean();
+        echo $htmlResponce;
   } else if ($value == "Most Viewed") {
     ob_start(); ?>
-      <!--  -->
+            <!--  -->
 
 
-      <?php
-      $htmlResponce = ob_get_clean();
-      echo $htmlResponce;
+            <?php
+            $htmlResponce = ob_get_clean();
+            echo $htmlResponce;
   } else {
     ob_start(); ?>
 
 
 
-      <?php
-      $htmlResponce = ob_get_clean();
-      echo $htmlResponce;
+            <?php
+            $htmlResponce = ob_get_clean();
+            echo $htmlResponce;
 
   }
 
 
 
-} 
+}
 ?>
 
 
@@ -246,51 +246,51 @@ if (isset($_POST["Bookid_FOR_QUICKVIEW"])) {
   ob_start();
   ?>
 
-  <div class="modal-body" id="Mod_Clz">
-      <div class="modal-product">
-          <!-- Start product images -->
-          <div class="product-images">
-              <div class="main-image images">
-                  <img alt=""
-                      src="<?php echo ($_POST["filename"] == "index.php" || $_POST["filename"] == "collections.php") ? "" : "../"; ?>images/products/<?php echo DatabaseManager::select("books", "image_name", "id=$bookid")[0]["image_name"] ?>"
-                      class="img-responsive">
-              </div>
-          </div>
-          <!-- end product images -->
-          <div class="product-info">
-              <h2>
-                  <?php echo DatabaseManager::select("books", "title", "id=$bookid")[0]["title"] ?>
-              </h2>
-              <div class="price-box">
-                  <p class="price"><span class="special-price"><span class="amount">$
-                              <?php echo DatabaseManager::select("book_details", "sale_price", "book_id=$bookid")[0]["sale_price"] ?>
-                          </span></span></p>
-              </div>
-              <a href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?<?php echo $bookid ?>"
-                  class="see-all">See all features</a>
-              <div class="quick-add-to-cart">
+    <div class="modal-body" id="Mod_Clz">
+        <div class="modal-product">
+            <!-- Start product images -->
+            <div class="product-images">
+                <div class="main-image images">
+                    <img alt=""
+                        src="<?php echo ($_POST["filename"] == "index.php" || $_POST["filename"] == "collections.php") ? "" : "../"; ?>images/products/<?php echo DatabaseManager::select("books", "image_name", "id=$bookid")[0]["image_name"] ?>"
+                        class="img-responsive">
+                </div>
+            </div>
+            <!-- end product images -->
+            <div class="product-info">
+                <h2>
+                    <?php echo DatabaseManager::select("books", "title", "id=$bookid")[0]["title"] ?>
+                </h2>
+                <div class="price-box">
+                    <p class="price"><span class="special-price"><span class="amount">$
+                                <?php echo DatabaseManager::select("book_details", "sale_price", "book_id=$bookid")[0]["sale_price"] ?>
+                            </span></span></p>
+                </div>
+                <a href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?<?php echo $bookid ?>"
+                    class="see-all">See all features</a>
+                <div class="quick-add-to-cart">
 
-                  <div class="numbers-row">
-                      <input type="hidden" id="id" name="id" value="" />
-                      <input type="number" name="quantity" id="quantity" value="1">
-                  </div>
-                  <button class="single_add_to_cart_button  _addtocart" data-original-title="<?php echo $bookid ?>"
-                      type="submit">Add to Cart</button>
+                    <div class="numbers-row">
+                        <input type="hidden" id="id" name="id" value="" />
+                        <input type="number" name="quantity" id="quantity" value="1">
+                    </div>
+                    <button class="single_add_to_cart_button  _addtocart" data-original-title="<?php echo $bookid ?>"
+                        type="submit">Add to Cart</button>
 
-              </div>
-              <div class="quick-desc">
-                  <?php echo DatabaseManager::select("book_details", "description", "book_id=$bookid")[0]["description"] ?>
-              </div>
-          </div>
-          <!-- .product-info -->
-      </div>
-      <!-- .modal-product -->
-  </div>
+                </div>
+                <div class="quick-desc">
+                    <?php echo DatabaseManager::select("book_details", "description", "book_id=$bookid")[0]["description"] ?>
+                </div>
+            </div>
+            <!-- .product-info -->
+        </div>
+        <!-- .modal-product -->
+    </div>
 
-  <?php
-  $html = '';
-  $html = ob_get_clean();
-  echo $html;
+    <?php
+    $html = '';
+    $html = ob_get_clean();
+    echo $html;
 }
 ?>
 <?php
@@ -435,6 +435,7 @@ if (isset($_GET["logout"])) {
 
 
 
+
 if (isset($_POST["form_type"])) {
   if ($_POST['form_type'] == "recover_customer_password") {
     $email = $_POST["customer"]['email'];
@@ -492,7 +493,56 @@ if (isset($_POST["form_type"])) {
 
 
 
+<?php
 
+if (isset($_POST["get_Item_Count"])) {
+  if (isset($_SESSION["AddToCart"])) {
+    echo count($_SESSION["AddToCart"]);
+  } else {
+    echo "0";
+  }
+} ?>
+
+
+<?php
+
+if (isset($_POST["get_amount"])) {
+  if (isset($_SESSION["AddToCart"])) {
+    $ids = "";
+    
+    if (count($_SESSION["AddToCart"]) > 0) {
+      $firstKey = key($_SESSION["AddToCart"]); // Get the first key
+  
+      foreach ($_SESSION["AddToCart"] as $key => $value) {
+        if ($key === $firstKey) {
+          $ids .= "$value";
+        } else {
+          $ids .= ",$value";
+        }
+      }
+  
+      $totalSalePrice = DatabaseManager::select(
+        "books left join book_details on books.id=book_details.book_id",
+        "SUM(sale_price)",
+        "book_id in ($ids) AND sale_price != 0"
+      )[0]["SUM(sale_price)"];
+  
+      $totalPrice = DatabaseManager::select(
+        "books left join book_details on books.id=book_details.book_id",
+        "SUM(price)",
+        "book_id in ($ids) AND sale_price = 0"
+      )[0]["SUM(price)"];
+  
+      $totalAmount = $totalSalePrice + $totalPrice;
+  
+      echo "$" . number_format($totalAmount, 2);
+    } else {
+      echo "$" . number_format(0, 2);
+    }
+  } else {
+    echo "$0.00";
+  }
+} ?>
 
 
 <?php
@@ -502,321 +552,41 @@ if (isset($_GET["type"])) {
 
 
 
-  if ($_GET["type"] == "Featured Products") { 
+  if ($_GET["type"] == "Featured Products") {
     ob_start();
     ?>
-    <div class="row" id="custom-products">
+        <div class="row" id="custom-products">
 
 
 
 
 
 
-        <?php
+            <?php
 
-        $cardsPerPage = 10;
-        $totalRecords = DatabaseManager::select("books", "count(id) as cid", "is_Featured=1")[0]["cid"];
-        $totalPages = ceil($totalRecords / $cardsPerPage); //paginaion loop limit &Workin
-        $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
-        $offset = ($currentPage - 1) * $cardsPerPage;
+            $cardsPerPage = 10;
+            $totalRecords = DatabaseManager::select("books", "count(id) as cid", "is_Featured=1")[0]["cid"];
+            $totalPages = ceil($totalRecords / $cardsPerPage); //paginaion loop limit &Workin
+            $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
+            $offset = ($currentPage - 1) * $cardsPerPage;
 
 
 
-        $arru = DatabaseManager::select("books left join categories on categories.id=books.category_id ", "books.id as ID, title as Title, image_name as Image ,category_id as catId,categories.name as catName", "is_Featured=1 LIMIT $offset, $cardsPerPage");
+            $arru = DatabaseManager::select("books left join categories on categories.id=books.category_id ", "books.id as ID, title as Title, image_name as Image ,category_id as catId,categories.name as catName", "is_Featured=1 LIMIT $offset, $cardsPerPage");
 
 
 
 
-        for ($i = 0; $i < ((count($arru) > 10) ? 10 : count($arru)); $i++) {
+            for ($i = 0; $i < ((count($arru) > 10) ? 10 : count($arru)); $i++) {
 
-          $BookTitle = $arru[$i]["Title"];
-          $imagename = $arru[$i]["Image"];
-          $Bookid = $arru[$i]["ID"];
-          $catId = $arru[$i]["catId"];
-          $catName = $arru[$i]["catName"];
-          $htmlprodSec = '';
-          // ob_start();
-          ?>
-          <!-- div -->
-
-          <div class="product-layout product-list col-xs-12 product-item">
-              <div class="product-thumb">
-                  <div class="item item1">
-                      <div class="item-inner">
-                          <div class="caption-top">
-
-                              <p class="manufacture-product">
-                                  <a href="singleProductPage.php?bookid=<?php echo $Bookid ?>"
-                                      title="<?php echo $catName ?>"><?php echo $catName ?></a>
-                              </p>
-
-                              <h4 class="product-name">
-                                  <a
-                                      href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?bookid=<?php echo $Bookid ?>">
-                                <?php echo $BookTitle ?>
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="box-border">
-                              <div class="image images-container">
-                                  <div class="inner">
-                                      <div class="box-label">
-                                      </div>
-                                      <div class="image rotate-image-container">
-
-                                          <a href="../pages/singleProductPage.php?bookid=<?php echo $Bookid ?>" class="">
-                                              <img class="img-responsive has-rotator img-default-image img-cate-1613090193460-collection-page"
-                                                  src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "" : "../"; ?>images/products/<?php echo $imagename ?>"
-                                                  alt="<?php echo $Bookid ?>">
-
-
-
-
-                                              <input type="hidden"
-                                                  value="//smartbook-theme.myshopify.com/images/products/11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg?v=1552406840"
-                                                  class="img-default-1613090193460-collection-page" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                          </a>
-
-
-                                      </div>
-                                      <div class="action-links">
-                                          <button class="button btn-cart 
-    _addtocart" type="button" data-toggle="tooltip" data-loading-text="Loading..." title="Add to Cart"
-                                              data-original-title="<?php echo $Bookid ?>"
-                                              data-useless-attr="cart.add('14458099466292');">
-                                              <span>Add to Cart</span>
-                                          </button>
-
-
-                                          <button class="btn-wishlist _addWishlist button btn-default "
-                                              data-product-handle="copy-of-a-wing-and-a-prayer" type="button"
-                                              data-toggle="tooltip" title="Add to Wish List"
-                                              data-original-title="<?php echo $Bookid ?>">
-                                              <span>Add to Wish List</span>
-                                          </button>
-
-
-                                          <button class="button btn-compare" type="button" data-toggle="tooltip"
-                                              title="View Details"
-                                              onclick="location.href='singleProductPage.php?bookid=<?php echo $Bookid ?>';">
-                                              <span>View Details</span>
-                                          </button>
-
-                                          <button class="button btn-quickview quickview" type="button" title="Quick View"
-                                              data-toggle="modal" data-target="#productModal"
-                                              data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
-                                              <span>Quick View</span>
-                                          </button>
-
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- image -->
-                              <div class="caption">
-
-
-                                  <div class="price-box">
-
-                                      <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
-                                      foreach ($price_saleprice as $key => $value) {
-                                        $price = $value["price"];
-                                        $saleprice = $value["sale_price"]; ?>
-
-
-                                        <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                          <p class="special-price">
-                                              <span class="price">
-                                                  <span class="money" data-currency-usd="$<?php echo $saleprice ?>">
-                                                      $<?php echo $saleprice ?>
-                                                  </span>
-                                              </span>
-                                          </p>
-                                        <?php } ?>
-                                        <p class="old-price">
-                                            <span class="price">
-                                                <span class="money" data-currency-usd="$<?php echo $price; ?>">
-                                                    $<?php echo $price; ?>
-                                                </span>
-                                            </span>
-                                        </p>
-
-                                      <?php } ?>
-
-                                  </div>
-                                  <!-- price-container -->
-
-
-
-
-
-
-                                  <?php foreach ($price_saleprice as $key => $value) {
-                                    $price = $value["price"];
-                                    $saleprice = $value["sale_price"]; ?>
-                                    <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                      <div class="label-product label_sale">
-                                          <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
-                                      </div>
-                                    <?php }
-                                  } ?>
-
-
-
-
-
-
-                              </div>
-                              <!-- caption -->
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!-- product-thumb -->
-          </div>
-
-
-
-
-
-          <!-- div -->
-
-
-
-
-
-
-
-          <!-- product-layout -->
-
-
-        <?php } ?>
-
-
-
-
-
-    </div>
-
-        <?php if ($totalRecords > 10) {
-          $type = $_GET["type"] ?>
-          <div class="toolbar toolbar-products toolbar-bottom" id="pagination">
-              <div class="pages ajax_pagination">
-
-                  <ul class="pagination">
-                      <?php
-
-
-
-                      if ($currentPage > 1) {
-                        echo '<li class="pagination-next"><a href="?page=' . ($currentPage - 1) . '"> &lt;</a></li>';
-                      }
-
-                      if ($totalPages <= 5) {
-                        // Display all available pages if there are 5 or fewer
-                        for ($i = 1; $i <= $totalPages; $i++) {
-                          if ($i == $currentPage) {
-                            echo '<li class="active"><span>' . $i . '</span></li>';
-                          } else {
-                            echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
-                          }
-                        }
-                      } else {
-                        // Display the current page and two pages before and after it
-                        $startPage = max(1, $currentPage - 2);
-                        $endPage = min($totalPages, $currentPage + 2);
-
-                        for ($i = $startPage; $i <= $endPage; $i++) {
-                          if ($i == $currentPage) {
-                            echo '<li class="active"><span>' . $i . '</span></li>';
-                          } else {
-                            echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
-                          }
-                        }
-                      }
-
-                      if ($currentPage < $totalPages) {
-                        echo '<li class="pagination-next"><a href="?page=' . ($currentPage + 1) . '"> &gt;</a></li>';
-                      }
-
-                      ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  </ul>
-
-              </div>
-              <div class="toolbar-amount">
-
-
-                  <span>Showing 1 to 9 of 13 items
-                  </span>
-              </div>
-          </div>
-        <?php } ?>
-
-
-
-
-
-      <?php
-    $data=ob_get_clean();
-    echo $data;
-    } else if ($_GET["type"] == "Most Viewed") { ob_start();?>
-
-          <div class="row" id="custom-products">
-
-
-              <?php
-
-              $cardsPerPage = 10;
-              $totalRecords = DatabaseManager::select("books", "count(id) as cid", "views>100")[0]["cid"];
-              $totalPages = ceil($totalRecords / $cardsPerPage); //paginaion loop limit &Workin
-              $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
-              $offset = ($currentPage - 1) * $cardsPerPage;
-
-
-
-              $arru = DatabaseManager::select("books left join categories on categories.id=books.category_id ", "books.id as ID, title as Title, image_name as Image ,category_id as catId,categories.name as catName", "views>100 order by views desc LIMIT $offset, $cardsPerPage");
-
-
-
-
-              for ($i = 0; $i < ((count($arru) > 10) ? 10 : count($arru)); $i++) {
-
-                $BookTitle = $arru[$i]["Title"];
-                $imagename = $arru[$i]["Image"];
-                $Bookid = $arru[$i]["ID"];
-                $catId = $arru[$i]["catId"];
-                $catName = $arru[$i]["catName"];
-                $htmlprodSec = '';
-                // ob_start();
-                ?>
+              $BookTitle = $arru[$i]["Title"];
+              $imagename = $arru[$i]["Image"];
+              $Bookid = $arru[$i]["ID"];
+              $catId = $arru[$i]["catId"];
+              $catName = $arru[$i]["catName"];
+              $htmlprodSec = '';
+              // ob_start();
+              ?>
                 <!-- div -->
 
                 <div class="product-layout product-list col-xs-12 product-item">
@@ -826,18 +596,18 @@ if (isset($_GET["type"])) {
                                 <div class="caption-top">
 
                                     <p class="manufacture-product">
-                                        <a href="../vendors@q=Little&#32;Green&#32;Works.php"
-                                            title="Little Green Works"><?php echo $catName ?></a>
+                                        <a href="singleProductPage.php?bookid=<?php echo $Bookid ?>"
+                                            title="<?php echo $catName ?>"><?php echo $catName ?></a>
                                     </p>
 
                                     <h4 class="product-name">
                                         <a
                                             href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?bookid=<?php echo $Bookid ?>">
-                                    <?php echo $BookTitle ?>
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="box-border">
+                                <?php echo $BookTitle ?>
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="box-border">
                                     <div class="image images-container">
                                         <div class="inner">
                                             <div class="box-label">
@@ -910,30 +680,30 @@ if (isset($_GET["type"])) {
 
                                         <div class="price-box">
 
-                                          <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
-                                          foreach ($price_saleprice as $key => $value) {
-                                            $price = $value["price"];
-                                            $saleprice = $value["sale_price"]; ?>
+                                            <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+                                            foreach ($price_saleprice as $key => $value) {
+                                              $price = $value["price"];
+                                              $saleprice = $value["sale_price"]; ?>
 
 
-                                            <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                <p class="special-price">
+                                                <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                    <p class="special-price">
+                                                        <span class="price">
+                                                            <span class="money" data-currency-usd="$<?php echo $saleprice ?>">
+                                                                $<?php echo $saleprice ?>
+                                                            </span>
+                                                        </span>
+                                                    </p>
+                                                <?php } ?>
+                                                <p class="old-price">
                                                     <span class="price">
-                                                        <span class="money" data-currency-usd="$<?php echo $saleprice ?>">
-                                                            $<?php echo $saleprice ?>
+                                                        <span class="money" data-currency-usd="$<?php echo $price; ?>">
+                                                            $<?php echo $price; ?>
                                                         </span>
                                                     </span>
                                                 </p>
-                                            <?php } ?>
-                                              <p class="old-price">
-                                                  <span class="price">
-                                                      <span class="money" data-currency-usd="$<?php echo $price; ?>">
-                                                          $<?php echo $price; ?>
-                                                      </span>
-                                                  </span>
-                                              </p>
 
-                                          <?php } ?>
+                                            <?php } ?>
 
                                         </div>
                                         <!-- price-container -->
@@ -943,15 +713,15 @@ if (isset($_GET["type"])) {
 
 
 
-                                      <?php foreach ($price_saleprice as $key => $value) {
-                                        $price = $value["price"];
-                                        $saleprice = $value["sale_price"]; ?>
-                                        <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                            <div class="label-product label_sale">
-                                                <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
-                                            </div>
-                                        <?php }
-                                      } ?>
+                                        <?php foreach ($price_saleprice as $key => $value) {
+                                          $price = $value["price"];
+                                          $saleprice = $value["sale_price"]; ?>
+                                            <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                <div class="label-product label_sale">
+                                                    <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                </div>
+                                            <?php }
+                                        } ?>
 
 
 
@@ -985,602 +755,53 @@ if (isset($_GET["type"])) {
             <?php } ?>
 
 
-          </div>
 
 
 
+        </div>
 
-        <?php if ($totalRecords > 10) {
-          $type = $_GET["type"] ?>
-            <div class="toolbar toolbar-products toolbar-bottom" id="pagination">
-                <div class="pages ajax_pagination">
-
-                    <ul class="pagination">
-                        <?php
-
-
-
-                        if ($currentPage > 1) {
-                          echo '<li class="pagination-next"><a href="?type=' . $type . '&page=' . ($currentPage - 1) . '"> &lt;</a></li>';
-                        }
-
-                        if ($totalPages <= 5) {
-                          // Display all available pages if there are 5 or fewer
-                          for ($i = 1; $i <= $totalPages; $i++) {
-                            if ($i == $currentPage) {
-                              echo '<li class="active"><span>' . $i . '</span></li>';
-                            } else {
-                              echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
-                            }
-                          }
-                        } else {
-                          // Display the current page and two pages before and after it
-                          $startPage = max(1, $currentPage - 2);
-                          $endPage = min($totalPages, $currentPage + 2);
-
-                          for ($i = $startPage; $i <= $endPage; $i++) {
-                            if ($i == $currentPage) {
-                              echo '<li class="active"><span>' . $i . '</span></li>';
-                            } else {
-                              echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
-                            }
-                          }
-                        }
-
-                        if ($currentPage < $totalPages) {
-                          echo '<li class="pagination-next"><a href="?page=' . ($currentPage + 1) . '"> &gt;</a></li>';
-                        }
-
-                        ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    </ul>
-
-                </div>
-                <div class="toolbar-amount">
-
-
-                    <span>Showing 1 to 9 of 13 items
-                    </span>
-                </div>
-            </div>
-        <?php } ?>
-
-
-      <?php   $data=ob_get_clean();
-    echo $data;} else if ($_GET["type"] == "New Arrivals") { ob_start(); ?>
-
-            <div class="row" id="custom-products">
-
-
-              <?php
-
-              $cardsPerPage = 10;
-              $totalRecords = DatabaseManager::select("books", "count(id) as cid", "views>100")[0]["cid"];
-              $totalPages = ceil($totalRecords / $cardsPerPage); //paginaion loop limit &Workin
-              $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
-              $offset = ($currentPage - 1) * $cardsPerPage;
-
-
-
-              $arru = DatabaseManager::select("books left join categories on categories.id=books.category_id ", "books.id as ID, title as Title, image_name as Image ,category_id as catId,categories.name as catName", "date_added >= DATE_SUB(NOW(), INTERVAL 30 DAY) LIMIT $offset, $cardsPerPage");
-
-
-
-
-              for ($i = 0; $i < ((count($arru) > 10) ? 10 : count($arru)); $i++) {
-
-                $BookTitle = $arru[$i]["Title"];
-                $imagename = $arru[$i]["Image"];
-                $Bookid = $arru[$i]["ID"];
-                $catId = $arru[$i]["catId"];
-                $catName = $arru[$i]["catName"];
-                $htmlprodSec = '';
-                // ob_start();
-                ?>
-                  <!-- div -->
-
-                  <div class="product-layout product-list col-xs-12 product-item">
-                      <div class="product-thumb">
-                          <div class="item item1">
-                              <div class="item-inner">
-                                  <div class="caption-top">
-
-                                      <p class="manufacture-product">
-                                          <a href="../vendors@q=Little&#32;Green&#32;Works.php"
-                                              title="Little Green Works"><?php echo $catName ?></a>
-                                      </p>
-
-                                      <h4 class="product-name">
-                                          <a
-                                              href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?bookid=<?php echo $Bookid ?>">
-                                    <?php echo $BookTitle ?>
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="box-border">
-                                      <div class="image images-container">
-                                          <div class="inner">
-                                              <div class="box-label">
-                                              </div>
-                                              <div class="image rotate-image-container">
-
-                                                  <a href="../pages/singleProductPage.php?bookid=<?php echo $Bookid ?>" class="">
-                                                      <img class="img-responsive has-rotator img-default-image img-cate-1613090193460-collection-page"
-                                                          src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "" : "../"; ?>images/products/<?php echo $imagename ?>"
-                                                          alt="<?php echo $Bookid ?>">
-
-
-
-
-                                                      <input type="hidden"
-                                                          value="//smartbook-theme.myshopify.com/images/products/11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg?v=1552406840"
-                                                          class="img-default-1613090193460-collection-page" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                  </a>
-
-
-                                              </div>
-                                              <div class="action-links">
-                                                  <button class="button btn-cart 
-    _addtocart" type="button" data-toggle="tooltip" data-loading-text="Loading..." title="Add to Cart"
-                                                      data-original-title="<?php echo $Bookid ?>"
-                                                      data-useless-attr="cart.add('14458099466292');">
-                                                      <span>Add to Cart</span>
-                                                  </button>
-
-
-                                                  <button class="btn-wishlist _addWishlist button btn-default "
-                                                      data-product-handle="copy-of-a-wing-and-a-prayer" type="button"
-                                                      data-toggle="tooltip" title="Add to Wish List"
-                                                      data-original-title="<?php echo $Bookid ?>">
-                                                      <span>Add to Wish List</span>
-                                                  </button>
-
-
-                                                  <button class="button btn-compare" type="button" data-toggle="tooltip"
-                                                      title="View Details"
-                                                      onclick="location.href='singleProductPage.php?bookid=<?php echo $Bookid ?>';">
-                                                      <span>View Details</span>
-                                                  </button>
-
-                                                  <button class="button btn-quickview quickview" type="button" title="Quick View"
-                                                      data-toggle="modal" data-target="#productModal"
-                                                      data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
-                                                      <span>Quick View</span>
-                                                  </button>
-
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <!-- image -->
-                                      <div class="caption">
-
-
-                                          <div class="price-box">
-
-                                          <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
-                                          foreach ($price_saleprice as $key => $value) {
-                                            $price = $value["price"];
-                                            $saleprice = $value["sale_price"]; ?>
-
-
-                                            <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                  <p class="special-price">
-                                                      <span class="price">
-                                                          <span class="money" data-currency-usd="$<?php echo $saleprice ?>">
-                                                              $<?php echo $saleprice ?>
-                                                          </span>
-                                                      </span>
-                                                  </p>
-                                            <?php } ?>
-                                                <p class="old-price">
-                                                    <span class="price">
-                                                        <span class="money" data-currency-usd="$<?php echo $price; ?>">
-                                                            $<?php echo $price; ?>
-                                                        </span>
-                                                    </span>
-                                                </p>
-
-                                          <?php } ?>
-
-                                          </div>
-                                          <!-- price-container -->
-
-
-
-
-
-
-                                      <?php foreach ($price_saleprice as $key => $value) {
-                                        $price = $value["price"];
-                                        $saleprice = $value["sale_price"]; ?>
-                                        <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                              <div class="label-product label_sale">
-                                                  <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
-                                              </div>
-                                        <?php }
-                                      } ?>
-
-
-
-
-
-
-                                      </div>
-                                      <!-- caption -->
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- product-thumb -->
-                  </div>
-
-
-
-
-
-                  <!-- div -->
-
-
-
-
-
-
-
-                  <!-- product-layout -->
-
-
-            <?php } ?>
-
-
-            </div>
-
-
-
-
-        <?php if ($totalRecords > 10) {
-          $type = $_GET["type"] ?>
-              <div class="toolbar toolbar-products toolbar-bottom" id="pagination">
-                  <div class="pages ajax_pagination">
-
-                      <ul class="pagination">
-                        <?php
-
-
-
-                        if ($currentPage > 1) {
-                          echo '<li class="pagination-next"><a href="?type=' . $type . '&page=' . ($currentPage - 1) . '"> &lt;</a></li>';
-                        }
-
-                        if ($totalPages <= 5) {
-                          // Display all available pages if there are 5 or fewer
-                          for ($i = 1; $i <= $totalPages; $i++) {
-                            if ($i == $currentPage) {
-                              echo '<li class="active"><span>' . $i . '</span></li>';
-                            } else {
-                              echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
-                            }
-                          }
-                        } else {
-                          // Display the current page and two pages before and after it
-                          $startPage = max(1, $currentPage - 2);
-                          $endPage = min($totalPages, $currentPage + 2);
-
-                          for ($i = $startPage; $i <= $endPage; $i++) {
-                            if ($i == $currentPage) {
-                              echo '<li class="active"><span>' . $i . '</span></li>';
-                            } else {
-                              echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
-                            }
-                          }
-                        }
-
-                        if ($currentPage < $totalPages) {
-                          echo '<li class="pagination-next"><a href="?page=' . ($currentPage + 1) . '"> &gt;</a></li>';
-                        }
-
-                        ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                      </ul>
-
-                  </div>
-                  <div class="toolbar-amount">
-
-
-                      <span>Showing 1 to 9 of 13 items
-                      </span>
-                  </div>
-              </div>
-        <?php } ?>
-
-      <?php   $data=ob_get_clean();
-    echo $data;} else if ($_GET["type"] == "Special offer") { ob_start(); ?>
-
-              <div class="row" id="custom-products">
-
-
-              <?php
-
-              $cardsPerPage = 10;
-              $totalRecords = DatabaseManager::select("books", "count(id) as cid", "views>100")[0]["cid"];
-              $totalPages = ceil($totalRecords / $cardsPerPage); //paginaion loop limit &Workin
-              $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
-              $offset = ($currentPage - 1) * $cardsPerPage;
-
-
-
-              $arru = DatabaseManager::select("books left join categories on categories.id=books.category_id inner join book_details on books.id=book_details.book_id", "books.id as ID, title as Title, image_name as Image ,category_id as catId,categories.name as catName", "sale_price>(0.5*price) LIMIT $offset, $cardsPerPage");
-
-
-
-
-              for ($i = 0; $i < ((count($arru) > 10) ? 10 : count($arru)); $i++) {
-
-                $BookTitle = $arru[$i]["Title"];
-                $imagename = $arru[$i]["Image"];
-                $Bookid = $arru[$i]["ID"];
-                $catId = $arru[$i]["catId"];
-                $catName = $arru[$i]["catName"];
-                $htmlprodSec = '';
-                // ob_start();
-                ?>
-                    <!-- div -->
-
-                    <div class="product-layout product-list col-xs-12 product-item">
-                        <div class="product-thumb">
-                            <div class="item item1">
-                                <div class="item-inner">
-                                    <div class="caption-top">
-
-                                        <p class="manufacture-product">
-                                            <a href="../vendors@q=Little&#32;Green&#32;Works.php"
-                                                title="Little Green Works"><?php echo $catName ?></a>
-                                        </p>
-
-                                        <h4 class="product-name">
-                                            <a
-                                                href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?bookid=<?php echo $Bookid ?>">
-                                    <?php echo $BookTitle ?>
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="box-border">
-                                        <div class="image images-container">
-                                            <div class="inner">
-                                                <div class="box-label">
-                                                </div>
-                                                <div class="image rotate-image-container">
-
-                                                    <a href="../pages/singleProductPage.php?bookid=<?php echo $Bookid ?>" class="">
-                                                        <img class="img-responsive has-rotator img-default-image img-cate-1613090193460-collection-page"
-                                                            src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "" : "../"; ?>images/products/<?php echo $imagename ?>"
-                                                            alt="<?php echo $Bookid ?>">
-
-
-
-
-                                                        <input type="hidden"
-                                                            value="//smartbook-theme.myshopify.com/images/products/11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg?v=1552406840"
-                                                            class="img-default-1613090193460-collection-page" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                    </a>
-
-
-                                                </div>
-                                                <div class="action-links">
-                                                    <button class="button btn-cart 
-    _addtocart" type="button" data-toggle="tooltip" data-loading-text="Loading..." title="Add to Cart"
-                                                        data-original-title="<?php echo $Bookid ?>"
-                                                        data-useless-attr="cart.add('14458099466292');">
-                                                        <span>Add to Cart</span>
-                                                    </button>
-
-
-                                                    <button class="btn-wishlist _addWishlist button btn-default "
-                                                        data-product-handle="copy-of-a-wing-and-a-prayer" type="button"
-                                                        data-toggle="tooltip" title="Add to Wish List"
-                                                        data-original-title="<?php echo $Bookid ?>">
-                                                        <span>Add to Wish List</span>
-                                                    </button>
-
-
-                                                    <button class="button btn-compare" type="button" data-toggle="tooltip"
-                                                        title="View Details"
-                                                        onclick="location.href='singleProductPage.php?bookid=<?php echo $Bookid ?>';">
-                                                        <span>View Details</span>
-                                                    </button>
-
-                                                    <button class="button btn-quickview quickview" type="button" title="Quick View"
-                                                        data-toggle="modal" data-target="#productModal"
-                                                        data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
-                                                        <span>Quick View</span>
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- image -->
-                                        <div class="caption">
-
-
-                                            <div class="price-box">
-
-                                          <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
-                                          foreach ($price_saleprice as $key => $value) {
-                                            $price = $value["price"];
-                                            $saleprice = $value["sale_price"]; ?>
-
-
-                                            <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                    <p class="special-price">
-                                                        <span class="price">
-                                                            <span class="money" data-currency-usd="$<?php echo $saleprice ?>">
-                                                                $<?php echo $saleprice ?>
-                                                            </span>
-                                                        </span>
-                                                    </p>
-                                            <?php } ?>
-                                                  <p class="old-price">
-                                                      <span class="price">
-                                                          <span class="money" data-currency-usd="$<?php echo $price; ?>">
-                                                              $<?php echo $price; ?>
-                                                          </span>
-                                                      </span>
-                                                  </p>
-
-                                          <?php } ?>
-
-                                            </div>
-                                            <!-- price-container -->
-
-
-
-
-
-
-                                      <?php foreach ($price_saleprice as $key => $value) {
-                                        $price = $value["price"];
-                                        $saleprice = $value["sale_price"]; ?>
-                                        <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                <div class="label-product label_sale">
-                                                    <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
-                                                </div>
-                                        <?php }
-                                      } ?>
-
-
-
-
-
-
-                                        </div>
-                                        <!-- caption -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- product-thumb -->
-                    </div>
-
-
-
-
-
-                    <!-- div -->
-
-
-
-
-
-
-
-                    <!-- product-layout -->
-
-
-            <?php } ?>
-
-
-              </div>
-
-
-
-
-        <?php if ($totalRecords > 10) {
-          $type = $_GET["type"] ?>
+            <?php if ($totalRecords > 10) {
+              $type = $_GET["type"] ?>
                 <div class="toolbar toolbar-products toolbar-bottom" id="pagination">
                     <div class="pages ajax_pagination">
 
                         <ul class="pagination">
-                        <?php
+                            <?php
 
 
 
-                        if ($currentPage > 1) {
-                          echo '<li class="pagination-next"><a href="?type=' . $type . '&page=' . ($currentPage - 1) . '"> &lt;</a></li>';
-                        }
-
-                        if ($totalPages <= 5) {
-                          // Display all available pages if there are 5 or fewer
-                          for ($i = 1; $i <= $totalPages; $i++) {
-                            if ($i == $currentPage) {
-                              echo '<li class="active"><span>' . $i . '</span></li>';
-                            } else {
-                              echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
+                            if ($currentPage > 1) {
+                              echo '<li class="pagination-next"><a href="?page=' . ($currentPage - 1) . '"> &lt;</a></li>';
                             }
-                          }
-                        } else {
-                          // Display the current page and two pages before and after it
-                          $startPage = max(1, $currentPage - 2);
-                          $endPage = min($totalPages, $currentPage + 2);
 
-                          for ($i = $startPage; $i <= $endPage; $i++) {
-                            if ($i == $currentPage) {
-                              echo '<li class="active"><span>' . $i . '</span></li>';
+                            if ($totalPages <= 5) {
+                              // Display all available pages if there are 5 or fewer
+                              for ($i = 1; $i <= $totalPages; $i++) {
+                                if ($i == $currentPage) {
+                                  echo '<li class="active"><span>' . $i . '</span></li>';
+                                } else {
+                                  echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
+                                }
+                              }
                             } else {
-                              echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
+                              // Display the current page and two pages before and after it
+                              $startPage = max(1, $currentPage - 2);
+                              $endPage = min($totalPages, $currentPage + 2);
+
+                              for ($i = $startPage; $i <= $endPage; $i++) {
+                                if ($i == $currentPage) {
+                                  echo '<li class="active"><span>' . $i . '</span></li>';
+                                } else {
+                                  echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
+                                }
+                              }
                             }
-                          }
-                        }
 
-                        if ($currentPage < $totalPages) {
-                          echo '<li class="pagination-next"><a href="?page=' . ($currentPage + 1) . '"> &gt;</a></li>';
-                        }
+                            if ($currentPage < $totalPages) {
+                              echo '<li class="pagination-next"><a href="?page=' . ($currentPage + 1) . '"> &gt;</a></li>';
+                            }
 
-                        ?>
+                            ?>
 
 
 
@@ -1607,79 +828,84 @@ if (isset($_GET["type"])) {
                         </span>
                     </div>
                 </div>
-        <?php } ?>
+            <?php } ?>
 
-      <?php   $data=ob_get_clean();
-    echo $data;} else if ($_GET["type"] == "category") { ob_start(); ?>
+
+
+
+
+          <?php
+          $data = ob_get_clean();
+          echo $data;
+  } else if ($_GET["type"] == "Most Viewed") {
+    ob_start(); ?>
 
                 <div class="row" id="custom-products">
 
 
-              <?php
-              $catid = $_GET["catid"];
-              $cardsPerPage = 10;
-              $totalRecords = DatabaseManager::select("books", "count(id) as cid", "category_id=$catid")[0]["cid"];
-              $totalPages = ceil($totalRecords / $cardsPerPage); //paginaion loop limit &Workin
-              $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
-              $offset = ($currentPage - 1) * $cardsPerPage;
+                    <?php
+
+                    $cardsPerPage = 10;
+                    $totalRecords = DatabaseManager::select("books", "count(id) as cid", "views>100")[0]["cid"];
+                    $totalPages = ceil($totalRecords / $cardsPerPage); //paginaion loop limit &Workin
+                    $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
+                    $offset = ($currentPage - 1) * $cardsPerPage;
 
 
 
-              $arru = DatabaseManager::select("books left join categories on categories.id=books.category_id", "books.id as ID, title as Title, image_name as Image ,category_id as catId,categories.name as catName", "category_id=$catid LIMIT $offset, $cardsPerPage");
+                    $arru = DatabaseManager::select("books left join categories on categories.id=books.category_id ", "books.id as ID, title as Title, image_name as Image ,category_id as catId,categories.name as catName", "views>100 order by views desc LIMIT $offset, $cardsPerPage");
 
 
 
 
-              for ($i = 0; $i < ((count($arru) > 10) ? 10 : count($arru)); $i++) {
+                    for ($i = 0; $i < ((count($arru) > 10) ? 10 : count($arru)); $i++) {
 
-                $BookTitle = $arru[$i]["Title"];
-                $imagename = $arru[$i]["Image"];
-                $Bookid = $arru[$i]["ID"];
-                $catId = $arru[$i]["catId"];
-                $catName = $arru[$i]["catName"];
-                $htmlprodSec = '';
-                // ob_start();
-                ?>
-                      <!-- div -->
+                      $BookTitle = $arru[$i]["Title"];
+                      $imagename = $arru[$i]["Image"];
+                      $Bookid = $arru[$i]["ID"];
+                      $catId = $arru[$i]["catId"];
+                      $catName = $arru[$i]["catName"];
+                      $htmlprodSec = '';
+                      // ob_start();
+                      ?>
+                        <!-- div -->
 
-                      <div class="product-layout product-list col-xs-12 product-item">
-                          <div class="product-thumb">
-                              <div class="item item1">
-                                  <div class="item-inner">
-                                      <div class="caption-top">
+                        <div class="product-layout product-list col-xs-12 product-item">
+                            <div class="product-thumb">
+                                <div class="item item1">
+                                    <div class="item-inner">
+                                        <div class="caption-top">
 
-                                          <p class="manufacture-product">
-                                              <a href="../vendors@q=Little&#32;Green&#32;Works.php"
-                                                  title="Little Green Works"><?php echo $catName ?></a>
-                                          </p>
+                                            <p class="manufacture-product">
+                                                <a href="../vendors@q=Little&#32;Green&#32;Works.php"
+                                                    title="Little Green Works"><?php echo $catName ?></a>
+                                            </p>
 
-                                          <h4 class="product-name">
-                                              <a
-                                                  href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?bookid=<?php echo $Bookid ?>">
+                                            <h4 class="product-name">
+                                                <a
+                                                    href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?bookid=<?php echo $Bookid ?>">
                                     <?php echo $BookTitle ?>
                                 </a>
                             </h4>
                         </div>
                         <div class="box-border">
-                                          <div class="image images-container">
-                                              <div class="inner">
-                                                  <div class="box-label">
-                                                  </div>
-                                                  <div class="image rotate-image-container">
+                                            <div class="image images-container">
+                                                <div class="inner">
+                                                    <div class="box-label">
+                                                    </div>
+                                                    <div class="image rotate-image-container">
 
-                                                      <a href="../pages/singleProductPage.php?bookid=<?php echo $Bookid ?>" class="">
-                                                          <img class="img-responsive has-rotator img-default-image img-cate-1613090193460-collection-page"
-                                                              src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "" : "../"; ?>images/products/<?php echo $imagename ?>"
-                                                              alt="<?php echo $Bookid ?>">
-
-
+                                                        <a href="../pages/singleProductPage.php?bookid=<?php echo $Bookid ?>" class="">
+                                                            <img class="img-responsive has-rotator img-default-image img-cate-1613090193460-collection-page"
+                                                                src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "" : "../"; ?>images/products/<?php echo $imagename ?>"
+                                                                alt="<?php echo $Bookid ?>">
 
 
-                                                          <input type="hidden"
-                                                              value="//smartbook-theme.myshopify.com/images/products/11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg?v=1552406840"
-                                                              class="img-default-1613090193460-collection-page" />
 
 
+                                                            <input type="hidden"
+                                                                value="//smartbook-theme.myshopify.com/images/products/11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg?v=1552406840"
+                                                                class="img-default-1613090193460-collection-page" />
 
 
 
@@ -1691,121 +917,123 @@ if (isset($_GET["type"])) {
 
 
 
-                                                      </a>
 
 
-                                                  </div>
-                                                  <div class="action-links">
-                                                      <button class="button btn-cart 
+                                                        </a>
+
+
+                                                    </div>
+                                                    <div class="action-links">
+                                                        <button class="button btn-cart 
     _addtocart" type="button" data-toggle="tooltip" data-loading-text="Loading..." title="Add to Cart"
-                                                          data-original-title="<?php echo $Bookid ?>"
-                                                          data-useless-attr="cart.add('14458099466292');">
-                                                          <span>Add to Cart</span>
-                                                      </button>
+                                                            data-original-title="<?php echo $Bookid ?>"
+                                                            data-useless-attr="cart.add('14458099466292');">
+                                                            <span>Add to Cart</span>
+                                                        </button>
 
 
-                                                      <button class="btn-wishlist _addWishlist button btn-default "
-                                                          data-product-handle="copy-of-a-wing-and-a-prayer" type="button"
-                                                          data-toggle="tooltip" title="Add to Wish List"
-                                                          data-original-title="<?php echo $Bookid ?>">
-                                                          <span>Add to Wish List</span>
-                                                      </button>
+                                                        <button class="btn-wishlist _addWishlist button btn-default "
+                                                            data-product-handle="copy-of-a-wing-and-a-prayer" type="button"
+                                                            data-toggle="tooltip" title="Add to Wish List"
+                                                            data-original-title="<?php echo $Bookid ?>">
+                                                            <span>Add to Wish List</span>
+                                                        </button>
 
 
-                                                      <button class="button btn-compare" type="button" data-toggle="tooltip"
-                                                          title="View Details"
-                                                          onclick="location.href='singleProductPage.php?bookid=<?php echo $Bookid ?>';">
-                                                          <span>View Details</span>
-                                                      </button>
+                                                        <button class="button btn-compare" type="button" data-toggle="tooltip"
+                                                            title="View Details"
+                                                            onclick="location.href='singleProductPage.php?bookid=<?php echo $Bookid ?>';">
+                                                            <span>View Details</span>
+                                                        </button>
 
-                                                      <button class="button btn-quickview quickview" type="button" title="Quick View"
-                                                          data-toggle="modal" data-target="#productModal"
-                                                          data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
-                                                          <span>Quick View</span>
-                                                      </button>
+                                                        <button class="button btn-quickview quickview" type="button" title="Quick View"
+                                                            data-toggle="modal" data-target="#productModal"
+                                                            data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
+                                                            <span>Quick View</span>
+                                                        </button>
 
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <!-- image -->
-                                          <div class="caption">
-
-
-                                              <div class="price-box">
-
-                                          <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
-                                          foreach ($price_saleprice as $key => $value) {
-                                            $price = $value["price"];
-                                            $saleprice = $value["sale_price"]; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- image -->
+                                            <div class="caption">
 
 
-                                            <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                      <p class="special-price">
-                                                          <span class="price">
-                                                              <span class="money" data-currency-usd="$<?php echo $saleprice ?>">
-                                                                  $<?php echo $saleprice ?>
-                                                              </span>
-                                                          </span>
-                                                      </p>
-                                            <?php } ?>
-                                                    <p class="old-price">
-                                                        <span class="price">
-                                                            <span class="money" data-currency-usd="$<?php echo $price; ?>">
-                                                                $<?php echo $price; ?>
+                                                <div class="price-box">
+
+                                                <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+                                                foreach ($price_saleprice as $key => $value) {
+                                                  $price = $value["price"];
+                                                  $saleprice = $value["sale_price"]; ?>
+
+
+                                                    <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                            <p class="special-price">
+                                                                <span class="price">
+                                                                    <span class="money" data-currency-usd="$<?php echo $saleprice ?>">
+                                                                        $<?php echo $saleprice ?>
+                                                                    </span>
+                                                                </span>
+                                                            </p>
+                                                    <?php } ?>
+                                                        <p class="old-price">
+                                                            <span class="price">
+                                                                <span class="money" data-currency-usd="$<?php echo $price; ?>">
+                                                                    $<?php echo $price; ?>
+                                                                </span>
                                                             </span>
-                                                        </span>
-                                                    </p>
+                                                        </p>
 
-                                          <?php } ?>
+                                                <?php } ?>
 
-                                              </div>
-                                              <!-- price-container -->
-
-
-
-
-
-
-                                      <?php foreach ($price_saleprice as $key => $value) {
-                                        $price = $value["price"];
-                                        $saleprice = $value["sale_price"]; ?>
-                                        <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                  <div class="label-product label_sale">
-                                                      <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
-                                                  </div>
-                                        <?php }
-                                      } ?>
+                                                </div>
+                                                <!-- price-container -->
 
 
 
 
 
 
-                                          </div>
-                                          <!-- caption -->
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- product-thumb -->
-                      </div>
-
-
-
-
-
-                      <!-- div -->
-
+                                            <?php foreach ($price_saleprice as $key => $value) {
+                                              $price = $value["price"];
+                                              $saleprice = $value["sale_price"]; ?>
+                                                <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                        <div class="label-product label_sale">
+                                                            <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                        </div>
+                                                <?php }
+                                            } ?>
 
 
 
 
 
 
-                      <!-- product-layout -->
+                                            </div>
+                                            <!-- caption -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product-thumb -->
+                        </div>
 
 
-            <?php } ?>
+
+
+
+                        <!-- div -->
+
+
+
+
+
+
+
+                        <!-- product-layout -->
+
+
+                <?php } ?>
 
 
                 </div>
@@ -1813,50 +1041,48 @@ if (isset($_GET["type"])) {
 
 
 
-        <?php if ($totalRecords > 10) {
-          $type = $_GET["type"] ?>
-                  <div class="toolbar toolbar-products toolbar-bottom" id="pagination">
-                      <div class="pages ajax_pagination">
+            <?php if ($totalRecords > 10) {
+              $type = $_GET["type"] ?>
+                    <div class="toolbar toolbar-products toolbar-bottom" id="pagination">
+                        <div class="pages ajax_pagination">
 
-                          <ul class="pagination">
-                        <?php
-
-
-
-                        if ($currentPage > 1) {
-                          echo '<li class="pagination-next"><a href="?type=' . $type . '&page=' . ($currentPage - 1) . '"> &lt;</a></li>';
-                        }
-
-                        if ($totalPages <= 5) {
-                          // Display all available pages if there are 5 or fewer
-                          for ($i = 1; $i <= $totalPages; $i++) {
-                            if ($i == $currentPage) {
-                              echo '<li class="active"><span>' . $i . '</span></li>';
-                            } else {
-                              echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
-                            }
-                          }
-                        } else {
-                          // Display the current page and two pages before and after it
-                          $startPage = max(1, $currentPage - 2);
-                          $endPage = min($totalPages, $currentPage + 2);
-
-                          for ($i = $startPage; $i <= $endPage; $i++) {
-                            if ($i == $currentPage) {
-                              echo '<li class="active"><span>' . $i . '</span></li>';
-                            } else {
-                              echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
-                            }
-                          }
-                        }
-
-                        if ($currentPage < $totalPages) {
-                          echo '<li class="pagination-next"><a href="?page=' . ($currentPage + 1) . '"> &gt;</a></li>';
-                        }
-
-                        ?>
+                            <ul class="pagination">
+                                <?php
 
 
+
+                                if ($currentPage > 1) {
+                                  echo '<li class="pagination-next"><a href="?type=' . $type . '&page=' . ($currentPage - 1) . '"> &lt;</a></li>';
+                                }
+
+                                if ($totalPages <= 5) {
+                                  // Display all available pages if there are 5 or fewer
+                                  for ($i = 1; $i <= $totalPages; $i++) {
+                                    if ($i == $currentPage) {
+                                      echo '<li class="active"><span>' . $i . '</span></li>';
+                                    } else {
+                                      echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
+                                    }
+                                  }
+                                } else {
+                                  // Display the current page and two pages before and after it
+                                  $startPage = max(1, $currentPage - 2);
+                                  $endPage = min($totalPages, $currentPage + 2);
+
+                                  for ($i = $startPage; $i <= $endPage; $i++) {
+                                    if ($i == $currentPage) {
+                                      echo '<li class="active"><span>' . $i . '</span></li>';
+                                    } else {
+                                      echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
+                                    }
+                                  }
+                                }
+
+                                if ($currentPage < $totalPages) {
+                                  echo '<li class="pagination-next"><a href="?page=' . ($currentPage + 1) . '"> &gt;</a></li>';
+                                }
+
+                                ?>
 
 
 
@@ -1871,210 +1097,761 @@ if (isset($_GET["type"])) {
 
 
 
-                          </ul>
-
-                      </div>
-                      <div class="toolbar-amount">
 
 
-                          <span>Showing 1 to 9 of 13 items
-                          </span>
-                      </div>
-                  </div>
-        <?php } ?>
+                            </ul>
 
-      <?php   $data=ob_get_clean();
-    echo $data;}else if ($_GET["type"] == "All") { ob_start(); ?>
-
-<div class="row" id="custom-products">
-                                        <?php
-
-                                        $cardsPerPage = 10;
-                                        $totalRecords = DatabaseManager::select("books", "count(id) as cid")[0]["cid"];
-                                        $totalPages = ceil($totalRecords / $cardsPerPage); //paginaion loop limit &Workin
-                                        $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
-                                        $offset = ($currentPage - 1) * $cardsPerPage;
-                                        $query = "SELECT * FROM your_table ";
+                        </div>
+                        <div class="toolbar-amount">
 
 
-                                        $arru = DatabaseManager::select("books left join categories on categories.id=books.category_id LIMIT $offset, $cardsPerPage", "books.id as ID, title as Title, image_name as Image ,category_id as catId,categories.name as catName");
+                            <span>Showing 1 to 9 of 13 items
+                            </span>
+                        </div>
+                    </div>
+            <?php } ?>
+
+
+          <?php $data = ob_get_clean();
+          echo $data;
+  } else if ($_GET["type"] == "New Arrivals") {
+    ob_start(); ?>
+
+                    <div class="row" id="custom-products">
+
+
+                    <?php
+
+                    $cardsPerPage = 10;
+                    $totalRecords = DatabaseManager::select("books", "count(id) as cid", "views>100")[0]["cid"];
+                    $totalPages = ceil($totalRecords / $cardsPerPage); //paginaion loop limit &Workin
+                    $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
+                    $offset = ($currentPage - 1) * $cardsPerPage;
+
+
+
+                    $arru = DatabaseManager::select("books left join categories on categories.id=books.category_id ", "books.id as ID, title as Title, image_name as Image ,category_id as catId,categories.name as catName", "date_added >= DATE_SUB(NOW(), INTERVAL 30 DAY) LIMIT $offset, $cardsPerPage");
 
 
 
 
-                                        for ($i = 0; $i < ((count($arru) > 10) ? 10 : count($arru)); $i++) {
+                    for ($i = 0; $i < ((count($arru) > 10) ? 10 : count($arru)); $i++) {
 
-                                            $BookTitle = $arru[$i]["Title"];
-                                            $imagename = $arru[$i]["Image"];
-                                            $Bookid = $arru[$i]["ID"];
-                                            $catId = $arru[$i]["catId"];
-                                            $catName = $arru[$i]["catName"];
-                                            $htmlprodSec = '';
-                                            // ob_start();
-                                            ?>
-                                        <!-- div -->
+                      $BookTitle = $arru[$i]["Title"];
+                      $imagename = $arru[$i]["Image"];
+                      $Bookid = $arru[$i]["ID"];
+                      $catId = $arru[$i]["catId"];
+                      $catName = $arru[$i]["catName"];
+                      $htmlprodSec = '';
+                      // ob_start();
+                      ?>
+                            <!-- div -->
 
-                                        <div class="product-layout product-list col-xs-12 product-item">
-                                            <div class="product-thumb">
-                                                <div class="item item1">
-                                                    <div class="item-inner">
-                                                        <div class="caption-top">
+                            <div class="product-layout product-list col-xs-12 product-item">
+                                <div class="product-thumb">
+                                    <div class="item item1">
+                                        <div class="item-inner">
+                                            <div class="caption-top">
 
-                                                            <p class="manufacture-product">
-                                                                <a href="../vendors@q=Little&#32;Green&#32;Works.php"
-                                                                    title="Little Green Works"><?php echo $catName ?></a>
+                                                <p class="manufacture-product">
+                                                    <a href="../vendors@q=Little&#32;Green&#32;Works.php"
+                                                        title="Little Green Works"><?php echo $catName ?></a>
+                                                </p>
+
+                                                <h4 class="product-name">
+                                                    <a
+                                                        href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?bookid=<?php echo $Bookid ?>">
+                                    <?php echo $BookTitle ?>
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="box-border">
+                                                <div class="image images-container">
+                                                    <div class="inner">
+                                                        <div class="box-label">
+                                                        </div>
+                                                        <div class="image rotate-image-container">
+
+                                                            <a href="../pages/singleProductPage.php?bookid=<?php echo $Bookid ?>" class="">
+                                                                <img class="img-responsive has-rotator img-default-image img-cate-1613090193460-collection-page"
+                                                                    src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "" : "../"; ?>images/products/<?php echo $imagename ?>"
+                                                                    alt="<?php echo $Bookid ?>">
+
+
+
+
+                                                                <input type="hidden"
+                                                                    value="//smartbook-theme.myshopify.com/images/products/11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg?v=1552406840"
+                                                                    class="img-default-1613090193460-collection-page" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            </a>
+
+
+                                                        </div>
+                                                        <div class="action-links">
+                                                            <button class="button btn-cart 
+    _addtocart" type="button" data-toggle="tooltip" data-loading-text="Loading..." title="Add to Cart"
+                                                                data-original-title="<?php echo $Bookid ?>"
+                                                                data-useless-attr="cart.add('14458099466292');">
+                                                                <span>Add to Cart</span>
+                                                            </button>
+
+
+                                                            <button class="btn-wishlist _addWishlist button btn-default "
+                                                                data-product-handle="copy-of-a-wing-and-a-prayer" type="button"
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                data-original-title="<?php echo $Bookid ?>">
+                                                                <span>Add to Wish List</span>
+                                                            </button>
+
+
+                                                            <button class="button btn-compare" type="button" data-toggle="tooltip"
+                                                                title="View Details"
+                                                                onclick="location.href='singleProductPage.php?bookid=<?php echo $Bookid ?>';">
+                                                                <span>View Details</span>
+                                                            </button>
+
+                                                            <button class="button btn-quickview quickview" type="button" title="Quick View"
+                                                                data-toggle="modal" data-target="#productModal"
+                                                                data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
+                                                                <span>Quick View</span>
+                                                            </button>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- image -->
+                                                <div class="caption">
+
+
+                                                    <div class="price-box">
+
+                                                <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+                                                foreach ($price_saleprice as $key => $value) {
+                                                  $price = $value["price"];
+                                                  $saleprice = $value["sale_price"]; ?>
+
+
+                                                    <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                <p class="special-price">
+                                                                    <span class="price">
+                                                                        <span class="money" data-currency-usd="$<?php echo $saleprice ?>">
+                                                                            $<?php echo $saleprice ?>
+                                                                        </span>
+                                                                    </span>
+                                                                </p>
+                                                    <?php } ?>
+                                                            <p class="old-price">
+                                                                <span class="price">
+                                                                    <span class="money" data-currency-usd="$<?php echo $price; ?>">
+                                                                        $<?php echo $price; ?>
+                                                                    </span>
+                                                                </span>
                                                             </p>
 
-                                                            <h4 class="product-name">
-                                                                <a
-                                                                    href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?bookid=<?php echo $Bookid ?>">
-                                                                    <?php echo $BookTitle ?>
-                                                                </a>
-                                                            </h4>
-                                                        </div>
-                                                        <div class="box-border">
-                                                            <div class="image images-container">
-                                                                <div class="inner">
-                                                                    <div class="box-label">
-                                                                    </div>
-                                                                    <div class="image rotate-image-container">
+                                                <?php } ?>
 
-                                                                        <a href="../pages/singleProductPage.php?bookid=<?php echo $Bookid ?>"
-                                                                            class="">
-                                                                            <img class="img-responsive has-rotator img-default-image img-cate-1613090193460-collection-page"
-                                                                                src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "" : "../"; ?>images/products/<?php echo $imagename ?>"
-                                                                                alt="<?php echo $Bookid ?>">
-
-
-
-
-                                                                            <input type="hidden"
-                                                                                value="//smartbook-theme.myshopify.com/images/products/11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg?v=1552406840"
-                                                                                class="img-default-1613090193460-collection-page" />
+                                                    </div>
+                                                    <!-- price-container -->
 
 
 
 
 
 
-
-
-
-
-
-
-
-                                                                        </a>
-
-
-                                                                    </div>
-                                                                    <div class="action-links">
-                                                                        <button class="button btn-cart 
-    _addtocart" type="button" data-toggle="tooltip" data-loading-text="Loading..." title="Add to Cart"
-                                                                            data-original-title="<?php echo $Bookid ?>"
-                                                                            data-useless-attr="cart.add('14458099466292');">
-                                                                            <span>Add to Cart</span>
-                                                                        </button>
-
-
-                                                                        <button
-                                                                            class="btn-wishlist _addWishlist button btn-default "
-                                                                            data-product-handle="copy-of-a-wing-and-a-prayer"
-                                                                            type="button" data-toggle="tooltip"
-                                                                            title="Add to Wish List"
-                                                                            data-original-title="<?php echo $Bookid ?>">
-                                                                            <span>Add to Wish List</span>
-                                                                        </button>
-
-
-                                                                        <button class="button btn-compare" type="button"
-                                                                            data-toggle="tooltip" title="View Details"
-                                                                            onclick="location.href='singleProductPage.php?bookid=<?php echo $Bookid ?>';">
-                                                                            <span>View Details</span>
-                                                                        </button>
-
-                                                                        <button class="button btn-quickview quickview"
-                                                                            type="button" title="Quick View"
-                                                                            data-toggle="modal"
-                                                                            data-target="#productModal"
-                                                                            data-book_id='<?php echo $Bookid ?>'
-                                                                            data-original-title="Quick View">
-                                                                            <span>Quick View</span>
-                                                                        </button>
-
-                                                                    </div>
-                                                                </div>
+                                            <?php foreach ($price_saleprice as $key => $value) {
+                                              $price = $value["price"];
+                                              $saleprice = $value["sale_price"]; ?>
+                                                <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                            <div class="label-product label_sale">
+                                                                <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
                                                             </div>
-                                                            <!-- image -->
-                                                            <div class="caption">
+                                                <?php }
+                                            } ?>
 
 
-                                                                <div class="price-box">
-
-                                                                    <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
-                                                                                                    foreach ($price_saleprice as $key => $value) {
-                                                                                                        $price = $value["price"];
-                                                                                                        $saleprice = $value["sale_price"]; ?>
 
 
-                                                                    <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+
+
+                                                </div>
+                                                <!-- caption -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product-thumb -->
+                            </div>
+
+
+
+
+
+                            <!-- div -->
+
+
+
+
+
+
+
+                            <!-- product-layout -->
+
+
+                <?php } ?>
+
+
+                    </div>
+
+
+
+
+            <?php if ($totalRecords > 10) {
+              $type = $_GET["type"] ?>
+                        <div class="toolbar toolbar-products toolbar-bottom" id="pagination">
+                            <div class="pages ajax_pagination">
+
+                                <ul class="pagination">
+                                <?php
+
+
+
+                                if ($currentPage > 1) {
+                                  echo '<li class="pagination-next"><a href="?type=' . $type . '&page=' . ($currentPage - 1) . '"> &lt;</a></li>';
+                                }
+
+                                if ($totalPages <= 5) {
+                                  // Display all available pages if there are 5 or fewer
+                                  for ($i = 1; $i <= $totalPages; $i++) {
+                                    if ($i == $currentPage) {
+                                      echo '<li class="active"><span>' . $i . '</span></li>';
+                                    } else {
+                                      echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
+                                    }
+                                  }
+                                } else {
+                                  // Display the current page and two pages before and after it
+                                  $startPage = max(1, $currentPage - 2);
+                                  $endPage = min($totalPages, $currentPage + 2);
+
+                                  for ($i = $startPage; $i <= $endPage; $i++) {
+                                    if ($i == $currentPage) {
+                                      echo '<li class="active"><span>' . $i . '</span></li>';
+                                    } else {
+                                      echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
+                                    }
+                                  }
+                                }
+
+                                if ($currentPage < $totalPages) {
+                                  echo '<li class="pagination-next"><a href="?page=' . ($currentPage + 1) . '"> &gt;</a></li>';
+                                }
+
+                                ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </ul>
+
+                            </div>
+                            <div class="toolbar-amount">
+
+
+                                <span>Showing 1 to 9 of 13 items
+                                </span>
+                            </div>
+                        </div>
+            <?php } ?>
+
+          <?php $data = ob_get_clean();
+          echo $data;
+  } else if ($_GET["type"] == "Special offer") {
+    ob_start(); ?>
+
+                        <div class="row" id="custom-products">
+
+
+                    <?php
+
+                    $cardsPerPage = 10;
+                    $totalRecords = DatabaseManager::select("books", "count(id) as cid", "views>100")[0]["cid"];
+                    $totalPages = ceil($totalRecords / $cardsPerPage); //paginaion loop limit &Workin
+                    $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
+                    $offset = ($currentPage - 1) * $cardsPerPage;
+
+
+
+                    $arru = DatabaseManager::select("books left join categories on categories.id=books.category_id inner join book_details on books.id=book_details.book_id", "books.id as ID, title as Title, image_name as Image ,category_id as catId,categories.name as catName", "sale_price>(0.5*price) LIMIT $offset, $cardsPerPage");
+
+
+
+
+                    for ($i = 0; $i < ((count($arru) > 10) ? 10 : count($arru)); $i++) {
+
+                      $BookTitle = $arru[$i]["Title"];
+                      $imagename = $arru[$i]["Image"];
+                      $Bookid = $arru[$i]["ID"];
+                      $catId = $arru[$i]["catId"];
+                      $catName = $arru[$i]["catName"];
+                      $htmlprodSec = '';
+                      // ob_start();
+                      ?>
+                                <!-- div -->
+
+                                <div class="product-layout product-list col-xs-12 product-item">
+                                    <div class="product-thumb">
+                                        <div class="item item1">
+                                            <div class="item-inner">
+                                                <div class="caption-top">
+
+                                                    <p class="manufacture-product">
+                                                        <a href="../vendors@q=Little&#32;Green&#32;Works.php"
+                                                            title="Little Green Works"><?php echo $catName ?></a>
+                                                    </p>
+
+                                                    <h4 class="product-name">
+                                                        <a
+                                                            href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?bookid=<?php echo $Bookid ?>">
+                                    <?php echo $BookTitle ?>
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="box-border">
+                                                    <div class="image images-container">
+                                                        <div class="inner">
+                                                            <div class="box-label">
+                                                            </div>
+                                                            <div class="image rotate-image-container">
+
+                                                                <a href="../pages/singleProductPage.php?bookid=<?php echo $Bookid ?>" class="">
+                                                                    <img class="img-responsive has-rotator img-default-image img-cate-1613090193460-collection-page"
+                                                                        src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "" : "../"; ?>images/products/<?php echo $imagename ?>"
+                                                                        alt="<?php echo $Bookid ?>">
+
+
+
+
+                                                                    <input type="hidden"
+                                                                        value="//smartbook-theme.myshopify.com/images/products/11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg?v=1552406840"
+                                                                        class="img-default-1613090193460-collection-page" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                </a>
+
+
+                                                            </div>
+                                                            <div class="action-links">
+                                                                <button class="button btn-cart 
+    _addtocart" type="button" data-toggle="tooltip" data-loading-text="Loading..." title="Add to Cart"
+                                                                    data-original-title="<?php echo $Bookid ?>"
+                                                                    data-useless-attr="cart.add('14458099466292');">
+                                                                    <span>Add to Cart</span>
+                                                                </button>
+
+
+                                                                <button class="btn-wishlist _addWishlist button btn-default "
+                                                                    data-product-handle="copy-of-a-wing-and-a-prayer" type="button"
+                                                                    data-toggle="tooltip" title="Add to Wish List"
+                                                                    data-original-title="<?php echo $Bookid ?>">
+                                                                    <span>Add to Wish List</span>
+                                                                </button>
+
+
+                                                                <button class="button btn-compare" type="button" data-toggle="tooltip"
+                                                                    title="View Details"
+                                                                    onclick="location.href='singleProductPage.php?bookid=<?php echo $Bookid ?>';">
+                                                                    <span>View Details</span>
+                                                                </button>
+
+                                                                <button class="button btn-quickview quickview" type="button" title="Quick View"
+                                                                    data-toggle="modal" data-target="#productModal"
+                                                                    data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
+                                                                    <span>Quick View</span>
+                                                                </button>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- image -->
+                                                    <div class="caption">
+
+
+                                                        <div class="price-box">
+
+                                                <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+                                                foreach ($price_saleprice as $key => $value) {
+                                                  $price = $value["price"];
+                                                  $saleprice = $value["sale_price"]; ?>
+
+
+                                                    <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
                                                                     <p class="special-price">
                                                                         <span class="price">
-                                                                            <span class="money"
-                                                                                data-currency-usd="$<?php echo $saleprice ?>">
+                                                                            <span class="money" data-currency-usd="$<?php echo $saleprice ?>">
                                                                                 $<?php echo $saleprice ?>
                                                                             </span>
                                                                         </span>
                                                                     </p>
-                                                                    <?php } ?>
+                                                    <?php } ?>
+                                                                <p class="old-price">
+                                                                    <span class="price">
+                                                                        <span class="money" data-currency-usd="$<?php echo $price; ?>">
+                                                                            $<?php echo $price; ?>
+                                                                        </span>
+                                                                    </span>
+                                                                </p>
+
+                                                <?php } ?>
+
+                                                        </div>
+                                                        <!-- price-container -->
+
+
+
+
+
+
+                                            <?php foreach ($price_saleprice as $key => $value) {
+                                              $price = $value["price"];
+                                              $saleprice = $value["sale_price"]; ?>
+                                                <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                <div class="label-product label_sale">
+                                                                    <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                                </div>
+                                                <?php }
+                                            } ?>
+
+
+
+
+
+
+                                                    </div>
+                                                    <!-- caption -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- product-thumb -->
+                                </div>
+
+
+
+
+
+                                <!-- div -->
+
+
+
+
+
+
+
+                                <!-- product-layout -->
+
+
+                <?php } ?>
+
+
+                        </div>
+
+
+
+
+            <?php if ($totalRecords > 10) {
+              $type = $_GET["type"] ?>
+                            <div class="toolbar toolbar-products toolbar-bottom" id="pagination">
+                                <div class="pages ajax_pagination">
+
+                                    <ul class="pagination">
+                                <?php
+
+
+
+                                if ($currentPage > 1) {
+                                  echo '<li class="pagination-next"><a href="?type=' . $type . '&page=' . ($currentPage - 1) . '"> &lt;</a></li>';
+                                }
+
+                                if ($totalPages <= 5) {
+                                  // Display all available pages if there are 5 or fewer
+                                  for ($i = 1; $i <= $totalPages; $i++) {
+                                    if ($i == $currentPage) {
+                                      echo '<li class="active"><span>' . $i . '</span></li>';
+                                    } else {
+                                      echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
+                                    }
+                                  }
+                                } else {
+                                  // Display the current page and two pages before and after it
+                                  $startPage = max(1, $currentPage - 2);
+                                  $endPage = min($totalPages, $currentPage + 2);
+
+                                  for ($i = $startPage; $i <= $endPage; $i++) {
+                                    if ($i == $currentPage) {
+                                      echo '<li class="active"><span>' . $i . '</span></li>';
+                                    } else {
+                                      echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
+                                    }
+                                  }
+                                }
+
+                                if ($currentPage < $totalPages) {
+                                  echo '<li class="pagination-next"><a href="?page=' . ($currentPage + 1) . '"> &gt;</a></li>';
+                                }
+
+                                ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </ul>
+
+                                </div>
+                                <div class="toolbar-amount">
+
+
+                                    <span>Showing 1 to 9 of 13 items
+                                    </span>
+                                </div>
+                            </div>
+            <?php } ?>
+
+          <?php $data = ob_get_clean();
+          echo $data;
+  } else if ($_GET["type"] == "category") {
+    ob_start(); ?>
+
+                            <div class="row" id="custom-products">
+
+
+                    <?php
+                    $catid = $_GET["catid"];
+                    $cardsPerPage = 10;
+                    $totalRecords = DatabaseManager::select("books", "count(id) as cid", "category_id=$catid")[0]["cid"];
+                    $totalPages = ceil($totalRecords / $cardsPerPage); //paginaion loop limit &Workin
+                    $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
+                    $offset = ($currentPage - 1) * $cardsPerPage;
+
+
+
+                    $arru = DatabaseManager::select("books left join categories on categories.id=books.category_id", "books.id as ID, title as Title, image_name as Image ,category_id as catId,categories.name as catName", "category_id=$catid LIMIT $offset, $cardsPerPage");
+
+
+
+
+                    for ($i = 0; $i < ((count($arru) > 10) ? 10 : count($arru)); $i++) {
+
+                      $BookTitle = $arru[$i]["Title"];
+                      $imagename = $arru[$i]["Image"];
+                      $Bookid = $arru[$i]["ID"];
+                      $catId = $arru[$i]["catId"];
+                      $catName = $arru[$i]["catName"];
+                      $htmlprodSec = '';
+                      // ob_start();
+                      ?>
+                                    <!-- div -->
+
+                                    <div class="product-layout product-list col-xs-12 product-item">
+                                        <div class="product-thumb">
+                                            <div class="item item1">
+                                                <div class="item-inner">
+                                                    <div class="caption-top">
+
+                                                        <p class="manufacture-product">
+                                                            <a href="../vendors@q=Little&#32;Green&#32;Works.php"
+                                                                title="Little Green Works"><?php echo $catName ?></a>
+                                                        </p>
+
+                                                        <h4 class="product-name">
+                                                            <a
+                                                                href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?bookid=<?php echo $Bookid ?>">
+                                    <?php echo $BookTitle ?>
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="box-border">
+                                                        <div class="image images-container">
+                                                            <div class="inner">
+                                                                <div class="box-label">
+                                                                </div>
+                                                                <div class="image rotate-image-container">
+
+                                                                    <a href="../pages/singleProductPage.php?bookid=<?php echo $Bookid ?>" class="">
+                                                                        <img class="img-responsive has-rotator img-default-image img-cate-1613090193460-collection-page"
+                                                                            src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "" : "../"; ?>images/products/<?php echo $imagename ?>"
+                                                                            alt="<?php echo $Bookid ?>">
+
+
+
+
+                                                                        <input type="hidden"
+                                                                            value="//smartbook-theme.myshopify.com/images/products/11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg?v=1552406840"
+                                                                            class="img-default-1613090193460-collection-page" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    </a>
+
+
+                                                                </div>
+                                                                <div class="action-links">
+                                                                    <button class="button btn-cart 
+    _addtocart" type="button" data-toggle="tooltip" data-loading-text="Loading..." title="Add to Cart"
+                                                                        data-original-title="<?php echo $Bookid ?>"
+                                                                        data-useless-attr="cart.add('14458099466292');">
+                                                                        <span>Add to Cart</span>
+                                                                    </button>
+
+
+                                                                    <button class="btn-wishlist _addWishlist button btn-default "
+                                                                        data-product-handle="copy-of-a-wing-and-a-prayer" type="button"
+                                                                        data-toggle="tooltip" title="Add to Wish List"
+                                                                        data-original-title="<?php echo $Bookid ?>">
+                                                                        <span>Add to Wish List</span>
+                                                                    </button>
+
+
+                                                                    <button class="button btn-compare" type="button" data-toggle="tooltip"
+                                                                        title="View Details"
+                                                                        onclick="location.href='singleProductPage.php?bookid=<?php echo $Bookid ?>';">
+                                                                        <span>View Details</span>
+                                                                    </button>
+
+                                                                    <button class="button btn-quickview quickview" type="button" title="Quick View"
+                                                                        data-toggle="modal" data-target="#productModal"
+                                                                        data-book_id='<?php echo $Bookid ?>' data-original-title="Quick View">
+                                                                        <span>Quick View</span>
+                                                                    </button>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- image -->
+                                                        <div class="caption">
+
+
+                                                            <div class="price-box">
+
+                                                <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+                                                foreach ($price_saleprice as $key => $value) {
+                                                  $price = $value["price"];
+                                                  $saleprice = $value["sale_price"]; ?>
+
+
+                                                    <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                        <p class="special-price">
+                                                                            <span class="price">
+                                                                                <span class="money" data-currency-usd="$<?php echo $saleprice ?>">
+                                                                                    $<?php echo $saleprice ?>
+                                                                                </span>
+                                                                            </span>
+                                                                        </p>
+                                                    <?php } ?>
                                                                     <p class="old-price">
                                                                         <span class="price">
-                                                                            <span class="money"
-                                                                                data-currency-usd="$<?php echo $price; ?>">
+                                                                            <span class="money" data-currency-usd="$<?php echo $price; ?>">
                                                                                 $<?php echo $price; ?>
                                                                             </span>
                                                                         </span>
                                                                     </p>
 
-                                                                    <?php } ?>
-
-                                                                </div>
-                                                                <!-- price-container -->
-
-
-
-
-
-
-                                                                <?php foreach ($price_saleprice as $key => $value) {
-                                                                                                    $price = $value["price"];
-                                                                                                    $saleprice = $value["sale_price"]; ?>
-                                                                <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
-                                                                <div class="label-product label_sale">
-                                                                    <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
-                                                                </div>
-                                                                <?php }
-                                                                                                } ?>
-
-
-
-
-
+                                                <?php } ?>
 
                                                             </div>
-                                                            <!-- caption -->
+                                                            <!-- price-container -->
+
+
+
+
+
+
+                                            <?php foreach ($price_saleprice as $key => $value) {
+                                              $price = $value["price"];
+                                              $saleprice = $value["sale_price"]; ?>
+                                                <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                    <div class="label-product label_sale">
+                                                                        <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                                    </div>
+                                                <?php }
+                                            } ?>
+
+
+
+
+
+
                                                         </div>
+                                                        <!-- caption -->
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- product-thumb -->
                                         </div>
+                                        <!-- product-thumb -->
+                                    </div>
 
 
 
 
 
-                                        <!-- div -->
+                                    <!-- div -->
 
 
 
@@ -2082,85 +1859,368 @@ if (isset($_GET["type"])) {
 
 
 
-                                        <!-- product-layout -->
+                                    <!-- product-layout -->
 
 
+                <?php } ?>
+
+
+                            </div>
+
+
+
+
+            <?php if ($totalRecords > 10) {
+              $type = $_GET["type"] ?>
+                                <div class="toolbar toolbar-products toolbar-bottom" id="pagination">
+                                    <div class="pages ajax_pagination">
+
+                                        <ul class="pagination">
+                                <?php
+
+
+
+                                if ($currentPage > 1) {
+                                  echo '<li class="pagination-next"><a href="?type=' . $type . '&page=' . ($currentPage - 1) . '"> &lt;</a></li>';
+                                }
+
+                                if ($totalPages <= 5) {
+                                  // Display all available pages if there are 5 or fewer
+                                  for ($i = 1; $i <= $totalPages; $i++) {
+                                    if ($i == $currentPage) {
+                                      echo '<li class="active"><span>' . $i . '</span></li>';
+                                    } else {
+                                      echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
+                                    }
+                                  }
+                                } else {
+                                  // Display the current page and two pages before and after it
+                                  $startPage = max(1, $currentPage - 2);
+                                  $endPage = min($totalPages, $currentPage + 2);
+
+                                  for ($i = $startPage; $i <= $endPage; $i++) {
+                                    if ($i == $currentPage) {
+                                      echo '<li class="active"><span>' . $i . '</span></li>';
+                                    } else {
+                                      echo '<li><a href="products.php?type=' . $type . '&page=' . $i . '">' . $i . '</a></li>';
+                                    }
+                                  }
+                                }
+
+                                if ($currentPage < $totalPages) {
+                                  echo '<li class="pagination-next"><a href="?page=' . ($currentPage + 1) . '"> &gt;</a></li>';
+                                }
+
+                                ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        </ul>
+
+                                    </div>
+                                    <div class="toolbar-amount">
+
+
+                                        <span>Showing 1 to 9 of 13 items
+                                        </span>
+                                    </div>
+                                </div>
+            <?php } ?>
+
+          <?php $data = ob_get_clean();
+          echo $data;
+  } else if ($_GET["type"] == "All") {
+    ob_start(); ?>
+
+              <div class="row" id="custom-products">
+                                              <?php
+
+                                              $cardsPerPage = 10;
+                                              $totalRecords = DatabaseManager::select("books", "count(id) as cid")[0]["cid"];
+                                              $totalPages = ceil($totalRecords / $cardsPerPage); //paginaion loop limit &Workin
+                                              $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
+                                              $offset = ($currentPage - 1) * $cardsPerPage;
+                                              $query = "SELECT * FROM your_table ";
+
+
+                                              $arru = DatabaseManager::select("books left join categories on categories.id=books.category_id LIMIT $offset, $cardsPerPage", "books.id as ID, title as Title, image_name as Image ,category_id as catId,categories.name as catName");
+
+
+
+
+                                              for ($i = 0; $i < ((count($arru) > 10) ? 10 : count($arru)); $i++) {
+
+                                                $BookTitle = $arru[$i]["Title"];
+                                                $imagename = $arru[$i]["Image"];
+                                                $Bookid = $arru[$i]["ID"];
+                                                $catId = $arru[$i]["catId"];
+                                                $catName = $arru[$i]["catName"];
+                                                $htmlprodSec = '';
+                                                // ob_start();
+                                                ?>
+                                                        <!-- div -->
+
+                                                        <div class="product-layout product-list col-xs-12 product-item">
+                                                            <div class="product-thumb">
+                                                                <div class="item item1">
+                                                                    <div class="item-inner">
+                                                                        <div class="caption-top">
+
+                                                                            <p class="manufacture-product">
+                                                                                <a href="../vendors@q=Little&#32;Green&#32;Works.php"
+                                                                                    title="Little Green Works"><?php echo $catName ?></a>
+                                                                            </p>
+
+                                                                            <h4 class="product-name">
+                                                                                <a
+                                                                                    href<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?bookid=<?php echo $Bookid ?>">
+                                                                    <?php echo $BookTitle ?>
+                                                                </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="box-border">
+                                                                            <div class="image images-container">
+                                                                                <div class="inner">
+                                                                                    <div class="box-label">
+                                                                                    </div>
+                                                                                    <div class="image rotate-image-container">
+
+                                                                                        <a href="../pages/singleProductPage.php?bookid=<?php echo $Bookid ?>"
+                                                                                            class="">
+                                                                                            <img class="img-responsive has-rotator img-default-image img-cate-1613090193460-collection-page"
+                                                                                                src="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "" : "../"; ?>images/products/<?php echo $imagename ?>"
+                                                                                                alt="<?php echo $Bookid ?>">
+
+
+
+
+                                                                                            <input type="hidden"
+                                                                                                value="//smartbook-theme.myshopify.com/images/products/11-700x700_458ce7bf-cb27-49db-88eb-882e4693f2b4_600x600.jpg?v=1552406840"
+                                                                                                class="img-default-1613090193460-collection-page" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                        </a>
+
+
+                                                                                    </div>
+                                                                                    <div class="action-links">
+                                                                                        <button class="button btn-cart 
+    _addtocart" type="button" data-toggle="tooltip" data-loading-text="Loading..." title="Add to Cart"
+                                                                                            data-original-title="<?php echo $Bookid ?>"
+                                                                                            data-useless-attr="cart.add('14458099466292');">
+                                                                                            <span>Add to Cart</span>
+                                                                                        </button>
+
+
+                                                                                        <button
+                                                                                            class="btn-wishlist _addWishlist button btn-default "
+                                                                                            data-product-handle="copy-of-a-wing-and-a-prayer"
+                                                                                            type="button" data-toggle="tooltip"
+                                                                                            title="Add to Wish List"
+                                                                                            data-original-title="<?php echo $Bookid ?>">
+                                                                                            <span>Add to Wish List</span>
+                                                                                        </button>
+
+
+                                                                                        <button class="button btn-compare" type="button"
+                                                                                            data-toggle="tooltip" title="View Details"
+                                                                                            onclick="location.href='singleProductPage.php?bookid=<?php echo $Bookid ?>';">
+                                                                                            <span>View Details</span>
+                                                                                        </button>
+
+                                                                                        <button class="button btn-quickview quickview"
+                                                                                            type="button" title="Quick View"
+                                                                                            data-toggle="modal"
+                                                                                            data-target="#productModal"
+                                                                                            data-book_id='<?php echo $Bookid ?>'
+                                                                                            data-original-title="Quick View">
+                                                                                            <span>Quick View</span>
+                                                                                        </button>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- image -->
+                                                                            <div class="caption">
+
+
+                                                                                <div class="price-box">
+
+                                                                          <?php $price_saleprice = DatabaseManager::select("book_details", "price , sale_price", "Book_id=$Bookid");
+                                                                          foreach ($price_saleprice as $key => $value) {
+                                                                            $price = $value["price"];
+                                                                            $saleprice = $value["sale_price"]; ?>
+
+
+                                                                            <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                        <p class="special-price">
+                                                                                            <span class="price">
+                                                                                                <span class="money"
+                                                                                                    data-currency-usd="$<?php echo $saleprice ?>">
+                                                                                                    $<?php echo $saleprice ?>
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </p>
+                                                                            <?php } ?>
+                                                                                      <p class="old-price">
+                                                                                          <span class="price">
+                                                                                              <span class="money"
+                                                                                                  data-currency-usd="$<?php echo $price; ?>">
+                                                                                                  $<?php echo $price; ?>
+                                                                                              </span>
+                                                                                          </span>
+                                                                                      </p>
+
+                                                                          <?php } ?>
+
+                                                                                </div>
+                                                                                <!-- price-container -->
+
+
+
+
+
+
+                                                                      <?php foreach ($price_saleprice as $key => $value) {
+                                                                        $price = $value["price"];
+                                                                        $saleprice = $value["sale_price"]; ?>
+                                                                        <?php if ($saleprice !== "0.00" && (int) $price > (int) $saleprice) { ?>
+                                                                                    <div class="label-product label_sale">
+                                                                                        <span>-<?php echo floor(((((int) $price) - ((int) $saleprice)) / ((int) $price)) * 100) ?>%</span>
+                                                                                    </div>
+                                                                        <?php }
+                                                                      } ?>
+
+
+
+
+
+
+                                                                            </div>
+                                                                            <!-- caption -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- product-thumb -->
+                                                        </div>
+
+
+
+
+
+                                                        <!-- div -->
+
+
+
+
+
+
+
+                                                        <!-- product-layout -->
+
+
+                                            <?php } ?>
+                                                  </div>
+
+                                        <?php if ($totalRecords > 10) {
+                                          ?>
+                                                    <div class="toolbar toolbar-products toolbar-bottom" id="pagination">
+                                                        <div class="pages ajax_pagination">
+
+                                                            <ul class="pagination">
+                                                        <?php
+
+
+
+                                                        if ($currentPage > 1) {
+                                                          echo '<li class="pagination-next"><a href="?page=' . ($currentPage - 1) . '"> &lt;</a></li>';
+                                                        }
+
+                                                        if ($totalPages <= 5) {
+                                                          // Display all available pages if there are 5 or fewer
+                                                          for ($i = 1; $i <= $totalPages; $i++) {
+                                                            if ($i == $currentPage) {
+                                                              echo '<li class="active"><span>' . $i . '</span></li>';
+                                                            } else {
+                                                              echo '<li><a href="products.php?page=' . $i . '">' . $i . '</a></li>';
+                                                            }
+                                                          }
+                                                        } else {
+                                                          // Display the current page and two pages before and after it
+                                                          $startPage = max(1, $currentPage - 2);
+                                                          $endPage = min($totalPages, $currentPage + 2);
+
+                                                          for ($i = $startPage; $i <= $endPage; $i++) {
+                                                            if ($i == $currentPage) {
+                                                              echo '<li class="active"><span>' . $i . '</span></li>';
+                                                            } else {
+                                                              echo '<li><a href="products.php?page=' . $i . '">' . $i . '</a></li>';
+                                                            }
+                                                          }
+                                                        }
+
+                                                        if ($currentPage < $totalPages) {
+                                                          echo '<li class="pagination-next"><a href="?page=' . ($currentPage + 1) . '"> &gt;</a></li>';
+                                                        }
+
+                                                        ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            </ul>
+
+                                                        </div>
+                                                        <div class="toolbar-amount">
+
+
+                                                            <span>Showing 1 to 9 of 13 items
+                                                            </span>
+                                                        </div>
+                                                    </div>
                                         <?php } ?>
-                                    </div>
-
-                                    <?php if ($totalRecords > 10) {
-                                        ?>
-                                    <div class="toolbar toolbar-products toolbar-bottom" id="pagination">
-                                        <div class="pages ajax_pagination">
-
-                                            <ul class="pagination">
-                                                <?php
 
 
-
-                                                    if ($currentPage > 1) {
-                                                        echo '<li class="pagination-next"><a href="?page=' . ($currentPage - 1) . '"> &lt;</a></li>';
-                                                    }
-
-                                                    if ($totalPages <= 5) {
-                                                        // Display all available pages if there are 5 or fewer
-                                                        for ($i = 1; $i <= $totalPages; $i++) {
-                                                            if ($i == $currentPage) {
-                                                                echo '<li class="active"><span>' . $i . '</span></li>';
-                                                            } else {
-                                                                echo '<li><a href="products.php?page=' . $i . '">' . $i . '</a></li>';
-                                                            }
-                                                        }
-                                                    } else {
-                                                        // Display the current page and two pages before and after it
-                                                        $startPage = max(1, $currentPage - 2);
-                                                        $endPage = min($totalPages, $currentPage + 2);
-
-                                                        for ($i = $startPage; $i <= $endPage; $i++) {
-                                                            if ($i == $currentPage) {
-                                                                echo '<li class="active"><span>' . $i . '</span></li>';
-                                                            } else {
-                                                                echo '<li><a href="products.php?page=' . $i . '">' . $i . '</a></li>';
-                                                            }
-                                                        }
-                                                    }
-
-                                                    if ($currentPage < $totalPages) {
-                                                        echo '<li class="pagination-next"><a href="?page=' . ($currentPage + 1) . '"> &gt;</a></li>';
-                                                    }
-
-                                                    ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                            </ul>
-
-                                        </div>
-                                        <div class="toolbar-amount">
-
-
-                                            <span>Showing 1 to 9 of 13 items
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <?php } ?>
-
-
-      <?php   $data=ob_get_clean();
-    echo $data;} ?>
+          <?php $data = ob_get_clean();
+          echo $data;
+  } ?>
 
 
 
@@ -2178,5 +2238,5 @@ if (isset($_GET["type"])) {
 
 
 
-      <?php
+        <?php
 } ?>

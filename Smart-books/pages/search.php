@@ -277,7 +277,7 @@
                                                                                                                     type="button"
                                                                                                                     data-toggle="tooltip"
                                                                                                                     title="View Details"
-                                                                                                                    onclick="location.href='osingleProductPage.php?bookid=<?php echo $Bookid?>;">
+                                                                                                                    onclick="location.href='singleProductPage.php?bookid=<?php echo $Bookid?>';">
                                                                                                                     <span>View
                                                                                                                         Details</span>
                                                                                                                 </button>
@@ -517,7 +517,7 @@
                                                                                                                         type="button"
                                                                                                                         data-toggle="tooltip"
                                                                                                                         title="View Details"
-                                                                                                                        onclick="location.href='osingleProductPage.php?bookid=<?php echo $Bookid?>;">
+                                                                                                                        onclick="location.href='singleProductPage.php?bookid=<?php echo $Bookid?>;">
                                                                                                                         <span>View
                                                                                                                             Details</span>
                                                                                                                     </button>

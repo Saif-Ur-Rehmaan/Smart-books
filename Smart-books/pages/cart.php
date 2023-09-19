@@ -143,6 +143,7 @@
                                                     <tr>
                                                         <td class="text-center btn-remove-product">
                                                             <a 
+                                                            onmouseup="location.reload()"
                                                             class="btn btn-danger wishlist-btn _addtocart"
                                                             type="button" 
                                                             data-toggle="tooltip" title="Remove"

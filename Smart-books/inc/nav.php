@@ -66,18 +66,17 @@
                       id="customer_login_link">
                       <span>Sign out</span>
                     </a>
-
                   <?php } else { ?>
                     <a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>login.php"
                       id="customer_login_link">
                       <span>Sign in</span>
                     </a>
+                    <li><a
+                        href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>register.php"
+                        id="customer_register_link"><span>Register</span></a></li>
                   <?php } ?>
                 </li>
 
-                <li><a
-                    href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>register.php"
-                    id="customer_register_link"><span>Register</span></a></li>
 
 
 

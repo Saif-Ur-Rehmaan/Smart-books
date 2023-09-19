@@ -6,9 +6,12 @@
     <?php
 
     include "../inc/config.php"; ?>
+<?php if(isset($_SESSION["logged_in"])){
+    header('location: ../index.php');
+    die();
+}; ?>
     <?php include "../inc/heads/wishlistHead.php" ?>
 </head>
-
 <body class="
                 home1">
     <!--[if lt IE 8]>
@@ -215,7 +218,7 @@
                 echo "<script>alert('Register yourself first! then login');</script>";
             } else if (isset($_GET['success'])) {
                 echo ($_GET['success'] == "true") ?
-                    "<script>alert('Logged in');window.location.href='login.php';</script>" :
+                    "<script>alert('Logged in');window.location.href='../index.php';</script>" :
                     "<script>alert('Error occurred');</script>";
             }else if (isset($_GET['emptyfield'])) {
                 echo "<script>alert('Error occurred: input fields cant be empty');</script>";

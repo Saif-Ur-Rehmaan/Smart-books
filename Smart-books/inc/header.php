@@ -971,52 +971,61 @@
                         <button type="button" data-toggle="dropdown" data-loading-text="Loading..."
                             class="btn dropdown-toggle">
                             <span id="cart-total">
-
-                                <?php
-                                if (isset($_SESSION["AddToCart"])) {
-                                    $ids = "";?>
-                                    <span class="txt_number">
+ 
+                      
+                               
+                                    <span class="txt_number" id="_item_count">
                                         <?php echo count($_SESSION["AddToCart"]) ?>
                                     </span>
                                     <a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php"||basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>cart.php">
-                                    <span class="txt_items">Shopping Cart </span></a>
-                                    <?php if (count($_SESSION["AddToCart"]) > 0) {
-                                        $firstKey = key($_SESSION["AddToCart"]); // Get the first key
-                                
-                                        foreach ($_SESSION["AddToCart"] as $key => $value) {
-                                            if ($key === $firstKey) {
-                                                $ids .= "$value";
-                                            } else {
-                                                $ids .= ",$value";
-                                            }
-                                        }
+                                    <span class="txt_items" id="_xyz" > Shopping Cart </span></a>
+                                                <script>
+                                                    document.getElementById("_xyz").addEventListener("click",()=>{
+                                                        let a=window.location.href='<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php") ? "pages/" : ""; ?>cart.php'
+                                                        console.log(a);
+                                                    })
+                                                </script>
+                                    <span class="total-price" id="_Total_Amount">
 
-                                        $totalSalePrice = DatabaseManager::select(
+                                    <?php 
+                                    
+                                    if (isset($_SESSION["AddToCart"])) {
+                                        $ids = "";
+                                        
+                                        if (count($_SESSION["AddToCart"]) > 0) {
+                                          $firstKey = key($_SESSION["AddToCart"]); // Get the first key
+                                      
+                                          foreach ($_SESSION["AddToCart"] as $key => $value) {
+                                            if ($key === $firstKey) {
+                                              $ids .= "$value";
+                                            } else {
+                                              $ids .= ",$value";
+                                            }
+                                          }
+                                      
+                                          $totalSalePrice = DatabaseManager::select(
                                             "books left join book_details on books.id=book_details.book_id",
                                             "SUM(sale_price)",
                                             "book_id in ($ids) AND sale_price != 0"
-                                        )[0]["SUM(sale_price)"];
-
-                                        $totalPrice = DatabaseManager::select(
+                                          )[0]["SUM(sale_price)"];
+                                      
+                                          $totalPrice = DatabaseManager::select(
                                             "books left join book_details on books.id=book_details.book_id",
                                             "SUM(price)",
                                             "book_id in ($ids) AND sale_price = 0"
-                                        )[0]["SUM(price)"];
-
-                                        $totalAmount = $totalSalePrice + $totalPrice;
-
-                                        echo "$" . number_format($totalAmount, 2);
-                                    } else { 
-                                        echo "$" . number_format(0, 2);
-                                    }
-                                } else {
-                                    ?>
-                                    <span class="txt_number">0</span>
-                                    <span class="txt_items">Shopping Cart</span>
-                                    <span class="total-price"><span class="money">$0.00</span></span>
-                                    <?php
-                                }
-                                ?>
+                                          )[0]["SUM(price)"];
+                                      
+                                          $totalAmount = $totalSalePrice + $totalPrice;
+                                      
+                                          echo "$" . number_format($totalAmount, 2);
+                                        } else {
+                                          echo "$" . number_format(0, 2);
+                                        }
+                                      } else {
+                                        echo "$0.00";
+                                      }?>
+                                    </span>
+                                
                             </span>
                         </button>
                        
