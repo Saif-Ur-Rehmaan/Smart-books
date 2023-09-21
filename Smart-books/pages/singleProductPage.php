@@ -21,7 +21,7 @@
             <?php include "../inc/header.php"; ?>
 
             <!--End of Header Area-->
-            <script type="text/javascript" defer>
+            <script defr type="text/javascript" defer>
             $(document).ready(function() {
                 // top message bar
                 if ($.cookie('alertbtn_cookie') != 'closed') {
@@ -240,7 +240,7 @@
                                             <div id="Countdown1613076168756" class="box-timer cc pp"></div>
                                         </div>
                                     </div>
-                                    <script type="text/javascript">
+                                    <script defr type="text/javascript">
                                     $(function() {
                                         $('#Countdown1613076168756').countdown({
                                             until: new Date(' 2020-10-11'),
@@ -306,7 +306,7 @@
                                                     display: none !important;
                                                 }
                                                 </style>
-                                                <script>
+                                                <script defr>
                                                 $(window).load(function() {
                                                     $('.selector-wrapper:eq(0)').hide();
                                                 });
@@ -340,7 +340,7 @@
                                                     </div>
 
 
-                                                    <script>
+                                                    <script defr>
                                                     jQuery('.swatch[data-option-index="0"] .hard').removeClass(
                                                         'soldout').addClass('available').find(':radio').removeAttr(
                                                         'disabled');
@@ -366,7 +366,7 @@
                                                     </div>
 
 
-                                                    <script>
+                                                    <script defr>
                                                     jQuery('.swatch[data-option-index="0"] .soft').removeClass(
                                                         'soldout').addClass('available').find(':radio').removeAttr(
                                                         'disabled');
@@ -392,7 +392,7 @@
                                                     </div>
 
 
-                                                    <script>
+                                                    <script defr>
                                                     jQuery('.swatch[data-option-index="0"] .audio').removeClass(
                                                         'soldout').addClass('available').find(':radio').removeAttr(
                                                         'disabled');
@@ -458,7 +458,7 @@
                                             fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a
                                             class="addthis_button_pinterest_pinit"></a> <a
                                             class="addthis_counter addthis_pill_style"></a></div>
-                                    <script type="text/javascript"
+                                    <script defr type="text/javascript"
                                         src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e">
                                     </script>
                                     <!-- AddThis Button END -->
@@ -482,7 +482,7 @@
             </div>
 
  
-            <script type="text/javascript">
+            <script defr type="text/javascript">
             function updatecartsticky(input1) {
                 if (input1 == 1) {
                     $('#form_buy_sticky').find('input[name="stickyquantity"]').val($('#form_buy').find(
@@ -499,7 +499,7 @@
 
 
 
-            <script type="text/javascript">
+            <script defr type="text/javascript">
  
             // related products	 
             $(document).ready(function() {
@@ -550,7 +550,7 @@
             //
             
             </script>
-            <script>
+            <script defr>
             $(document).ready(function() {
                 // vertical thumbs on product page
 

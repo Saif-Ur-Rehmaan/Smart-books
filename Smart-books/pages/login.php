@@ -24,7 +24,7 @@
             <?php include "../inc/header.php"; ?>
 
             <!--End of Header Area-->
-            <script type="text/javascript" defer>
+            <script defr type="text/javascript" defer>
                 $(document).ready(function () {
                     // top message bar
                     if ($.cookie('alertbtn_cookie') != 'closed') {
@@ -192,7 +192,7 @@
                     </div>
                 </div>
             </div>
-            <script>
+            <script defr>
                 /*
                   Show/hide the recover password form when requested.
                 */
@@ -215,24 +215,24 @@
             <!--End of Contact Us Area-->
             <?php
             if (isset($_GET['success']) && isset($_GET["reason"])) {
-                echo "<script>alert('Register yourself first! then login');</script>";
+                echo "<script defr>alert('Register yourself first! then login');</script>";
             } else if (isset($_GET['success'])) {
                 echo ($_GET['success'] == "true") ?
-                    "<script>alert('Logged in');window.location.href='../index.php';</script>" :
-                    "<script>alert('Error occurred');</script>";
+                    "<script defr>alert('Logged in');window.location.href='../index.php';</script>" :
+                    "<script defr>alert('Error occurred');</script>";
             }else if (isset($_GET['emptyfield'])) {
-                echo "<script>alert('Error occurred: input fields cant be empty');</script>";
+                echo "<script defr>alert('Error occurred: input fields cant be empty');</script>";
             }else if (isset($_GET['logout'])) {
-                echo "<script>alert('loggedout');</script>";
+                echo "<script defr>alert('loggedout');</script>";
             }else if (isset($_GET['emailnotfound'])) {
-                echo "<script>alert('email not found as registered one');</script>";
+                echo "<script defr>alert('email not found as registered one');</script>";
             }else if (isset($_GET['checkMail'])) {
-                echo "<script>alert('check your mail and reset password');</script>";
+                echo "<script defr>alert('check your mail and reset password');</script>";
             }
             ?>
 
 
-            <script>
+            <script defr>
                 $(document).ready(function () {
                     $('body').on('click', '[name="submitMessage"]', function () {
                         if ($('#contact_accept_agree').is(':checked')) {
@@ -255,7 +255,7 @@
         <?php include "../inc/newsletterpopup.php"; ?>
         <?php include "../inc/scripts.php" ?>
         <?php include "../inc/custom_card_JQ.php" ?>
-        <script>
+        <script defr>
             $(document).ready(() => {
                 $('#role').on('change', function () {
                     // Get the selected value

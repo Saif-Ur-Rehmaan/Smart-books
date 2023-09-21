@@ -20,7 +20,7 @@
             <?php include "../inc/header.php"; ?>
 
             <!--End of Header Area-->
-            <script type="text/javascript" defer>
+            <script defr type="text/javascript" defer>
             $(document).ready(function() {
                 // top message bar
                 if ($.cookie('alertbtn_cookie') != 'closed') {
@@ -661,7 +661,7 @@
                                                                 echo "search something by categiry or book title";
                                                             }?>
                                                         </div>
-                                                        <script>
+                                                        <script defr>
                                                         $(document).ready(function() {
                                                             $('a[href="#tab-15430604294250"]').trigger("click");
                                                             $(".tab-container-1543060429425").owlCarousel({

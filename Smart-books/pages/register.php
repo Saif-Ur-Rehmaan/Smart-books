@@ -21,7 +21,7 @@
             <?php include "../inc/header.php"; ?>
 
             <!--End of Header Area-->
-            <script type="text/javascript" defer>
+            <script defr type="text/javascript" defer>
                 $(document).ready(function () {
                     // top message bar
                     if ($.cookie('alertbtn_cookie') != 'closed') {
@@ -185,15 +185,15 @@
             if (isset($_GET['success']) && isset($_GET["reason"])) {
                 $rsn=$_GET["reason"];
                 echo ($_GET['success'] == "true") ? "
-                <script>alert('You are registered ');window.location.href='login.php'</script>" : "<script>alert('not registered bcz $rsn')</script>";
+                <script defr>alert('You are registered ');window.location.href='login.php'</script>" : "<script defr>alert('not registered bcz $rsn')</script>";
 
             }else if (isset($_GET['success'])) {
                 echo ($_GET['success'] == "true") ? "
-                <script>alert('You are registered ');window.location.href='login.php'</script>" : "<script>alert('you are already registered')</script>";
+                <script defr>alert('You are registered ');window.location.href='login.php'</script>" : "<script defr>alert('you are already registered')</script>";
             }
             ?>
 
-            <script>
+            <script defr>
                 $(document).ready(function () {
                     $('body').on('click', '[name="submitMessage"]', function () {
                         if ($('#contact_accept_agree').is(':checked')) {
@@ -216,7 +216,7 @@
         <?php include "../inc/newsletterpopup.php"; ?>
         <?php include "../inc/scripts.php" ?>
         <?php include "../inc/custom_card_JQ.php" ?>
-        <script>
+        <script defr>
             $(document).ready(() => {
                 $('#role').on('change', function () {
                     // Get the selected value

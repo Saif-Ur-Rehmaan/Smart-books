@@ -25,7 +25,7 @@
             <?php include "../inc/header.php"; ?>
 
             <!--End of Header Area-->
-            <script type="text/javascript" defer>
+            <script defr type="text/javascript" defer>
             $(document).ready(function() {
                 // top message bar
                 if ($.cookie('alertbtn_cookie') != 'closed') {
@@ -226,14 +226,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <script type="text/javascript">
+                                <script defr type="text/javascript">
                                 $(".filter-attribute-container").find("a").addClass(
                                     "advanced-filter a-filter add-filter");
                                 $("#adil").find("a").addClass("active-filter a-filter add-filter");
                                 </script>
 
 
-                                <script>
+                                <script defr>
                                 var product_owlCarousel = $("#product_modulecollection-page .tt-product");
                                 product_owlCarousel.owlCarousel({
                                     loop: false,
@@ -313,7 +313,7 @@
                                 <div></div>
                             </div>
                         </aside>
-                        <script>
+                        <script defr>
                         $(function() {
                             // collection sidebar 
                             $("#column-left").on("click", ".advanced-filters a", function(event) {
@@ -720,7 +720,7 @@
     <?php include "../inc/newsletterpopup.php"; ?>
     <?php include "../inc/scripts.php" ?>
     <?php include "../inc/custom_card_JQ.php" ?>
-    <script>
+    <script defr>
     $(document).ready(() => {
         $("._product_cat_Select").on("click", (e) => {
             let clickedbtn = e.target;
@@ -781,7 +781,7 @@
     </script>
     <?php if(isset($_GET["type"])){
         ?>
-        <script>
+        <script defr>
             $(document).ready(()=>{
                 let getval="<?php echo $_GET["type"]?>";
                 console.log("hiiiiii");

@@ -116,14 +116,14 @@
 
 
     <!-- Header hook for plugins ================================================== -->
-    <script>
+    <script defr>
     window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');
     </script>
     <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/7089913908/digital_wallets/dialog">
     <meta name="shopify-checkout-api-token" content="738358f2cc6d7db1bd02b409a58d0c77">
     <meta id="in-context-paypal-metadata" data-shop-id="7089913908" data-venmo-supported="false"
         data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="USD">
-    <script>
+    <script defr>
     (function() {
         var scripts = [
             "https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.baseline.en.89aafa774d3a68be9eb9.js",
@@ -177,7 +177,7 @@
         addEventListener('load', prefetchAssets);
     })();
     </script>
-    <script id="shopify-features" type="application/json">
+    <script defr id="shopify-features" type="application/json">
     {
         "accessToken": "738358f2cc6d7db1bd02b409a58d0c77",
         "betas": ["rich-media-storefront-analytics"],
@@ -192,7 +192,7 @@
         "betterDynamicCheckoutRecommendation": false
     }
     </script>
-    <script>
+    <script defr>
     var Shopify = Shopify || {};
     Shopify.shop = "smartbook-theme.myshopify.com";
     Shopify.locale = "en";
@@ -216,12 +216,12 @@
     Shopify.routes = Shopify.routes || {};
     Shopify.routes.root = "/";
     </script>
-    <script type="module">
+    <script defr type="module">
     ! function(o) {
         (o.Shopify = o.Shopify || {}).modules = !0
     }(window);
     </script>
-    <script>
+    <script defr>
     ! function(o) {
         function n() {
             var o = [];
@@ -235,7 +235,7 @@
         t.loadFeatures = n(), t.autoloadFeatures = n()
     }(window);
     </script>
-    <script>
+    <script defr>
     (function() {
         function asyncLoad() {
             var urls = ["\/\/productreviews.shopifycdn.com\/embed\/loader.js?shop=smartbook-theme.myshopify.com"];
@@ -255,7 +255,7 @@
         }
     })();
     </script>
-    <script id="__st">
+    <script defr id="__st">
     var __st = {
         "a": 7089913908,
         "offset": -14400,
@@ -265,10 +265,10 @@
         "p": "collections"
     };
     </script>
-    <script>
+    <script defr>
     window.ShopifyPaypalV4VisibilityTracking = true;
     </script>
-    <script>
+    <script defr>
     ! function(o) {
         o.addEventListener("DOMContentLoaded", function() {
             window.Shopify = window.Shopify || {}, window.Shopify.recaptchaV3 = window.Shopify.recaptchaV3 || {
@@ -301,7 +301,7 @@
         })
     }(document);
     </script>
-    <script>
+    <script defr>
     document.addEventListener('DOMContentLoaded', function() {
         const previewBarInjector = new Shopify.PreviewBarInjector({
             targetNode: document.body,
@@ -314,15 +314,15 @@
         previewBarInjector.init();
     });
     </script>
-    <script integrity="sha256-atgy37M9Jn61+JKsuMFsbCkWlGMgmOcwfLDPeUl9V2s="
+    <script defr integrity="sha256-atgy37M9Jn61+JKsuMFsbCkWlGMgmOcwfLDPeUl9V2s="
         data-source-attribution="shopify.loadfeatures" defer="defer"
         src="cdn/shopifycloud/shopify/assets/storefront/load_feature-6ad832dfb33d267eb5f892acb8c16c6c291694632098e7307cb0cf79497d576b.js"
         crossorigin="anonymous"></script>
-    <script integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4="
+    <script defr integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4="
         data-source-attribution="shopify.dynamic-checkout" defer="defer"
         src="cdn/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js"
         crossorigin="anonymous"></script>
-    <script integrity="sha256-V7lM7zdLAxLbwI5Iz1g1WLOqzMR1UKAIHMJLCMbKENY=" defer="defer"
+    <script defr integrity="sha256-V7lM7zdLAxLbwI5Iz1g1WLOqzMR1UKAIHMJLCMbKENY=" defer="defer"
         src="cdn/shopifycloud/shopify/assets/storefront/bars/preview_bar_injector-57b94cef374b0312dbc08e48cf583558b3aaccc47550a0081cc24b08c6ca10d6.js"
         crossorigin="anonymous"></script>
 
@@ -340,63 +340,63 @@
         }
     }
     </style>
-    <script>
+    <script defr>
     window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');
     </script>
 
 
     <!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
-<script src="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/respond.min.js?v=52248677837542619231562343332" type="text/javascript"></script>
+<script defr src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
+<script defr src="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/respond.min.js?v=52248677837542619231562343332" type="text/javascript"></script>
 <link href="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/respond-proxy.php" id="respond-proxy" rel="respond-proxy" />
 <link href="//smartbook-theme.myshopify.com/search?q=9ee3da80448438e77835cec11e5d3f42" id="respond-redirect" rel="respond-redirect" />
-<script src="//smartbook-theme.myshopify.com/search?q=9ee3da80448438e77835cec11e5d3f42" type="text/javascript"></script>
-<script src="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/es5-shim.min.js?v=162403747125444000461562343323" type="text/javascript"></script>
+<script defr src="//smartbook-theme.myshopify.com/search?q=9ee3da80448438e77835cec11e5d3f42" type="text/javascript"></script>
+<script defr src="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/es5-shim.min.js?v=162403747125444000461562343323" type="text/javascript"></script>
 <![endif]-->
-    <!--[if (lte IE 9) ]><script src="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/match-media.min.js?18205" type="text/javascript"></script><![endif]-->
+    <!--[if (lte IE 9) ]><script defr src="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/match-media.min.js?18205" type="text/javascript"></script><![endif]-->
 
 
     <!-- JavaScripts-->
-    <script src="cdn/shop/t/16/assets/jquery-2.1.1.min.js@v=14397996608708860371562343325" type="text/javascript">
+    <script defr src="cdn/shop/t/16/assets/jquery-2.1.1.min.js@v=14397996608708860371562343325" type="text/javascript">
     </script>
-    <script src="cdn/shop/t/16/assets/owl.carousel.min.js@v=166908070870787366981562343329" type="text/javascript">
+    <script defr src="cdn/shop/t/16/assets/owl.carousel.min.js@v=166908070870787366981562343329" type="text/javascript">
     </script>
-    <script src="cdn/shop/t/16/assets/jquery.plugin.min.js@v=168274580697022526331562343327" type="text/javascript">
+    <script defr src="cdn/shop/t/16/assets/jquery.plugin.min.js@v=168274580697022526331562343327" type="text/javascript">
     </script>
-    <script src="cdn/shop/t/16/assets/jquery.countdown.min.js@v=179067753610155927421562343326" type="text/javascript">
+    <script defr src="cdn/shop/t/16/assets/jquery.countdown.min.js@v=179067753610155927421562343326" type="text/javascript">
     </script>
-    <script src="cdn/shop/t/16/assets/menu.js@v=29274008892731009231562343328" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/menu.js@v=29274008892731009231562343328" type="text/javascript"></script>
 
 
 
 
-    <script src="cdn/shop/t/16/assets/grid.js@v=73184977561553557081562343324" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/filter.js@v=56216344247952065551562343324" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/grid.js@v=73184977561553557081562343324" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/filter.js@v=56216344247952065551562343324" type="text/javascript"></script>
 
-    <script src="cdn/shop/t/16/assets/jquery.bpopup.min.js@v=45937891466859774381562343325" type="text/javascript">
+    <script defr src="cdn/shop/t/16/assets/jquery.bpopup.min.js@v=45937891466859774381562343325" type="text/javascript">
     </script>
-    <script src="cdn/shop/t/16/assets/jquery.cookie.js@v=48388009562886839411562343326" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/moment.min.js@v=12766354955387885901562343329" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/quickview.js@v=172446652489787083371562343343" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/swiper.jquery.js@v=138888780083506419961562343334" type="text/javascript">
+    <script defr src="cdn/shop/t/16/assets/jquery.cookie.js@v=48388009562886839411562343326" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/moment.min.js@v=12766354955387885901562343329" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/quickview.js@v=172446652489787083371562343343" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/swiper.jquery.js@v=138888780083506419961562343334" type="text/javascript">
     </script>
-    <script src="cdn/shop/t/16/assets/common.js@v=115366291981147249621562343343" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/jquery.magnific-popup.min.js@v=132335878410273497401562343327"
+    <script defr src="cdn/shop/t/16/assets/common.js@v=115366291981147249621562343343" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/jquery.magnific-popup.min.js@v=132335878410273497401562343327"
         type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/shipping-cart.js@v=91022910107171357801562343332" type="text/javascript"></script>
+    <script defr src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/shipping-cart.js@v=91022910107171357801562343332" type="text/javascript"></script>
 
-    <script
+    <script defr
         src="cdn/shopifycloud/shopify/assets/themes_support/option_selection-9f517843f664ad329c689020fb1e45d03cac979f64b9eb1651ea32858b0ff452.js"
         type="text/javascript"></script>
 
 
-    <script src="cdn/shop/t/16/assets/jquery-ui.min.js@v=3075874348992017221562343325" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/bootstrap.min.js@v=135618559580299884151562343321" type="text/javascript">
+    <script defr src="cdn/shop/t/16/assets/jquery-ui.min.js@v=3075874348992017221562343325" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/bootstrap.min.js@v=135618559580299884151562343321" type="text/javascript">
     </script>
 
     <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
-    <script>
+    <script defr>
     (function() {
         if ("sendBeacon" in navigator && "performance" in window) {
             var session_token = document.cookie.match(/_shopify_s=([^;]*)/);
@@ -431,7 +431,7 @@
         }
     }());
     </script>
-    <script id="web-pixels-manager-setup">
+    <script defr id="web-pixels-manager-setup">
     (function e(e, n, a, o, t, r, i) {
         function s(e, n) {
             if (document.head) {
@@ -569,7 +569,7 @@
         "web_pixels_async_pixel_refactor"
     ]);
     </script>
-    <script>
+    <script defr>
     window.ShopifyAnalytics = window.ShopifyAnalytics || {};
     window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
     window.ShopifyAnalytics.meta.currency = 'USD';
@@ -582,12 +582,12 @@
         window.ShopifyAnalytics.meta[attr] = meta[attr];
     }
     </script>
-    <script>
+    <script defr>
     window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
 
     };
     </script>
-    <script class="analytics">
+    <script defr class="analytics">
     (function() {
         var customDocumentWrite = function(content) {
             var jquery = null;
@@ -778,7 +778,7 @@
 
     })();
     </script>
-    <script class="boomerang">
+    <script defr class="boomerang">
     (function() {
         if (window.BOOMR && (window.BOOMR.version || window.BOOMR.snippetExecuted)) {
             return;

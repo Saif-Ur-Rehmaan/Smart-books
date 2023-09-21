@@ -48,6 +48,6 @@
   </div>
   <!-- END Modal -->
 </div>
-<script>
+<script defr>
   
 </script>

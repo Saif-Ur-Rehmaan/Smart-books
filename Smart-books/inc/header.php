@@ -975,11 +975,11 @@
                       
                                
                                     <span class="txt_number" id="_item_count">
-                                        <?php echo count($_SESSION["AddToCart"]) ?>
+                                        <?php echo (isset($_SESSION["AddToCart"]))?count($_SESSION["AddToCart"]):"0" ?>
                                     </span>
                                     <a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php"||basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>cart.php">
                                     <span class="txt_items" id="_xyz" > Shopping Cart </span></a>
-                                                <script>
+                                                <script defr>
                                                     document.getElementById("_xyz").addEventListener("click",()=>{
                                                         let a=window.location.href='<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php") ? "pages/" : ""; ?>cart.php'
                                                         console.log(a);

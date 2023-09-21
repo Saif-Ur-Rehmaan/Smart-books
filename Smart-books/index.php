@@ -21,7 +21,7 @@
         <div id="shopify-section-header" class="shopify-section">
             <?php include "inc/nav.php"; ?>
             <?php include "inc/header.php"; ?>
-            <script type="text/javascript" defer>
+            <script defr type="text/javascript" defer>
             $(document).ready(function() {
                 // top message bar
                 if ($.cookie('alertbtn_cookie') != 'closed') {
@@ -216,7 +216,7 @@
 
 
 
-                                                    <script>
+                                                    <script defr>
                                                     $(document).ready(function() {
                                                         $('#oc-inivoslider1').nivoSlider({
                                                             effect: "random",
@@ -410,21 +410,21 @@
 
                                                         <li class="active">
                                                             <a data-toggle="pill"
-                                                                href="index.php@preview_theme_id=.php#tab-15430604294250"><span>Featured
+                                                                href="index.php#tab-15430604294250"><span>Featured
                                                                     Products</span></a>
                                                         </li>
 
 
                                                         <li>
                                                             <a data-toggle="pill"
-                                                                href="index.php@preview_theme_id=.php#tab-15430604294251"><span>New
+                                                                href="index.php#tab-15430604294251"><span>New
                                                                     Arrivals</span></a>
                                                         </li>
 
 
                                                         <li>
                                                             <a data-toggle="pill"
-                                                                href="index.php@preview_theme_id=.php#tab-15430604294252"><span>Most
+                                                                href="index.php#tab-15430604294252"><span>Most
                                                                     Viewed</span></a>
                                                         </li>
 
@@ -976,6 +976,7 @@ WHERE date_added >= DATE_SUB(NOW(), INTERVAL 30 DAY)";
                                                                                             <div class="image images-container">
 
                                                                                                 <a href="<?php echo (basename($_SERVER["SCRIPT_FILENAME"]) == "index.php" || basename($_SERVER["SCRIPT_FILENAME"]) == "collections.php") ? "pages/" : ""; ?>singleProductPage.php?bookid=<?php echo $Bookid; ?>"
+                                                                                                
                                                                                                     class="product-image">
                                                                                                     <img class="img-responsive has-rotator img-default-image img-cate-1613107134516-1543060429425"
                                                                                                         src="images/products/<?php echo ($imagename != null || $imagename != "") ? $imagename : "9-700x700_a7714b9b-0e08-4790-a02b-9ad0d34526e9_600x600.jpg@v=1552407244"; ?>"
@@ -1862,7 +1863,7 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
-                                        <script>
+                                        <script defr>
                                         $(document).ready(function() {
                                             $('a[href="#tab-15430604294250"]').trigger("click");
                                             $(".tab-container-1543060429425").owlCarousel({
@@ -2351,7 +2352,7 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
-                                        <script>
+                                        <script defr>
                                         var product_owlCarousel = $("#product_module1552581993254 .tt-product");
                                         product_owlCarousel.owlCarousel({
                                             loop: false,
@@ -2677,7 +2678,7 @@ RIGHT JOIN books ON categories.id = books.category_id order by views desc ";
 
                                             </div>
                                         </div>
-                                        <script>
+                                        <script defr>
                                         $('#banner1544501819548').swiper({
                                             slidesPerView: 6,
                                             spaceBetween: 30,

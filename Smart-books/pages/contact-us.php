@@ -20,7 +20,7 @@
                 <?php include "../inc/header.php"; ?>
 
                 <!--End of Header Area-->
-                <script type="text/javascript" defer>
+                <script defr type="text/javascript" defer>
                     $(document).ready(function () {
                         // top message bar
                         if ($.cookie('alertbtn_cookie') != 'closed') {
@@ -165,11 +165,11 @@
 <!--End of Contact Us Area-->
 <?php  
 if(isset($_GET['success'])){
-  echo ($_GET['success']=="true") ? "<script>alert('Your request is submitted and you will be responded soon');window.location.href='../index.php'</script>" : "<script>alert('An error occur while submitting your request .plz try again later')</script>" ;
+  echo ($_GET['success']=="true") ? "<script defr>alert('Your request is submitted and you will be responded soon');window.location.href='../index.php'</script>" : "<script defr>alert('An error occur while submitting your request .plz try again later')</script>" ;
 }
 ?>
 
-<script>
+<script defr>
   $(document).ready(function() {
     $('body').on('click', '[name="submitMessage"]', function() {
       if ($('#contact_accept_agree').is(':checked')) {
@@ -192,7 +192,7 @@ if(isset($_GET['success'])){
             <?php include "../inc/newsletterpopup.php"; ?>
             <?php include "../inc/scripts.php" ?>
             <?php include "../inc/custom_card_JQ.php" ?>
-            <script>
+            <script defr>
                 $(document).ready(() => {
                     $("#_disappear").fadeOut(1)
                     $("#_appear").fadeIn(1)

@@ -177,7 +177,7 @@ if(isset($_POST['update_product'])){
          }
       }
       }else{
-         echo '<script>document.querySelector(".edit-product-form").style.display = "none";</script>';
+         echo '<script defr>document.querySelector(".edit-product-form").style.display = "none";</script>';
       }
    ?>
 
@@ -190,7 +190,7 @@ if(isset($_POST['update_product'])){
 
 
 <!-- custom admin js file link  -->
-<script src="js/admin_script.js"></script>
+<script defr src="js/admin_script.js"></script>
 
 </body>
 </html>

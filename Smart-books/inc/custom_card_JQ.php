@@ -1,4 +1,4 @@
-<script defr>
+<script defr >
     $(document).ready(() => {
 
         $("._addView").on("click", function () {

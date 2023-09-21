@@ -21,7 +21,7 @@
             <?php include "inc/header.php"; ?>
 
             <!--End of Header Area-->
-            <script type="text/javascript" defer>
+            <script defr type="text/javascript" defer>
             $(document).ready(function() {
                 // top message bar
                 if ($.cookie('alertbtn_cookie') != 'closed') {
@@ -195,18 +195,18 @@
 
 
 
-        <script>
+        <script defr>
         var moneyFormat = '<span class=money>${{amount}}</span>';
         </script>
 
 
 
-        <script src="cdn/shop/t/16/assets/fastclick.min.js@v=29723458539410922371562343323" type="text/javascript">
+        <script defr src="cdn/shop/t/16/assets/fastclick.min.js@v=29723458539410922371562343323" type="text/javascript">
         </script>
 
 
-        <script src="cdn/shop/t/16/assets/Wishlist.js@v=26158059899868642851562343343" type="text/javascript"></script>
-        <script>
+        <script defr src="cdn/shop/t/16/assets/Wishlist.js@v=26158059899868642851562343343" type="text/javascript"></script>
+        <script defr>
         (function() {
             Wishlist.init();
         }());
@@ -221,7 +221,7 @@
 
 
 
-        <script>
+        <script defr>
         //place script you don't want to run on mobile here
         $(function() {
             var currentAjaxRequest = null;
@@ -345,12 +345,12 @@
             overflow: hidden;
         }
         </style>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"
+        <script defr src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"
             type="text/javascript"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" rel="stylesheet"
             type="text/css" media="all" />
 
-        <script>
+        <script defr>
         window.addEventListener("load", function() {
             window.cookieconsent.initialise({
                 "palette": {
@@ -372,11 +372,11 @@
         </script>
 
 
-        <script src="cdn/s/javascripts/currencies.js" type="text/javascript"></script>
-        <script src="cdn/shop/t/16/assets/jquery.currencies.min.js@v=175057760772006623221562343326"
+        <script defr src="cdn/s/javascripts/currencies.js" type="text/javascript"></script>
+        <script defr src="cdn/shop/t/16/assets/jquery.currencies.min.js@v=175057760772006623221562343326"
             type="text/javascript"></script>
 
-        <script>
+        <script defr>
         Currency.format = 'money_format';
         var shopCurrency = 'USD';
         /* Sometimes merchants change their shop currency, let's tell our JavaScript file */

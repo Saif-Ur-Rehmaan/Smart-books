@@ -4,7 +4,7 @@ $connection = mysqli_connect("localhost", "root", "", "smartbooks2");
 if (!$connection) {
     header("location: pages/404.php");
     die();
-}
+} 
 class DatabaseManager
 {
     public static function connect()

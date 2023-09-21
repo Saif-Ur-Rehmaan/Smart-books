@@ -200,7 +200,7 @@
         </div>
         <div id="back-top"><i class="ion-ios-arrow-up"></i></div>
       </footer>
-      <script>
+      <script defr>
           $(document).ready(function () {
             // hide #back-top first
             $("#back-top").hide();

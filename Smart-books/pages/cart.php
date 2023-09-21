@@ -24,7 +24,7 @@
                 <?php include "../inc/header.php"; ?>
 
                 <!--End of Header Area-->
-                <script type="text/javascript" defer>
+                <script defr type="text/javascript" defer>
                     $(document).ready(function () {
                         // top message bar
                         if ($.cookie('alertbtn_cookie') != 'closed') {
@@ -224,7 +224,7 @@
                 <?php include "../inc/newsletterpopup.php"; ?>
                 <?php include "../inc/scripts.php" ?>
                 <?php include "../inc/custom_card_JQ.php" ?>
-                <script>
+                <script defr>
                     $(document).ready(() => {
                         $("#_disappear").fadeOut(1)
                         $("#_appear").fadeIn(1)

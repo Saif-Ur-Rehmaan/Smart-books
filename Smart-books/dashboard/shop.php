@@ -131,10 +131,10 @@ session_start();
     
     
     <!-- Header hook for plugins ================================================== -->
-    <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/7089913908/digital_wallets/dialog">
+    <script defr>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/7089913908/digital_wallets/dialog">
 <meta name="shopify-checkout-api-token" content="738358f2cc6d7db1bd02b409a58d0c77">
 <meta id="in-context-paypal-metadata" data-shop-id="7089913908" data-venmo-supported="false" data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="USD">
-<script>
+<script defr>
   (function() {
     var scripts = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.baseline.en.89aafa774d3a68be9eb9.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/809.baseline.en.f398d37a1955c4eb6e20.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/810.baseline.en.d3de5a49b3f490317ed3.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information.baseline.en.91377c15e3b588dbd3e9.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/537.baseline.en.df4ae1db90b9f8d6330c.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/253.baseline.en.14d4860bd9e523020e95.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/551.baseline.en.edee99288d2f4e3b0ef2.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.en.711aaf1023fe0ba6a7cd.js"];
     var styles = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/537.baseline.en.548b7eaa7b8a05f43dd1.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.en.39bc14c5dba264d43d7e.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/739.baseline.en.0c17b1c57e10844613f2.css"];
@@ -171,8 +171,8 @@ session_start();
     addEventListener('load', prefetchAssets);
    })();
 </script>
-<script id="shopify-features" type="application/json">{"accessToken":"738358f2cc6d7db1bd02b409a58d0c77","betas":["rich-media-storefront-analytics"],"domain":"smartbook-theme.myshopify.com","predictiveSearch":true,"shopId":7089913908,"smart_payment_buttons_url":"https:\/\/smartbook-theme.myshopify.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/smartbook-theme.myshopify.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en","optimusEnabled":false,"optimusHidden":false,"betterDynamicCheckoutRecommendation":false}</script>
-<script>var Shopify = Shopify || {};
+<script defr id="shopify-features" type="application/json">{"accessToken":"738358f2cc6d7db1bd02b409a58d0c77","betas":["rich-media-storefront-analytics"],"domain":"smartbook-theme.myshopify.com","predictiveSearch":true,"shopId":7089913908,"smart_payment_buttons_url":"https:\/\/smartbook-theme.myshopify.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/smartbook-theme.myshopify.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en","optimusEnabled":false,"optimusHidden":false,"betterDynamicCheckoutRecommendation":false}</script>
+<script defr>var Shopify = Shopify || {};
 Shopify.shop = "smartbook-theme.myshopify.com";
 Shopify.locale = "en";
 Shopify.currency = {"active":"USD","rate":"1.0"};
@@ -183,9 +183,9 @@ Shopify.theme.style = {"id":null,"handle":null};
 Shopify.cdnHost = "cdn.shopify.com";
 Shopify.routes = Shopify.routes || {};
 Shopify.routes.root = "/";</script>
-<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
-<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
-<script>(function() {
+<script defr type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script defr>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script defr>(function() {
   function asyncLoad() {
     var urls = ["\/\/productreviews.shopifycdn.com\/embed\/loader.js?shop=smartbook-theme.myshopify.com"];
     for (var i = 0; i < urls.length; i++) {
@@ -203,10 +203,10 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":7089913908,"offset":-14400,"reqid":"47b4e637-84d5-4c34-a548-9fefb5db242f","pageurl":"smartbook-theme.myshopify.com\/shop.html","u":"028716a483f4","p":"home"};</script>
-<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
-<script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
-<script>document.addEventListener('DOMContentLoaded', function() {
+<script defr id="__st">var __st={"a":7089913908,"offset":-14400,"reqid":"47b4e637-84d5-4c34-a548-9fefb5db242f","pageurl":"smartbook-theme.myshopify.com\/shop.html","u":"028716a483f4","p":"home"};</script>
+<script defr>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script defr>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
+<script defr>document.addEventListener('DOMContentLoaded', function() {
   const previewBarInjector = new Shopify.PreviewBarInjector({
     targetNode: document.body,
     iframeRoot: 'https://smartbook-theme.myshopify.com',
@@ -217,9 +217,9 @@ Shopify.routes.root = "/";</script>
   });
   previewBarInjector.init();
 });</script>
-<script integrity="sha256-atgy37M9Jn61+JKsuMFsbCkWlGMgmOcwfLDPeUl9V2s=" data-source-attribution="shopify.loadfeatures" defer="defer" src="cdn/shopifycloud/shopify/assets/storefront/load_feature-6ad832dfb33d267eb5f892acb8c16c6c291694632098e7307cb0cf79497d576b.js" crossorigin="anonymous"></script>
-<script integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4=" data-source-attribution="shopify.dynamic-checkout" defer="defer" src="cdn/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js" crossorigin="anonymous"></script>
-<script integrity="sha256-V7lM7zdLAxLbwI5Iz1g1WLOqzMR1UKAIHMJLCMbKENY=" defer="defer" src="cdn/shopifycloud/shopify/assets/storefront/bars/preview_bar_injector-57b94cef374b0312dbc08e48cf583558b3aaccc47550a0081cc24b08c6ca10d6.js" crossorigin="anonymous"></script>
+<script defr integrity="sha256-atgy37M9Jn61+JKsuMFsbCkWlGMgmOcwfLDPeUl9V2s=" data-source-attribution="shopify.loadfeatures" defer="defer" src="cdn/shopifycloud/shopify/assets/storefront/load_feature-6ad832dfb33d267eb5f892acb8c16c6c291694632098e7307cb0cf79497d576b.js" crossorigin="anonymous"></script>
+<script defr integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4=" data-source-attribution="shopify.dynamic-checkout" defer="defer" src="cdn/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js" crossorigin="anonymous"></script>
+<script defr integrity="sha256-V7lM7zdLAxLbwI5Iz1g1WLOqzMR1UKAIHMJLCMbKENY=" defer="defer" src="cdn/shopifycloud/shopify/assets/storefront/bars/preview_bar_injector-57b94cef374b0312dbc08e48cf583558b3aaccc47550a0081cc24b08c6ca10d6.js" crossorigin="anonymous"></script>
 
 
 <style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
@@ -233,62 +233,62 @@ Shopify.routes.root = "/";</script>
     min-height: 60px;
   }
 }
-</style><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+</style><script defr>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
     
 
 <!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
-<script src="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/respond.min.js?v=52248677837542619231562343332" type="text/javascript"></script>
+<script defr src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
+<script defr src="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/respond.min.js?v=52248677837542619231562343332" type="text/javascript"></script>
 <link href="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
 <link href="//smartbook-theme.myshopify.com/search?q=9ee3da80448438e77835cec11e5d3f42" id="respond-redirect" rel="respond-redirect" />
-<script src="//smartbook-theme.myshopify.com/search?q=9ee3da80448438e77835cec11e5d3f42" type="text/javascript"></script>
-<script src="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/es5-shim.min.js?v=162403747125444000461562343323" type="text/javascript"></script>
+<script defr src="//smartbook-theme.myshopify.com/search?q=9ee3da80448438e77835cec11e5d3f42" type="text/javascript"></script>
+<script defr src="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/es5-shim.min.js?v=162403747125444000461562343323" type="text/javascript"></script>
 <![endif]-->
-<!--[if (lte IE 9) ]><script src="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/match-media.min.js?18205" type="text/javascript"></script><![endif]-->
+<!--[if (lte IE 9) ]><script defr src="//smartbook-theme.myshopify.com/cdn/shop/t/16/assets/match-media.min.js?18205" type="text/javascript"></script><![endif]-->
 
 
     <!-- JavaScripts-->
-    <script src="cdn/shop/t/16/assets/jquery-2.1.1.min.js@v=14397996608708860371562343325" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/owl.carousel.min.js@v=166908070870787366981562343329" type="text/javascript"></script> 
-    <script src="cdn/shop/t/16/assets/jquery.plugin.min.js@v=168274580697022526331562343327" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/jquery.countdown.min.js@v=179067753610155927421562343326" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/menu.js@v=29274008892731009231562343328" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/jquery-2.1.1.min.js@v=14397996608708860371562343325" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/owl.carousel.min.js@v=166908070870787366981562343329" type="text/javascript"></script> 
+    <script defr src="cdn/shop/t/16/assets/jquery.plugin.min.js@v=168274580697022526331562343327" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/jquery.countdown.min.js@v=179067753610155927421562343326" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/menu.js@v=29274008892731009231562343328" type="text/javascript"></script>
     
-    <script src="cdn/shop/t/16/assets/jquery.nivo.slider.js@v=122362495616164878221562343327" type="text/javascript"></script>
-    
-    
+    <script defr src="cdn/shop/t/16/assets/jquery.nivo.slider.js@v=122362495616164878221562343327" type="text/javascript"></script>
     
     
-    <script src="cdn/shop/t/16/assets/jquery.bpopup.min.js@v=45937891466859774381562343325" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/jquery.cookie.js@v=48388009562886839411562343326" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/moment.min.js@v=12766354955387885901562343329" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/quickview.js@v=172446652489787083371562343343" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/swiper.jquery.js@v=138888780083506419961562343334" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/common.js@v=115366291981147249621562343343" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/jquery.magnific-popup.min.js@v=132335878410273497401562343327" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/shipping-cart.js@v=91022910107171357801562343332" type="text/javascript"></script>
-    
-    <script src="cdn/shopifycloud/shopify/assets/themes_support/option_selection-9f517843f664ad329c689020fb1e45d03cac979f64b9eb1651ea32858b0ff452.js" type="text/javascript"></script>
     
     
-    <script src="cdn/shop/t/16/assets/jquery-ui.min.js@v=3075874348992017221562343325" type="text/javascript"></script>
-    <script src="cdn/shop/t/16/assets/bootstrap.min.js@v=135618559580299884151562343321" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/jquery.bpopup.min.js@v=45937891466859774381562343325" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/jquery.cookie.js@v=48388009562886839411562343326" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/moment.min.js@v=12766354955387885901562343329" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/quickview.js@v=172446652489787083371562343343" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/swiper.jquery.js@v=138888780083506419961562343334" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/common.js@v=115366291981147249621562343343" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/jquery.magnific-popup.min.js@v=132335878410273497401562343327" type="text/javascript"></script>
+    <script defr src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/shipping-cart.js@v=91022910107171357801562343332" type="text/javascript"></script>
+    
+    <script defr src="cdn/shopifycloud/shopify/assets/themes_support/option_selection-9f517843f664ad329c689020fb1e45d03cac979f64b9eb1651ea32858b0ff452.js" type="text/javascript"></script>
+    
+    
+    <script defr src="cdn/shop/t/16/assets/jquery-ui.min.js@v=3075874348992017221562343325" type="text/javascript"></script>
+    <script defr src="cdn/shop/t/16/assets/bootstrap.min.js@v=135618559580299884151562343321" type="text/javascript"></script>
     
   <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
-<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 7089913908,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
-<script id="web-pixels-manager-setup">(function e(e,n,a,o,t,r,i){function s(e,n){if(document.head){var a=document.createElement("link");e.match(/spin\.dev\/?/)&&(e+="?fast_storefront_renderer=1"),a.rel="preload",a.href=e,n&&(a.as=n);try{document.head.appendChild(a)}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Could not append prefetch link tag to DOM.")}}}var l=i||[],d=null!==e;d&&(window.Shopify=window.Shopify||{},window.Shopify.analytics=window.Shopify.analytics||{},window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=function(e,n,a){window.Shopify.analytics.replayQueue.push([e,n,a])});var c=function(){var e="legacy",n="unknown",a=null,o=navigator.userAgent.match(/(Firefox|Chrome)\/(\d+)/i),t=navigator.userAgent.match(/(Edg)\/(\d+)/i),r=navigator.userAgent.match(/(Version)\/(\d+)(.+)(Safari)\/(\d+)/i);r?(n="safari",a=parseInt(r[2],10)):t?(n="edge",a=parseInt(t[2],10)):o&&(n=o[1].toLocaleLowerCase(),a=parseInt(o[2],10));var i={chrome:60,firefox:55,safari:11,edge:80}[n];return void 0!==i&&null!==a&&i<=a&&(e="modern"),e}(),p=c.substring(0,1),f=o.substring(0,1);if(d)try{self.performance.mark("wpm:start")}catch(e){}if(d){var u=self.location.origin,w=(e.webPixelsConfigList||[]).filter((function(e){return"app"===e.type.toLowerCase()}));for(let e=0;e<w.length;e++){s([u,"/wpm@",r,"/web-pixel-",w[e].id,"@",w[e].scriptVersion,"/sandbox/worker.",c,".js"].join(""),"script")}}var h,y,m,g,v,b,_,S,x=[a,"/wpm","/",f,r,p,".js"].join("");h={src:x,async:!0,onload:function(){if(e){var a=window.webPixelsManager.init(e);n(a),window.Shopify.analytics.replayQueue.forEach((function(e){a.publishCustomEvent(e[0],e[1],e[2])})),window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=a.publishCustomEvent,l.indexOf("web_pixels_visitor_api")>-1&&(window.Shopify.analytics.visitor=a.visitor)}},onerror:function(){var n=(e.storefrontBaseUrl?e.storefrontBaseUrl.replace(/\/$/,""):self.location.origin)+"/.well-known/shopify/monorail/unstable/produce_batch",a=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/2.0",payload:{version:t||"latest",page_url:self.location.href,status:"failed",error_msg:x+" has failed to load"},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(n,a))return!0}catch(e){}const o=new XMLHttpRequest;try{return o.open("POST",n,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(a),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}},y=document.createElement("script"),m=h.src,g=h.async||!0,v=h.onload,b=h.onerror,_=document.head,S=document.body,y.async=g,y.src=m,v&&y.addEventListener("load",v),b&&y.addEventListener("error",b),_?_.appendChild(y):S?S.appendChild(y):console.error("Did not find a head or body element to append the script")})({shopId: 7089913908,storefrontBaseUrl: "https://smartbook-theme.myshopify.com",cdnBaseUrl: "https://smartbook-theme.myshopify.com/cdn",surface: "storefront-renderer",enabledBetaFlags: ["web_pixels_async_pixel_refactor"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"APP"},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"CUSTOM"}],initData: {"cart":null,"checkout":null,"customer":null,"productVariants":[]},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed");},"https://smartbook-theme.myshopify.com/cdn","browser","0.0.340","776a6b8dwc4f9a677p12fedeb6m90cf832d",["web_pixels_async_pixel_refactor"]);</script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+<script defr>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 7089913908,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script defr id="web-pixels-manager-setup">(function e(e,n,a,o,t,r,i){function s(e,n){if(document.head){var a=document.createElement("link");e.match(/spin\.dev\/?/)&&(e+="?fast_storefront_renderer=1"),a.rel="preload",a.href=e,n&&(a.as=n);try{document.head.appendChild(a)}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Could not append prefetch link tag to DOM.")}}}var l=i||[],d=null!==e;d&&(window.Shopify=window.Shopify||{},window.Shopify.analytics=window.Shopify.analytics||{},window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=function(e,n,a){window.Shopify.analytics.replayQueue.push([e,n,a])});var c=function(){var e="legacy",n="unknown",a=null,o=navigator.userAgent.match(/(Firefox|Chrome)\/(\d+)/i),t=navigator.userAgent.match(/(Edg)\/(\d+)/i),r=navigator.userAgent.match(/(Version)\/(\d+)(.+)(Safari)\/(\d+)/i);r?(n="safari",a=parseInt(r[2],10)):t?(n="edge",a=parseInt(t[2],10)):o&&(n=o[1].toLocaleLowerCase(),a=parseInt(o[2],10));var i={chrome:60,firefox:55,safari:11,edge:80}[n];return void 0!==i&&null!==a&&i<=a&&(e="modern"),e}(),p=c.substring(0,1),f=o.substring(0,1);if(d)try{self.performance.mark("wpm:start")}catch(e){}if(d){var u=self.location.origin,w=(e.webPixelsConfigList||[]).filter((function(e){return"app"===e.type.toLowerCase()}));for(let e=0;e<w.length;e++){s([u,"/wpm@",r,"/web-pixel-",w[e].id,"@",w[e].scriptVersion,"/sandbox/worker.",c,".js"].join(""),"script")}}var h,y,m,g,v,b,_,S,x=[a,"/wpm","/",f,r,p,".js"].join("");h={src:x,async:!0,onload:function(){if(e){var a=window.webPixelsManager.init(e);n(a),window.Shopify.analytics.replayQueue.forEach((function(e){a.publishCustomEvent(e[0],e[1],e[2])})),window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=a.publishCustomEvent,l.indexOf("web_pixels_visitor_api")>-1&&(window.Shopify.analytics.visitor=a.visitor)}},onerror:function(){var n=(e.storefrontBaseUrl?e.storefrontBaseUrl.replace(/\/$/,""):self.location.origin)+"/.well-known/shopify/monorail/unstable/produce_batch",a=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/2.0",payload:{version:t||"latest",page_url:self.location.href,status:"failed",error_msg:x+" has failed to load"},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(n,a))return!0}catch(e){}const o=new XMLHttpRequest;try{return o.open("POST",n,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(a),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}},y=document.createElement("script"),m=h.src,g=h.async||!0,v=h.onload,b=h.onerror,_=document.head,S=document.body,y.async=g,y.src=m,v&&y.addEventListener("load",v),b&&y.addEventListener("error",b),_?_.appendChild(y):S?S.appendChild(y):console.error("Did not find a head or body element to append the script")})({shopId: 7089913908,storefrontBaseUrl: "https://smartbook-theme.myshopify.com",cdnBaseUrl: "https://smartbook-theme.myshopify.com/cdn",surface: "storefront-renderer",enabledBetaFlags: ["web_pixels_async_pixel_refactor"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"APP"},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"CUSTOM"}],initData: {"cart":null,"checkout":null,"customer":null,"productVariants":[]},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed");},"https://smartbook-theme.myshopify.com/cdn","browser","0.0.340","776a6b8dwc4f9a677p12fedeb6m90cf832d",["web_pixels_async_pixel_refactor"]);</script>  <script defr>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
 window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
 window.ShopifyAnalytics.meta.currency = 'USD';
 var meta = {"page":{"pageType":"home"}};
 for (var attr in meta) {
   window.ShopifyAnalytics.meta[attr] = meta[attr];
 }</script>
-<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+<script defr>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
   
 };
 </script>
-<script class="analytics">(function () {
+<script defr class="analytics">(function () {
     var customDocumentWrite = function(content) {
       var jquery = null;
 
@@ -446,7 +446,7 @@ for (var attr in meta) {
         document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
 
 })();</script>
-<script class="boomerang">
+<script defr class="boomerang">
 (function () {
   if (window.BOOMR && (window.BOOMR.version || window.BOOMR.snippetExecuted)) {
     return;
@@ -2510,7 +2510,7 @@ for (var attr in meta) {
 </header>
 
 <!--End of Header Area-->
-<script type="text/javascript">
+<script defr type="text/javascript">
   $(document).ready(function() { 
     // top message bar
     
@@ -2663,7 +2663,7 @@ for (var attr in meta) {
                   
                   
                   
-                  <script >
+                  <script defr >
                     $(document).ready(function(){
                       $('#oc-inivoslider1').nivoSlider({
                         effect:    "random"  ,
@@ -8193,7 +8193,7 @@ for (var attr in meta) {
     </div>
     <div class="clearfix"></div>
   </div>
-  <script >
+  <script defr >
     $(document).ready(function() {
       $('a[href="#tab-15430604294250"]').trigger( "click" );
         $(".tab-container-1543060429425").owlCarousel({
@@ -8408,7 +8408,7 @@ for (var attr in meta) {
                   <div id="Countdown1613076168756-1552563746975" class="box-timer cc "></div>
                 </div>
               </div>
-              <script type="text/javascript">
+              <script defr type="text/javascript">
                 $(function () {
                   $('#Countdown1613076168756-1552563746975').countdown({
                     until: new Date(' 2020-10-11'),
@@ -8560,7 +8560,7 @@ for (var attr in meta) {
                   <div id="Countdown1613143277620-1552563746975" class="box-timer cc "></div>
                 </div>
               </div>
-              <script type="text/javascript">
+              <script defr type="text/javascript">
                 $(function () {
                   $('#Countdown1613143277620-1552563746975').countdown({
                     until: new Date('2019-12-01'),
@@ -8712,7 +8712,7 @@ for (var attr in meta) {
                   <div id="Countdown1613110149172-1552563746975" class="box-timer cc "></div>
                 </div>
               </div>
-              <script type="text/javascript">
+              <script defr type="text/javascript">
                 $(function () {
                   $('#Countdown1613110149172-1552563746975').countdown({
                     until: new Date('2019-12-12'),
@@ -8864,7 +8864,7 @@ for (var attr in meta) {
                   <div id="Countdown1613101662260-1552563746975" class="box-timer cc "></div>
                 </div>
               </div>
-              <script type="text/javascript">
+              <script defr type="text/javascript">
                 $(function () {
                   $('#Countdown1613101662260-1552563746975').countdown({
                     until: new Date('2020-01-01'),
@@ -9016,7 +9016,7 @@ for (var attr in meta) {
                   <div id="Countdown1613135773748-1552563746975" class="box-timer cc "></div>
                 </div>
               </div>
-              <script type="text/javascript">
+              <script defr type="text/javascript">
                 $(function () {
                   $('#Countdown1613135773748-1552563746975').countdown({
                     until: new Date('2019-10-10'),
@@ -9046,7 +9046,7 @@ for (var attr in meta) {
   </div>
   <div class="clearfix"></div>
 </div>
-<script >
+<script defr >
   var product_owlCarousel = $("#product_module1552563746975 .tt-product");
                               product_owlCarousel.owlCarousel({
                               loop:  false ,
@@ -9818,7 +9818,7 @@ for (var attr in meta) {
   </div>
   <div class="clearfix"></div>
 </div>
-<script >
+<script defr >
   var product_owlCarousel = $("#product_module1552581993254 .tt-product");
   product_owlCarousel.owlCarousel({
     loop:  false ,
@@ -11276,7 +11276,7 @@ for (var attr in meta) {
   </div>
   <div class="clearfix"></div>
 </div>
-<script >
+<script defr >
   $(document).ready(function() {
     $('a[href="#tab-15446303007210"]').trigger( "click" );
       $(".tab-container-1544630300721").owlCarousel({
@@ -12340,7 +12340,7 @@ for (var attr in meta) {
   </div>
   <div class="clearfix"></div>
 </div>
-<script >
+<script defr >
   $(document).ready(function() {
     $('a[href="#tab-15526532751180"]').trigger( "click" );
       $(".tab-container-1552653275118").owlCarousel({
@@ -12611,7 +12611,7 @@ for (var attr in meta) {
     </div>
   </div>
 </div>
-<script >
+<script defr >
   $(document).ready(function() {
     $(".articles-container").owlCarousel({
       autoPlay :  false ,
@@ -12743,7 +12743,7 @@ for (var attr in meta) {
     
   </div>
 </div>
-<script ><!--
+<script defr ><!--
   $('#banner1544501819548').swiper({
   slidesPerView: 6,
   spaceBetween: 30,
@@ -13028,7 +13028,7 @@ for (var attr in meta) {
   </div>
   <div id="back-top"><i class="ion-ios-arrow-up"></i></div>
 </footer>
-<script >
+<script defr >
   $(document).ready(function(){
     // hide #back-top first
     $("#back-top").hide();
@@ -13064,17 +13064,17 @@ for (var attr in meta) {
 
       
 
-      <script>
+      <script defr>
         var moneyFormat = '<span class=money>${{amount}}</span>';
       </script>
 
       
       
-      <script src="cdn/shop/t/16/assets/fastclick.min.js@v=29723458539410922371562343323" type="text/javascript"></script>
+      <script defr src="cdn/shop/t/16/assets/fastclick.min.js@v=29723458539410922371562343323" type="text/javascript"></script>
       
       
-      <script src="cdn/shop/t/16/assets/Wishlist.js@v=26158059899868642851562343343" type="text/javascript"></script>
-      <script>
+      <script defr src="cdn/shop/t/16/assets/Wishlist.js@v=26158059899868642851562343343" type="text/javascript"></script>
+      <script defr>
         (function() {
           Wishlist.init();
         }());
@@ -13089,7 +13089,7 @@ for (var attr in meta) {
 
 
 
-<script>
+<script defr>
 
   //place script you don't want to run on mobile here
   $(function() {
@@ -13207,10 +13207,10 @@ for (var attr in meta) {
     overflow: hidden;
   }
 </style>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" type="text/javascript"></script>
+      <script defr src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" type="text/javascript"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" rel="stylesheet" type="text/css" media="all" />
 
-<script>
+<script defr>
   window.addEventListener("load", function(){
     window.cookieconsent.initialise({
       "palette": {
@@ -13231,10 +13231,10 @@ for (var attr in meta) {
 </script> 
       
 
-<script src="cdn/s/javascripts/currencies.js" type="text/javascript"></script>
-<script src="cdn/shop/t/16/assets/jquery.currencies.min.js@v=175057760772006623221562343326" type="text/javascript"></script>
+<script defr src="cdn/s/javascripts/currencies.js" type="text/javascript"></script>
+<script defr src="cdn/shop/t/16/assets/jquery.currencies.min.js@v=175057760772006623221562343326" type="text/javascript"></script>
 
-<script>
+<script defr>
   Currency.format = 'money_format';
   var shopCurrency = 'USD';
   /* Sometimes merchants change their shop currency, let's tell our JavaScript file */
